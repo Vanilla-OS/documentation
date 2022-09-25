@@ -14,3 +14,15 @@ Answers to the most frequently asked questions (despite the project is very youn
   No. Vanilla OS uses `almost` for the immutability part. We writted this tool to perform an On-Demand Immutability based on the immutability attribute of files. This approach works on any partition schema/file system. OSTree may still be considered in the future.
 - **Rolling Release?**\
   No. Vanilla OS is a point release and follows the Ubuntu release cycle.
+
+## Immutability (Almost)
+These documents explain how to manage the immutability through the Almost utility.
+```
+section under construction
+```
+
+## Package Manager (Apx)
+These documents explain how to use the default package manager.
+```
+section under construction
+```

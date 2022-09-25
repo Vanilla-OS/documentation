@@ -2,8 +2,8 @@ title: Vanilla OS Documentation
 author: Vanilla OS Contributors
 email: send@mirko.pm
 
-assets: /documentation/assets
-uploads: /documentation/uploads
+assets: /assets
+uploads: /uploads
 
 defaults:
   - scope:

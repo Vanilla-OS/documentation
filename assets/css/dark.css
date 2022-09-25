@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1d1c1e;
+        color: #f0eef7;
+    }
+
+    a {
+        color: #f2efff;
+    }
+
+    nav a:not(.brand):not(.button):hover,
+    article p a {
+        color: #00b7ff;
+    }
+
+    code.highlighter-rouge,
+    div.highlighter-rouge {
+        background-color: #2f3438;
+    }
+
+    pre>code {
+        background-color: #2f3438;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #28272a;
+    }
+
+    tbody tr:hover {
+        background-color: #2c2b2e;
+    }
+
+    .highlight span.s {
+        color: #ff4372;
+    }
+
+    .highlight span.na {
+        color: #75ffff;
+    }
+}

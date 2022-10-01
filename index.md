@@ -23,11 +23,11 @@ Answers to the most frequently asked questions (despite the project is very youn
   No. Vanilla OS is a point release and follows the Ubuntu release cycle.
 
 ## Sections
-- **[Immutability (`almost`)](/docs/almost)**
+- **[Immutability (`almost`)](/docs/almost)**\
 Almost is a utility that allows you to perform an on-demand immutability based
 on the immutability attribute of files.
 
-- **[Package Manager (`apx`)](/docs/apx)**
+- **[Package Manager (`apx`)](/docs/apx)**\
 Apx is a package manager that allows you to install and manage packages in a
 managed container, without affecting the host system. Occasionally, it is
 possible to use `apx` to install packages on the host system as well.

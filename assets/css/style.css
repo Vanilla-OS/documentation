@@ -14,6 +14,7 @@ body {
 	font-family: 'Work Sans', sans-serif;
 	margin: 0;
 	display: flex;
+	overflow: hidden;
 }
 
 a {
@@ -21,6 +22,40 @@ a {
 	font-weight: 500;
 	border-bottom: 1px dashed;
 	color: #0080e5;
+}
+
+::-webkit-scrollbar {
+    background: 0 0;
+    height: 20px;
+    width: 20px
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 20px;
+    box-sizing: content-box;
+    width: 6px;
+    border: 7px solid transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    border: 7px solid transparent;
+    border-radius: 20px;
+    box-sizing: content-box;
+    min-height: 30px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #959595;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6a6a6a;
 }
 
 /* Headings */
@@ -65,7 +100,8 @@ main {
 
 main article {
     flex: 1;
-	padding: 10px 20px;
+    padding: 10px 20px;
+    overflow-y: auto;
 }
 
 /* Aside */
@@ -77,15 +113,11 @@ aside {
     background: #242424;
     min-width: 250px;
     color: #fff;
+    overflow-y: auto;
 }
 
 aside a {
     color: cyan;
-}
-
-aside .summary {
-    position: sticky;
-    top: 40px;
 }
 
 aside ul {

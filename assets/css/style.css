@@ -3,6 +3,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 @import url('/assets/css/dark.css');
 
+/* Anim */
+aside {
+	animation: fadeInLeft 0.5s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
 /* Main */
 html,body {
     height: 100%;
@@ -114,6 +120,8 @@ aside {
     min-width: 250px;
     color: #fff;
     overflow-y: auto;
+    box-shadow: 0 0 0 transparent;
+    z-index: 1;
 }
 
 aside a {
@@ -135,5 +143,33 @@ aside li a.active {
 	main {
 		flex-direction: column;
 		gap: 0;
+	}
+
+	aside {
+		animation: fadeInDown 0.5s ease-in-out;
+	}
+
+	aside .summary > ul {
+		display: none;
+	}
+	
+	aside .summary > b::after {
+		content: " >";
+	}
+	
+	aside:hover .summary > b:after {
+		content: " <";
+	}
+	
+	aside:hover .summary > ul {
+		display: block;
+	}
+	
+	aside {
+		max-height: 70vh;
+	}
+	
+	aside:hover {
+		box-shadow: 0 0 70px #000000b8, 0 0 0 99rem #8f8f8fcf;
 	}
 }

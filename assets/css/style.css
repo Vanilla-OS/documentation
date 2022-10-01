@@ -4,11 +4,16 @@
 @import url('/assets/css/dark.css');
 
 /* Main */
+html,body {
+    height: 100%;
+}
+
 body {
 	font-size: 18px;
 	line-height: 30px;
 	font-family: 'Work Sans', sans-serif;
 	margin: 0;
+	display: flex;
 }
 
 a {

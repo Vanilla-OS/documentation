@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('/assets/css/dark.css');
 
 /* Anim */
 aside {
-	animation: fadeInLeft 0.5s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 
@@ -146,15 +145,15 @@ pre {
     overflow: auto;
 }
 
+pre, code {
+	font-family: 'Roboto Mono', monospace;
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
 	main {
 		flex-direction: column;
 		gap: 0;
-	}
-
-	aside {
-		animation: fadeInDown 0.5s ease-in-out;
 	}
 
 	aside .summary > ul {

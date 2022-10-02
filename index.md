@@ -16,7 +16,7 @@ Answers to the most frequently asked questions (despite the project is very youn
   Distrobox-based subsystem).
 - **Does it uses OSTree?**\
   No. Vanilla OS obtains immutability via [`almost`](https://github.com/Vanilla-OS/almost). 
-  We writted this utility to perform an On-Demand Immutability based on the 
+  We wrote this utility to perform an On-Demand Immutability based on the 
   immutability attribute of files. This approach works on any partition 
   schema/file system. OSTree may still be considered in the future.
 - **Rolling Release?**\

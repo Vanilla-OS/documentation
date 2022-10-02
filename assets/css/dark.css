@@ -30,7 +30,12 @@
         background-color: #2c2b2e;
     }
 
-    a.highlight {
+    h1.highlight,
+    h2.highlight,
+    h3.highlight,
+    h4.highlight,
+    h5.highlight,
+    h6.highlight {
         background-color: #4646466b;
         border-radius: 4px;
     }

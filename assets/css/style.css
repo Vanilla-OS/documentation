@@ -154,7 +154,12 @@ pre, code {
 }
 
 /* Highlight */
-a.highlight {
+h1.highlight,
+h2.highlight,
+h3.highlight,
+h4.highlight,
+h5.highlight,
+h6.highlight {
     background-color: #fbff006b;
     border-radius: 4px;
 }

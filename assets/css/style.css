@@ -108,6 +108,10 @@ main article {
     flex: 1;
     padding: 10px 20px;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 1vw;
 }
 
 /* Aside */

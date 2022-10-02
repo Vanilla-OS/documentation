@@ -149,6 +149,12 @@ pre, code {
 	font-family: 'Roboto Mono', monospace;
 }
 
+/* Highlight */
+.highlight {
+    background-color: #fbff006b;
+    border-radius: 4px;
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
 	main {

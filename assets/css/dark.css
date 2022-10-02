@@ -30,11 +30,8 @@
         background-color: #2c2b2e;
     }
 
-    .highlight span.s {
-        color: #ff4372;
-    }
-
-    .highlight span.na {
-        color: #75ffff;
+    .highlight {
+        background-color: #4646466b;
+        border-radius: 4px;
     }
 }

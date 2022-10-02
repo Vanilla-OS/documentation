@@ -194,6 +194,11 @@ h6.highlight {
 	aside:hover {
 		box-shadow: 0 0 70px #000000b8, 0 0 0 99rem #8f8f8fcf;
 	}
+
+	article {
+		width: initial;
+	}
+	
 	pre {
 		padding: 8px 10px;
 		overflow: auto;

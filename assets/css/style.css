@@ -102,6 +102,7 @@ main {
     display: flex;
     align-items: stretch;
     gap: 40px;
+    flex: 1;
 }
 
 main article {
@@ -138,6 +139,13 @@ aside li a.active {
     color: #ffeb3b;
 }
 
+/* Code */
+pre {
+    background-color: #f7f7f7;
+    padding: 8px 10px;
+    overflow: auto;
+}
+
 /* Media Queries */
 @media (max-width: 1100px) {
 	main {
@@ -171,5 +179,9 @@ aside li a.active {
 	
 	aside:hover {
 		box-shadow: 0 0 70px #000000b8, 0 0 0 99rem #8f8f8fcf;
+	}
+	pre {
+		padding: 8px 10px;
+		overflow: auto;
 	}
 }

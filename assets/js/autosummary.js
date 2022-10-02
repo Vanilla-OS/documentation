@@ -21,6 +21,7 @@ function autosummary(article_element, summary_element) {
     article = document.querySelector(article_element),
     summary = document.querySelector(summary_element),
     url = window.location.href,
+    url = url.split("#")[0],
     document.querySelector(summary_element + ">li:first-child").remove(),
     i=0,
     // generate summary entries
@@ -47,5 +48,18 @@ function autosummary(article_element, summary_element) {
                 document.querySelector(summary_element + '>li>a.' + t.getAttribute("id")).classList.add("active")
             }
         })
+    });
+    window.addEventListener("hashchange", function() {
+        var hash = window.location.hash;
+        var element = document.getElementById(hash.substring(1));
+        var highlights = document.querySelectorAll(".highlight");
+        if (highlights.length > 0) {
+            for (var i = 0; i < highlights.length; i++) {
+                highlights[i].classList.remove("highlight");
+            }
+        }
+        if (element) {
+            element.classList.add("highlight");
+        }
     });
 }

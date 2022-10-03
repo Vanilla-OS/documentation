@@ -4,19 +4,19 @@ description: Find out how to use Vanilla OS and all its tools and settings.
 ---
 
 # Vanilla OS
-Taste the GNOME Vanilla experience on Ubuntu with some spicy.
+Taste the GNOME Vanilla experience on Ubuntu with some spice.
 
 ## FAQ
-Answers to the most frequently asked questions (despite the project is very young).
+Answers to the most frequently asked questions (even though the project is very young).
 - **Why a new Distribution?**\
   Vanilla OS arose out of the need for an Ubuntu-based Linux distribution that 
-  would provide the GNOME Vanilla experience without any changes to the user 
-  experience. Later its scope was extended to experiment with some tools and 
-  technologies such as Almost (on-demand immutability) and Apx (the 
+  would provide vanilla GNOME without any changes to the user 
+  experience. Later, its scope was extended to experiment with some tools and 
+  technologies, such as Almost (on-demand immutability) and Apx (the 
   Distrobox-based subsystem).
-- **Does it uses OSTree?**\
-  No. Vanilla OS obtains immutability via [`almost`](https://github.com/Vanilla-OS/almost). 
-  We wrote this utility to perform an On-Demand Immutability based on the 
+- **Does it use OSTree?**\
+  No. Vanilla OS achieves immutability through [`almost`](https://github.com/Vanilla-OS/almost). 
+  We wrote this utility for On-Demand Immutability based on the 
   immutability attribute of files. This approach works on any partition 
   schema/file system. OSTree may still be considered in the future.
 - **Rolling Release?**\
@@ -24,7 +24,7 @@ Answers to the most frequently asked questions (despite the project is very youn
 
 ## Sections
 - **[Immutability (`almost`)](/docs/almost)**\
-Almost is a utility that allows you to perform an on-demand immutability based
+Almost is a utility for on-demand immutability based
 on the immutability attribute of files.
 
 - **[Package Manager (`apx`)](/docs/apx)**\

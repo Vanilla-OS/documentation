@@ -17,11 +17,11 @@ almost [OPTIONS] [COMMAND] [ARGS]
 
 ## DESCRIPTION
 ```
-almost is a utility that provides immutability on demand by toggling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable directories, allowing you to test changes before committing or dropping them.
+almost is a utility that provides on-demand immutability by toggling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable directories, allowing you to test changes before committing them.
 
 Options:
 	--help/-h		show this message
-	--verbose/-v		show more verbosity
+	--verbose/-v		verbose output
 	--version/-V		show version
 
 Commands:
@@ -35,7 +35,7 @@ Commands:
 ```
 Set the filesystem as read-only or read-write until reboot.
 
-Setting the filesystem as read-write mode may consist of a security risk, be
+Setting the filesystem to read-write mode could be a security risk, be
 careful when using this command.
 
 Usage:

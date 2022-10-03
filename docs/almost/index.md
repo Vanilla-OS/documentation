@@ -16,7 +16,7 @@ configuration files and the user's home directory (`/home, /etc, /var`).
 
 The same can be achieved using the `chattr` command, but `almost` provides
 consistency by restoring the default state of the system after a reboot, and
-with additional features to better manage immutability, e.g. launching a command 
+with additional features to better manage immutability, e.g. launching a command while
 temporarily disabling immutability.
 
 ### On-demand immutability

@@ -22,6 +22,10 @@
         background-color: #2f3438;
     }
 
+    code.language-plaintext.highlighter-rouge {
+        color: #00ffff;
+    }
+
     tbody tr:nth-child(even) {
         background-color: #28272a;
     }

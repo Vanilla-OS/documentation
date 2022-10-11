@@ -152,6 +152,12 @@ pre, code {
 	font-family: 'Roboto Mono', monospace;
 }
 
+code.language-plaintext.highlighter-rouge {
+    color: #005858;
+    background-color: #00ffff2e;
+}
+
+
 /* Highlight */
 h1.highlight,
 h2.highlight,
@@ -162,7 +168,6 @@ h6.highlight {
     background-color: #fbff006b;
     border-radius: 4px;
 }
-
 /* Media Queries */
 @media (max-width: 1100px) {
 	main {

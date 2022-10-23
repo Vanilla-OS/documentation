@@ -30,7 +30,7 @@ install a kernel module.
 
 In cases like this, you would use the `--sys` flag to bypass the container and 
 install directly on the host, *but be aware that this is not recommended*. `apx` 
-works with [`almost`](/docs/almost) to temporary disable the immutability, 
+works with [`almost`](/docs/almost) to temporarily disable the immutability, 
 allowing you install the needed packages and restoring the system afterwards.
 
 ### Multiple sources

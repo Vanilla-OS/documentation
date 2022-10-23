@@ -1,5 +1,5 @@
 ---
-title: Package Manager (apx) - Vanilla OS 
+title: Package Manager (apx) - Vanilla OS
 description: Find out how to use apx, the Vanilla OS package manager.
 ---
 

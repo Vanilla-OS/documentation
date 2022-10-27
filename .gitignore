@@ -1,1 +1,5 @@
 /_site
+
+# Local Dev
+.bundle/
+vendor/

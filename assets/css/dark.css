@@ -21,7 +21,7 @@
         --c-dark-code-plaintext: var(--c-vanilla-brand);
 
         /* Code block */
-        --c-dark-code-block: #2f3438;
+        --c-dark-code-block: var(--c-dark-secondary);
 
         /* Highlight */
         --c-dark-highlight: #4646466b;

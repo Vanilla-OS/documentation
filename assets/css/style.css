@@ -3,6 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
 @import url('/assets/css/dark.css');
 
+:root {
+    --c-vanilla-primary: ##ffbf48;
+
+    /* Links */
+    --c-aside-links: cyan;
+    --c-links: #0080e5;
+
+    /* Aside colors*/
+    --c-aside-background: #242424;
+    --c-aside-text: #fff;
+
+    /* Code block in plan text */
+    --c-code-plaintext-background: #00ffff2e;
+    --c-code-plaintext: #005858;
+
+    /* Code block */
+    --c-code-block: #f7f7f7;
+
+    /* Highlight */
+    --c-highlight: #fbff006b;
+}
+
 /* Anim */
 aside {
 	transition: all .2s ease-in-out;
@@ -26,7 +48,7 @@ a {
 	text-decoration: none;
 	font-weight: 500;
 	border-bottom: 1px dashed;
-	color: #0080e5;
+	color: var(--c-links);
 }
 
 ::-webkit-scrollbar {
@@ -119,16 +141,16 @@ aside {
     top: 0;
     margin-bottom: 0;
     margin-top: 0;
-    background: #242424;
+    background: var(--c-aside-background);
     min-width: 250px;
-    color: #fff;
+    color: var(--c-aside-text);
     overflow-y: auto;
     box-shadow: 0 0 0 transparent;
     z-index: 1;
 }
 
 aside a {
-    color: cyan;
+    color: var(--c-aside-links);
 }
 
 aside ul {
@@ -143,7 +165,7 @@ aside li a.active {
 
 /* Code */
 pre {
-    background-color: #f7f7f7;
+    background-color: var(--c-code-block);
     padding: 8px 10px;
     overflow: auto;
 }
@@ -153,8 +175,8 @@ pre, code {
 }
 
 code.language-plaintext.highlighter-rouge {
-    color: #005858;
-    background-color: #00ffff2e;
+    color: var(--c-code-plaintext);
+    background-color: var(--c-code-plaintext-background);
 }
 
 
@@ -165,7 +187,7 @@ h3.highlight,
 h4.highlight,
 h5.highlight,
 h6.highlight {
-    background-color: #fbff006b;
+    background-color: var(--c-highlight);
     border-radius: 4px;
 }
 /* Media Queries */

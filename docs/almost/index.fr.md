@@ -41,6 +41,6 @@ ou pour installer des pilotes. Désactiver l'immuabilité pour installer une app
 Utilisez [`apx`](/docs/apx), [`Flatpak`](/docs/flatpak), [`Snap`](/docs/snap) ou [`AppImage`](/docs/appimage)..
 
 ## Usage
-- [Page de manuel](/docs/almost/manpage)
+- [Guide](/docs/almost/manpage)
 - [Couches](/docs/almost/layers)
 - [Configuration](/docs/almost/configuration)

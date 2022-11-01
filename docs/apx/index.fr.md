@@ -52,4 +52,4 @@ paquet utilisé par Debian et ses dérivés, et **X**, qui doit être considér�
 ce qui veut dire qu'il se trouve au-dessus du système hôte.
 
 ## Usage
-- [Guide](/docs/apx/manpage)
+- [Guide](/docs/apx/manpage.fr.md)

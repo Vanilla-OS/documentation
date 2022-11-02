@@ -14,8 +14,8 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
   de usuario. Más tarde, su alcance se amplió para experimentar con algunas herramientas y 
   tecnologías, como Almost (inmutabilidad bajo demanda) y Apx (el 
   subsistema basado en Distrobox).
-- **Does it use OSTree?**\
-  No. Vanilla OS achieves immutability through [`almost`](https://github.com/Vanilla-OS/almost). 
+- **¿Utiliza OSTree?**\
+  No. Vanilla OS consigue la inmutabilidad a través de [`almost`](https://github.com/Vanilla-OS/almost). 
   We wrote this utility for On-Demand Immutability based on the 
   immutability attribute of files. This approach works on any partition 
   schema/file system. OSTree may still be considered in the future.

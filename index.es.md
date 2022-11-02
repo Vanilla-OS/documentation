@@ -23,11 +23,11 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
   No. Vanilla OS es un lanzamiento puntual y sigue el ciclo de lanzamiento de Ubuntu.
 
 ## Secciones
-- **[Immutability (`almost`)](/docs/almost)**\
+- **[Inmutabilidad (`almost`)](/docs/almost)**\
 Almost es una utilidad para la inmutabilidad bajo demanda basada
 en el atributo de inmutabilidad de los archivos.
 
-- **[Package Manager (`apx`)](/docs/apx)**\
+- **[Administrador de paquetes (`apx`)](/docs/apx)**\
 Apx is a package manager that allows you to install and manage packages in a
 managed container, without affecting the host system. Occasionally, it is
 possible to use `apx` to install packages on the host system as well.

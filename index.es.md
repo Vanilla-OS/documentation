@@ -24,8 +24,8 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
 
 ## Secciones
 - **[Immutability (`almost`)](/docs/almost)**\
-Almost is a utility for on-demand immutability based
-on the immutability attribute of files.
+Almost es una utilidad para la inmutabilidad bajo demanda basada
+en el atributo de inmutabilidad de los archivos.
 
 - **[Package Manager (`apx`)](/docs/apx)**\
 Apx is a package manager that allows you to install and manage packages in a

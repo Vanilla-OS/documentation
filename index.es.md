@@ -16,9 +16,9 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
   subsistema basado en Distrobox).
 - **¿Utiliza OSTree?**\
   No. Vanilla OS consigue la inmutabilidad a través de [`almost`](https://github.com/Vanilla-OS/almost). 
-  We wrote this utility for On-Demand Immutability based on the 
-  immutability attribute of files. This approach works on any partition 
-  schema/file system. OSTree may still be considered in the future.
+  Escribimos esta utilidad para la inmutabilidad bajo demanda basada en el 
+  atributo de inmutabilidad de los archivos. Este enfoque funciona en cualquier partición 
+  sistema de archivos/esquema de particiones. OSTree puede seguir siendo considerado en el futuro.
 - **Rolling Release?**\
   No. Vanilla OS is a point release and follows the Ubuntu release cycle.
 

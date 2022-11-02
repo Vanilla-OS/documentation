@@ -28,6 +28,6 @@ Almost es una utilidad para la inmutabilidad bajo demanda basada
 en el atributo de inmutabilidad de los archivos.
 
 - **[Administrador de paquetes (`apx`)](/docs/apx)**\
-Apx is a package manager that allows you to install and manage packages in a
-managed container, without affecting the host system. Occasionally, it is
-possible to use `apx` to install packages on the host system as well.
+Apx es un administrador de paquetes que permite instalar y gestionar paquetes en un
+contenedor gestionado, sin afectar al sistema anfitrión. Ocasionalmente, es
+posible utilizar `apx` para instalar paquetes en el sistema anfitrión también.

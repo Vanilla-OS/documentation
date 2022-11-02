@@ -19,10 +19,10 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
   Escribimos esta utilidad para la inmutabilidad bajo demanda basada en el 
   atributo de inmutabilidad de los archivos. Este enfoque funciona en cualquier partición 
   sistema de archivos/esquema de particiones. OSTree puede seguir siendo considerado en el futuro.
-- **Rolling Release?**\
-  No. Vanilla OS is a point release and follows the Ubuntu release cycle.
+- **Lanzamiento continuo**\
+  No. Vanilla OS es un lanzamiento puntual y sigue el ciclo de lanzamiento de Ubuntu.
 
-## Sections
+## Secciones
 - **[Immutability (`almost`)](/docs/almost)**\
 Almost is a utility for on-demand immutability based
 on the immutability attribute of files.

@@ -22,7 +22,7 @@ To flash the disk image to your USB stick, download and install [balenaEtcher](h
 If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or  [Rufus](https://rufus.ie/).
 
 ### Flashing the image
-**Warning**: this will erease **all data** on your USB flash drive. Make sure to back up all your important data before proceeding.
+**Warning**: this will erease **all data** on your USB flash drive. Make sure to back up all your important data before proceeding!
 
 Open Etcher, select the downloaded disk image and your USB flash drive, then click "Flash!".
 
@@ -31,7 +31,7 @@ When the process is done, you will have a bootable USB stick with Vanilla OS on 
 ## Booting from the USB flash drive
 Insert the USB flash drive in the computer that you want to install Vanilla OS to and power up or restart the device.
 
-If your device does not automatically boot into the Vanilla OS installation media, restart and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model.
+If your device does not automatically boot into the Vanilla OS installation media, restart and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the model of your USB flash drive from the boot menu.
 
 When your device has succesfully booted from the USB stick, you should see a Welcome screen inviting you to either try or install Vanilla OS.
 
@@ -51,7 +51,7 @@ This guide will help you with the following types of installation:
 - [Advanced Installation](/docs/installation/#title16)
 
 ## Installing Only Vanilla OS
-This section will guide you through installing Vanilla OS to an entire disk, **ereasing all previous data on it**. Make sure to back up all your important data before proceeding.
+This section will guide you through installing Vanilla OS to an entire disk, **ereasing all previous data on it**. Make sure to back up all your important data before proceeding!
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 

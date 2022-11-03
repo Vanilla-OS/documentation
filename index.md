@@ -31,3 +31,6 @@ on the immutability attribute of files.
 Apx is a package manager that allows you to install and manage packages in a
 managed container, without affecting the host system. Occasionally, it is
 possible to use `apx` to install packages on the host system as well.
+
+- **[Installation](/docs/installation)**\
+Learn how to install Vanilla OS to your device.

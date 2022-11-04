@@ -10,7 +10,7 @@ description: Learn how to install Vanilla OS to your device.
 - A drive with at least 25GB of storage space.
 - 30 minutes to an hour of your time.
 
-## Creating a Bootable USB Stick
+## Creating a bootable USB stick
 This section will guide you through creating a bootable USB stick with Vanilla OS on it.
 
 ### Downloading Vanilla OS
@@ -42,25 +42,25 @@ You can try Vanilla OS without making any changes to your device. If you are sat
 ## First steps
 Click "Install Vanilla OS" and set your preferred language, keyboard layout and timezone.
 
-## Types of Installation
+## Types of installation
 Depending on whether you want to dual- or multiboot Vanilla OS alongside other operating systems, you will need to follow different steps when selecting your disk.
 
 This guide will help you with the following types of installation:
-- [Installing Only Vanilla OS](/docs/installation/#title10)
-- [Installing Alongside Windows](/docs/installation/#title11)
-- [Advanced Installation](/docs/installation/#title16)
+- [Installing only Vanilla OS](/docs/installation/#title10)
+- [Installing alongside Windows](/docs/installation/#title11)
+- [Advanced installation](/docs/installation/#title16)
 
-## Installing Only Vanilla OS
+## Installing only Vanilla OS
 This section will guide you through installing Vanilla OS to an entire disk, **ereasing all previous data on it**. Make sure to back up all your important data before proceeding!
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
-## Installing Alongside Windows
+## Installing alongside Windows
 This section will guide you through installing Vanilla OS on the same drive as an existing Windows installation.
 
-If you wish to install Vanilla OS on the same computer, but on a different drive than Windows, follow the steps described in [Installing Only Vanilla OS](/docs/installation/#title10).
+If you wish to install Vanilla OS on the same computer, but on a different drive than Windows, follow the steps described in [Installing only Vanilla OS](/docs/installation/#title10).
 
 ### Opening GParted
 Select the disk that Windows is installed on and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
@@ -90,7 +90,7 @@ Click "Apply" and review your changes.
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
-## Advanced Installation
+## Advanced installation
 This section will help you with manual partitioning in case your particular needs for installation aren't covered by this guide.
 
 Select the disk that you want to install Vanilla OS to and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.

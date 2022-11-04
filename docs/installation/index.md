@@ -33,7 +33,7 @@ When the process is done, you will have a bootable USB stick with Vanilla OS on 
 ## Booting from the USB flash drive
 Insert the USB flash drive into the computer to which you want to install Vanilla OS and power up or restart the device.
 
-If your device does not automatically boot into the Vanilla OS installation media, reboot, and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the name of your USB flash drive from the boot menu.
+If your device does not automatically boot into the Vanilla OS installation media, reboot, and while it is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the name of your USB flash drive from the boot menu.
 
 When your device has successfully booted from the USB stick, you should see a welcome screen inviting you to try or install Vanilla OS.
 

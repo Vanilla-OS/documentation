@@ -98,11 +98,11 @@ Select "New" on the unallocated space again. Use the entirety of the remaining s
 Click "Apply All Operations" \(the checkmark in the toolbar\) and when it's finished, close GParted.
 
 ### Selecting the new partitions
-Click on your newly created partitions, then select their mount points as `/` for the bigger one and `/boot` for the 1024MB one. You might need to close and re-open the installer for the new partitions to appear.
+Click on your newly created partitions, then select their formats and mount points as `btrfs` and `/` for the bigger one and `ext4` and `/boot` for the 1024MB one. You might need to close and re-open the installer for the new partitions to appear.
 
 ![Selecting partitions](/assets/uploads/installer-select-boot.webp)
 
-Open GParted and see if you have a partition that reads "EFI System Partition" (if you have a modern computer, you most likely will). If so, select `/boot/efi` for that one.
+Open GParted and see if you have a partition that reads "EFI System Partition" (if you have a modern computer, you most likely will). If so, select `/boot/efi` as its mount point and leave the format on "Do not touch".
 
 Click "Apply" and review your changes.
 

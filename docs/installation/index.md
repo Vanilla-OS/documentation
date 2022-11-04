@@ -85,7 +85,7 @@ Right-click on the selected partition and click "Resize/Move". Here, you can dra
 Once you shrank it by how much space you want to take from Windows and dedicate to Vanilla OS (at least 25GB), click "Resize/Move".
 
 ### Creating the new partitions
-After shrinking your Windows partition, you will be left with unallocated space. You will have to create 2 partitions in this space. Right click on it and select "New".
+After shrinking your Windows partition, you will be left with unallocated space. You will have to create 2 partitions in this space. Right-click on it and select "New".
 
 Create a 1024MB partition with an `ext4` file system. Click "Add". This will be your `/boot` partition.
 

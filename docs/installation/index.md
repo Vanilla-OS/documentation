@@ -19,7 +19,7 @@ First, download the Vanilla OS disk image that will be written to your USB flash
 ### Installing Etcher
 To flash the disk image to your USB stick, download and install [balenaEtcher](https://www.balena.io/etcher/).
 
-If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or  [Rufus](https://rufus.ie/).
+If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or [Rufus](https://rufus.ie/).
 
 ### Flashing the image
 **Warning**: this will erease **all data** on your USB flash drive. Make sure to back up all your important data before proceeding!

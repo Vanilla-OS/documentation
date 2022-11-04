@@ -26,6 +26,8 @@ If you wish, you can also use different software that you are familiar with, suc
 
 Open Etcher, select the downloaded disk image and your USB flash drive, then click "Flash!".
 
+![Flashing](/assets/uploads/installation-flashing.webp)
+
 When the process is done, you will have a bootable USB stick with Vanilla OS on it.
 
 ## Booting from the USB flash drive
@@ -34,6 +36,8 @@ Insert the USB flash drive in the computer that you want to install Vanilla OS t
 If your device does not automatically boot into the Vanilla OS installation media, restart and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the model of your USB flash drive from the boot menu.
 
 When your device has succesfully booted from the USB stick, you should see a Welcome screen inviting you to either try or install Vanilla OS.
+
+![Welcome](/assets/uploads/installer-welcome.webp)
 
 You can try Vanilla OS without making any changes to your device. If you are satisfied, you can re-open the installer (the first icon in the dash) and proceed with the installation.
 
@@ -55,7 +59,11 @@ This section will guide you through installing Vanilla OS to an entire disk, **e
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 
+![Use Entire Disk](/assets/uploads/installer-use-entire-disk.webp)
+
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
+
+![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
 
 ## Installing alongside Windows
 This section will guide you through installing Vanilla OS on the same drive as an existing Windows installation.
@@ -65,10 +73,14 @@ If you wish to install Vanilla OS on the same computer, but on a different drive
 ### Opening GParted
 Select the disk that Windows is installed on and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
 
+![Manual Partitioning](/assets/uploads/installer-manual-partitioning.webp)
+
 ### Resizing your C: drive
 Once you are in GParted, you will see a visual representation of your disks' partitions. In the top right corner, select the disk that Windows is installed on. Select the `ntfs` partition equivalent to your Windows `C:` drive (usually the biggest one). If you are unsure which one that is, reboot to Windows, open Disk Management and check the partitions against the ones displayed here.
 
 Right click on the selected partition and click "Resize/Move". Here, you can drag either edge of the partition to make it smaller. You can also configure the exact new size of the partition at the bottom.
+
+![Shrinking your C: drive](/assets/uploads/installation-shrink-c.webp)
 
 Once you shrank it by how much space you want to take from Windows and dedicate to Vanilla OS (at least 25GB), click "Resize/Move".
 
@@ -77,12 +89,18 @@ After shrinking your Windows partition, you will be left with unallocated space.
 
 Create a 1024MB partition with an `ext4` file system. Click "Add". This will be your `/boot` partition.
 
+![Creating your /boot partition](/assets/uploads/installation-create-boot.webp)
+
 Select "New" on the unallocated space again. Use the entirity of the remaining space to create a partition with a `btrfs` file system. Click "Add". This will be your `/` partition.
+
+![Creating your / partition](/assets/uploads/installation-create-root.webp)
 
 Click "Apply" and when it's finished, close GParted.
 
 ### Selecting the new partitions
 Click on your newly created partitions, then select their mount points as `/` for the bigger one and `/boot` for the 1024MB one. You might need to close and re-open the installer for the new partitions to appear.
+
+![Selecting partitions](/assets/uploads/installer-select-boot.webp)
 
 Open GParted and see if you have a partition that reads "EFI System Partition" (if you have a modern computer, you most likely will). If so, select `/boot/efi` for that one.
 
@@ -90,16 +108,22 @@ Click "Apply" and review your changes.
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
 
+![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
+
 ## Advanced installation
 This section will help you with manual partitioning in case your particular needs for installation aren't covered by this guide.
 
 Select the disk that you want to install Vanilla OS to and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.
+
+![Manual Partitioning](/assets/uploads/installer-manual-partitioning.webp)
 
 After you're done, select mount points and file systems for each of your partitions. You might need to close and re-open the installer for new partitions to appear.
 
 Click "Apply" and review your changes.
 
 Create your user account and review the changes that will be made to your system. Click on "Install Vanilla OS" and the installation will begin.
+
+![Confirming the installation](/assets/uploads/installer-confirm-installation.webp)
 
 # Booting into Vanilla OS
 ## If you only have Vanilla OS installed

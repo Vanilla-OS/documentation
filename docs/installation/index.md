@@ -78,7 +78,7 @@ Select the disk that Windows is installed on and click "Configure". Select "Manu
 ### Resizing your C: drive
 Once you are in GParted, you will see a visual representation of your disks' partitions. In the top right corner, select the disk that Windows is installed on. Select the `ntfs` partition equivalent to your Windows `C:` drive (usually the biggest one). If you are unsure which one that is, reboot to Windows, open Disk Management and check the partitions against the ones displayed here.
 
-Right click on the selected partition and click "Resize/Move". Here, you can drag either edge of the partition to make it smaller. You can also configure the exact new size of the partition at the bottom.
+Right-click on the selected partition and click "Resize/Move". Here, you can drag either edge of the partition to make it smaller. You can also configure the exact new size of the partition at the bottom.
 
 ![Shrinking your C: drive](/assets/uploads/installation-shrink-c.webp)
 

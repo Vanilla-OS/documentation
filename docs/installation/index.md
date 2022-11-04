@@ -31,7 +31,7 @@ Open Etcher, select the downloaded disk image and your USB flash drive, then cli
 When the process is done, you will have a bootable USB stick with Vanilla OS on it.
 
 ## Booting from the USB flash drive
-Insert the USB flash drive in the computer that you want to install Vanilla OS to and power up or restart the device.
+Insert the USB flash drive into the computer to which you want to install Vanilla OS and power up or restart the device.
 
 If your device does not automatically boot into the Vanilla OS installation media, reboot, and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the name of your USB flash drive from the boot menu.
 

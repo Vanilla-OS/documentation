@@ -33,9 +33,9 @@ When the process is done, you will have a bootable USB stick with Vanilla OS on 
 ## Booting from the USB flash drive
 Insert the USB flash drive in the computer that you want to install Vanilla OS to and power up or restart the device.
 
-If your device does not automatically boot into the Vanilla OS installation media, restart and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the model of your USB flash drive from the boot menu.
+If your device does not automatically boot into the Vanilla OS installation media, reboot, and while the device is starting up, hold down the key to `select boot device` or for `boot menu` indicated by a prompt on the boot screen. The most common keys are F2, F10, F11, F12, Delete and Escape. If the prompt isn't present, try searching online for your specific model. Select Vanilla OS or the name of your USB flash drive from the boot menu.
 
-When your device has succesfully booted from the USB stick, you should see a Welcome screen inviting you to either try or install Vanilla OS.
+When your device has succesfully booted from the USB stick, you should see a welcome screen inviting you to either try or install Vanilla OS.
 
 ![Welcome](/assets/uploads/installer-welcome.webp)
 
@@ -97,12 +97,12 @@ Select "New" on the unallocated space again. Use the entirety of the remaining s
 
 Click "Apply All Operations" \(the checkmark in the toolbar\) and when it's finished, close GParted.
 
-### Selecting the new partitions
+### Selecting the partitions
 Click on your newly created partitions, then select their formats and mount points as `btrfs` and `/` for the bigger one and `ext4` and `/boot` for the 1024MB one. You might need to close and re-open the installer for the new partitions to appear.
 
 ![Selecting partitions](/assets/uploads/installer-select-boot.webp)
 
-Open GParted and see if you have a partition that reads "EFI System Partition" (if you have a modern computer, you most likely will). If so, select `/boot/efi` as its mount point and leave the format on "Do not touch".
+Open GParted and see if you have a partition that reads "EFI System Partition" \(if you have a modern computer, you most likely will\). If so, select `/boot/efi` as its mount point and leave the format as "Do not touch".
 
 Click "Apply" and review your changes.
 

@@ -22,7 +22,7 @@ To flash the disk image to your USB stick, download and install [balenaEtcher](h
 If you wish, you can also use different software that you are familiar with, such as [Ventoy](https://www.ventoy.net/) or [Rufus](https://rufus.ie/).
 
 ### Flashing the image
-**Warning**: this will erease **all data** on your USB flash drive. Make sure to back up all your important data before proceeding!
+**Warning**: this will erase **all data** on your USB flash drive. Make sure to back up all your important data before proceeding!
 
 Open Etcher, select the downloaded disk image and your USB flash drive, then click "Flash!".
 
@@ -55,7 +55,7 @@ This guide will help you with the following types of installation:
 - [Advanced installation](/docs/installation/#title14)
 
 ## Installing only Vanilla OS
-This section will guide you through installing Vanilla OS to an entire disk, **ereasing all previous data on it**. Make sure to back up all your important data before proceeding!
+This section will guide you through installing Vanilla OS to an entire disk, **erasing all previous data on it**. Make sure to back up all your important data before proceeding!
 
 Select the disk you want to install Vanilla OS to, click "Configure", select "Use Entire Disk", click "Apply" and review your changes.
 
@@ -91,11 +91,11 @@ Create a 1024MB partition with an `ext4` file system. Click "Add". This will be 
 
 ![Creating your /boot partition](/assets/uploads/installation-create-boot.webp)
 
-Select "New" on the unallocated space again. Use the entirity of the remaining space to create a partition with a `btrfs` file system. Click "Add". This will be your `/` partition.
+Select "New" on the unallocated space again. Use the entirety of the remaining space to create a partition with a `btrfs` file system. Click "Add". This will be your `/` partition.
 
 ![Creating your / partition](/assets/uploads/installation-create-root.webp)
 
-Click "Apply" and when it's finished, close GParted.
+Click "Apply All Operations" \(the checkmark in the toolbar\) and when it's finished, close GParted.
 
 ### Selecting the new partitions
 Click on your newly created partitions, then select their mount points as `/` for the bigger one and `/boot` for the 1024MB one. You might need to close and re-open the installer for the new partitions to appear.

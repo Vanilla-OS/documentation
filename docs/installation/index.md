@@ -46,9 +46,9 @@ Click "Install Vanilla OS" and set your preferred language, keyboard layout and 
 Depending on whether you want to dual- or multiboot Vanilla OS alongside other operating systems, you will need to follow different steps when selecting your disk.
 
 This guide will help you with the following types of installation:
-- [Installing only Vanilla OS](/docs/installation/#title10)
-- [Installing alongside Windows](/docs/installation/#title11)
-- [Advanced installation](/docs/installation/#title16)
+- [Installing only Vanilla OS](/docs/installation/#title8)
+- [Installing alongside Windows](/docs/installation/#title9)
+- [Advanced installation](/docs/installation/#title14)
 
 ## Installing only Vanilla OS
 This section will guide you through installing Vanilla OS to an entire disk, **ereasing all previous data on it**. Make sure to back up all your important data before proceeding!
@@ -60,7 +60,7 @@ Create your user account and review the changes that will be made to your system
 ## Installing alongside Windows
 This section will guide you through installing Vanilla OS on the same drive as an existing Windows installation.
 
-If you wish to install Vanilla OS on the same computer, but on a different drive than Windows, follow the steps described in [Installing only Vanilla OS](/docs/installation/#title10).
+If you wish to install Vanilla OS on the same computer, but on a different drive than Windows, follow the steps described in [Installing only Vanilla OS](/docs/installation/#title8).
 
 ### Opening GParted
 Select the disk that Windows is installed on and click "Configure". Select "Manual Partitioning" and click on the arrow next to it. Click on "Open GParted" to manually partition your disk.

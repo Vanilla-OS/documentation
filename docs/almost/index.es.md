@@ -11,7 +11,7 @@ cambios antes de confirmarlos.
 
 ## ¿Cómo funciona?
 La inmutabilidad en `almost` se obtiene estableciendo el indicador `i` en todos los archivos y
-directorios en la raíz del sistema, excepto los que se utilizan para almacenar archivos de y el
+directorios en la raíz del sistema, excepto los que se utilizan para almacenar archivos del
 directorio de inicio del usuario (`/home, /etc, /var`).
 
 Lo mismo puede lograrse utilizando el comando `chattr`, pero `almost` proporciona consistencia al

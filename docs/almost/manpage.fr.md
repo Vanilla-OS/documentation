@@ -1,5 +1,5 @@
 ---
-titre : Guide pour Almost - Vanilla OS
+titre : Guide pour almost - Vanilla OS
 description : Guide pour l'utilitaire almost.
 ---
 
@@ -7,25 +7,25 @@ description : Guide pour l'utilitaire almost.
 
 ## NOM
 ```
-almost - un outil d'immuabilité et de superposition à la demande basé sur l'attribut de fichier (i)mmutable et tmpfs.
+almost - un outil d'immuabilité à la demande et de superposition basé sur l'attribut de fichier (i)mmutable et tmpfs.
 ```
 
 ## SYNOPSIS
 ```
-almost [OPTIONS] [COMMAND] [ARGS]
+almost [OPTIONS] [COMMANDE] [ARGUMENTS]
 ```
 
 ## DESCRIPTION
 ```
-almost est un utilitaire qui fournit une immutabilité à la demande en basculant l'immutabilité des fichiers et des répertoires à la racine du système. Il fournit également un moyen de créer des couches au-dessus des répertoires immuables, vous permettant de tester les changements avant de les valider.
+almost est un utilitaire qui fournit une immutabilité à la demande en commutant l'immutabilité des fichiers et des répertoires à la racine du système. Il fournit également un moyen de créer des couches au-dessus des répertoires immutables, vous permettant de tester les changements avant de les valider.
 
 Options:
-	--help/-h   affiche ce message
-	--verbose/-v    sortie détaillée
+	--help/-h   		affiche ce message
+	--verbose/-v    	sortie détaillée
 	--version/-V		afficher la version
 
-Commands:
-	enter			définir le système de fichiers comme ro ou rw jusqu'au redémarrage
+Commandes:
+	enter			définit le système de fichiers en lecture seule ou lecture-écriture jusqu'au redémarrage
 	config			affiche la configuration actuelle
 	check			vérifie si le système de fichiers est en lecture seule ou en lecture-écriture
 	run			exécute une commande en mode lecture-écriture et revient en mode lecture seule à la fin de la commande.
@@ -33,13 +33,13 @@ Commands:
 
 ## ENTER
 ```
-Définir le système de fichiers en lecture seule ou en lecture-écriture jusqu'au redémarrage.
+Définit le système de fichiers en lecture seule ou en lecture-écriture jusqu'au redémarrage.
 
 Le passage du système de fichiers en mode lecture-écriture peut présenter un risque de
 sécurité, soyez prudent lorsque vous utilisez cette commande..
 
 Utilisation:
-    enter [options] [command]
+    enter [options] [commande]
 
 Options:
 	--help/-h		affiche ce message
@@ -60,13 +60,13 @@ Exemples:
 Gère et affiche la configuration actuelle.
 
 Utilisation:
-    config [options] [command]
+    config [options] [commande]
 
 Options:
     --help/-h		affiche ce message
 
 Commandes:
-    set [key] [value]	définit une valeur de configuration
+    set [clé] [valeur]	définit une valeur de configuration
 
 Exemples:
     almost config
@@ -78,9 +78,11 @@ Exemples:
 Vérifie si le système de fichiers est en lecture seule ou en lecture-écriture.
 
 Utilisation:
-check [options] [command]
+check [options] [commande]
+
 Options:
 	--help/-h		affiche ce message
+	
 Exemples:
 	almost check
 ```
@@ -90,10 +92,12 @@ Exemples:
 Exécute une commande en mode lecture-écriture et revient en mode lecture seule après la fin de la commande.
 
 Utilisation:
-    run [command]
+    run [commande]
+    
 Options:
 	--help/-h		affiche ce message
 	--verbose/-v		sortie détaillée
+	
 Exemples:
     almost run ls
 ```
@@ -112,4 +116,4 @@ Contributeurs de Vanilla OS
 ```
 
 ## RAPPORT DE BOGUES
-Rapportez les bogues sur le [issue tracker](https://github.com/Vanilla-OS/almost/issues).
+Rapportez les bogues via le [suivi des problèmes](https://github.com/Vanilla-OS/almost/issues).

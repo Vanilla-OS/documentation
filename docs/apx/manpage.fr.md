@@ -1,5 +1,5 @@
 ---
-title: Guide pour apx - Vanilla OS
+titre: Guide pour apx - Vanilla OS
 description: Guide pour l'utilitaire apx
 ---
 

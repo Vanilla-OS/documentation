@@ -40,11 +40,11 @@ able to make changes when needed.
 ## What it is not
 
 `almost` has no support for snapshots. Every change made to the system is
-permanent and cannot be reverted without restoring from a backup or dowgrading
+permanent and can only be reverted by restoring from a backup or downgrading
 the system. To avoid this, you should always test your changes using layers
 before committing them. The only reason to disable immutability would be to edit
-a configuration file which is not in the common directories, or to install
-drivers. Disabling the immutability to install an application or library is
+a configuration file which is not in the common directories or to install
+drivers. Disabling the immutability during an application or library installation is
 not recommended. Use [`apx`](/docs/apx), [`Flatpak`](/docs/flatpak),
 [`Snap`](/docs/snap) or [`AppImage`](/docs/appimage) instead.
 

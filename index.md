@@ -4,9 +4,11 @@ description: Find out how to use Vanilla OS and all its tools and settings.
 ---
 
 # Vanilla OS
+
 Taste the GNOME Vanilla experience on Ubuntu with some spice.
 
 ## FAQ
+
 Answers to the most frequently asked questions (even though the project is very young).
 - **Why a new Distribution?**\
   Vanilla OS arose out of the need for an Ubuntu-based Linux distribution that 
@@ -23,6 +25,7 @@ Answers to the most frequently asked questions (even though the project is very 
   No. Vanilla OS is a point release and follows the Ubuntu release cycle.
 
 ## Sections
+
 - **[Immutability (`almost`)](/docs/almost)**\
 Almost is a utility for on-demand immutability based
 on the immutability attribute of files.

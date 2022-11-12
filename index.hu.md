@@ -4,9 +4,11 @@ leírás: A Vanilla OS használata az eszközeivel és beállításaival.
 ---
 
 # Vanilla OS
+
 Kóstolja meg a Vanilla GNOME élményt Ubuntu-n enyhén fűszerezve. 
 
 ## GYIK
+
 Válaszok a leggyakrabban ismételt kérdésekre (pedig a projekt elég fiatal).
 - **Miért egy új disztribúció?**\
   A Vanilla OS egy olyan Ubuntu alapú Linux disztribúció hiányában jött létre, 
@@ -23,6 +25,7 @@ Válaszok a leggyakrabban ismételt kérdésekre (pedig a projekt elég fiatal).
   Nem. A Vanilla OS egy pont-kiadású rendszer és az Ubuntu kiadási ciklust követi.
 
 ## Szekciók
+
 - **[Felülírhatatlanság (`almost`)](/docs/almost)**\
 Az Almost egy kellék a fájlok felülírhatatlan tulajdonságán alapuló, igény 
 szerinti felülírhatatlansághoz.

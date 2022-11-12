@@ -4,11 +4,13 @@ opis: Dowiedz się, jak korzystać z apx, menedżera pakietów w Vanilla OS
 ---
 
 # Menedżer pakietów (`apx`)
+
 `apx` jest menedżerem pakietów Vanilla OS. Ma być łatwy w użyciu, ale także 
 potężny z obsługą instalacji pakietów z wielu źródeł bez zmiany głównego 
 systemu plików.
 
 ## Jak to działa
+
 `apx` wprowadza zupełnie nowy paradygmat w zarządzaniu pakietami. Idea polega 
 na używaniu systemu tylko jako pudełka do przechowywania plików, pozostawiając 
 go czystym od pakietów i ograniczając ryzyko uszkodzenia z powodu niekompatybilnych, 
@@ -25,6 +27,7 @@ zainstalowanym pakietom, jak również możesz mieć dostęp do własnych plikó
 zainstalowanego oprogramowania, np. otwierając plik w LibreOffice.
 
 ### System hosta
+
 Podczas gdy instalowanie oprogramowania na hoście jest sprzeczne z ideologią 
 projektu, istnieją przypadki, w których nie można tego uniknąć, na przykład 
 gdy trzeba zainstalować moduł jądra.
@@ -35,6 +38,7 @@ z [`almost`](/docs/almost) by tymczasowo wyłączyć niezmienność, pozwalając
 zainstalowanie potrzebnych pakietów i późniejsze przywrócenie systemu.
 
 ### Wiele źródeł
+
 Domyślnie, `apx` zapewnia kontener oparty na Twojej dystrybucji Linuksa (Ubuntu 
 22.10 dla Vanilla OS 22.10) i opakowuje wszystkie polecenia z menedżera pakietów 
 dystrybucji (`apt` dla Ubuntu).
@@ -49,10 +53,12 @@ do konkretnych implementacji. Obecnie obsługiwana jest tylko flaga `--aur`, ale
 planujemy zaimplementować także wsparcie dla menedżera pakietów Nix.
 
 ### Nazwa
+
 Nazwa `apx` pochodzi od **apt (Advanced Packaging Tool)**, menedżera pakietów 
 używanego przez Debiana i jego pochodne, oraz **X**, który powinien być postrzegany 
 jako 2 linie (hosta i kontenera) nakładające się na siebie, gdzie kontener jest na 
 górze, co oznacza, że jest na wierzchu systemu hosta.
 
 ## Użytek
+
 - [Manpage](/docs/apx/manpage)

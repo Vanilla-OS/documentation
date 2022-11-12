@@ -6,16 +6,19 @@ description: Manpage dla narzędzia almost.
 # Manpage `almost`
 
 ## NAZWA
+
 ```
 almost - narzędzie do niezmienności i warstwowości na żądanie, oparte na atrybucie (i)mmutable pliku i tmpfs.
 ```
 
 ## STRESZCZENIE
+
 ```
 almost [OPCJE] [POLECENIA] [ARGUMENTY]
 ```
 
 ## OPIS
+
 ```
 almost jest narzędziem, które zapewnia niezmienność na żądanie poprzez przełączanie niezmienności plików i katalogów w rootcie systemu. Zapewnia również sposób tworzenia warstw na wierzchu niezmiennych katalogów, pozwalając na testowanie zmian przed ich zatwierdzeniem.
 
@@ -32,6 +35,7 @@ Polecenia:
 ```
 
 ## ENTER
+
 ```
 Ustaw system plików jako tylko do oczytu lub odczyt-zapis do czasu ponownego uruchomienia
 
@@ -55,6 +59,7 @@ Przykłady:
 ```
 
 ## CONFIG
+
 ```
 Zarządzaj i pokaż obecną konfigurację.
 
@@ -73,6 +78,7 @@ Przykłady:
 ```
 
 ## CHECK
+
 ```
 Sprawdź czy system plików jest w trybie tylko do odczytu czy odczyt-zapis.
 
@@ -87,6 +93,7 @@ Przykłady:
 ```
 
 ## RUN
+
 ```
 Uruchom polecenie w trybie odczyt-zapis i wraca do trybu tylko do odczytu po jego zakończeniu.
 
@@ -102,17 +109,21 @@ Przykłady:
 ```
 
 ## ZOBACZ TAKŻE
+
 - [`apx`](/docs/apx)
 
 ## DIAGNOSTYKA
+
 ```
 almost zwraca 0 przy pomyślnym wykonaniu polecenia, 1 przy napotkaniu błędu.
 ```
 
 ## AUTOR
+
 ```
 Współtwórcy Vanilla OS
 ```
 
 ## ZGŁASZANIE BŁĘDÓW
+
 Prosimy zgłaszać błędy na [issue trackerze](https://github.com/Vanilla-OS/almost/issues).

@@ -4,9 +4,11 @@ opis: Dowiedz się, jak korzystać z Vanilla OS i wszystkich jego narzędzi oraz
 ---
 
 # Vanilla OS
+
 Doświadcz czystego GNOME na Ubuntu ze szczyptą charakteru.
 
 ## FAQ
+
 Odpowiedzi na najczęściej zadawane pytania (chociaż projekt wciąż jest bardzo młody).
 - **Dlaczego nowa dystrybucja?**\
   Vanilla OS powstało z potrzeby stworzenia dystrybucji Linuksa opartej na Ubuntu, 
@@ -24,6 +26,7 @@ Odpowiedzi na najczęściej zadawane pytania (chociaż projekt wciąż jest bard
   modelem aktualizacji używanym w Ubuntu.
 
 ## Sekcje
+
 - **[Niezmienność (`almost`)](/docs/almost)**\
 Almost to narzędzie dla niezmienności na życzenie oparte na atrybucie "immutability" plików. 
 

@@ -4,12 +4,14 @@ opis: Dowiedz się, jak korzystać z Almost, narzędzia do niezmienności na ż�
 ---
 
 # Niezmienność (`almost`)
+
 `almost` jest narzędziem, które zapewnia niezmienność na żądanie poprzez przełączanie 
 niezmienności plików i katalogów w rootcie systemu. Zapewnia również sposób tworzenia 
 warstw na wierzchu niezmiennych katalogów, pozwalając na testowanie zmian przed ich 
 zatwierdzeniem.
 
 ## Jak to działa
+
 Niezmienność w `almost` jest uzyskiwana przez ustawienie flagi `i` na wszystkich plikach 
 i katalogach w rootcie systemu, z wyjątkiem tych, które są używane do przechowywania 
 plików konfiguracyjnych oprogramowania i katalogu domowego użytkownika (`/home, /etc, 
@@ -21,6 +23,7 @@ funkcjami do lepszego zarządzania niezmiennością, np. uruchomienie komendy pr
 tymczasowym wyłączeniu niezmienności.
 
 ### Niezmienność na życzenie
+
 Nazywa się to niezmiennością *na życzenie*, ponieważ można ją włączyć lub wyłączyć w 
 dowolnym momencie. Niezmienność ma być używana jako środek bezpieczeństwa, aby zapobiec 
 przypadkowym zmianom w systemie, więc powinna być utrzymywana włączona przez większość 
@@ -30,11 +33,13 @@ Ze względu na swoją naturę, `almost` jest gotowy do użycia i działa na wszy
 systemach plików i konfiguracjach.
 
 ### Nazwa
+
 Nazwa `almost` pochodzi z faktu, że nie jest to pełnoprawna implementacja niezmienności, 
 ale raczej narzędzie, które pomaga je osiągnąć, a jednocześnie pozwala na wprowadzanie 
 zmian w razie potrzeby.
 
 ## Czym to nie jest
+
 `almost` nie ma wsparcia dla snapshotów. Każda zmiana dokonana w systemie jest trwała 
 i nie można jej cofnąć bez przywrócenia z kopii zapasowej lub downgrade'u systemu. Aby 
 tego uniknąć, powinieneś zawsze testować swoje zmiany używając warstw przed ich 
@@ -45,6 +50,7 @@ nie jest zalecane. Zamiast tego użyj [`apx`](/docs/apx), [`Flatpak`](/docs/flat
 [`Snap`](/docs/snap) lub [`AppImage`](/docs/appimage).
 
 ## Użytek
+
 - [Manpage](/docs/almost/manpage)
 - [Warstwy](/docs/almost/layers)
 - [Konfiguracja](/docs/almost/configuration)

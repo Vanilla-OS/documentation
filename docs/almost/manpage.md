@@ -1,5 +1,5 @@
 ---
-title: Manlpage almost - Vanilla OS
+title: Manpage almost - Vanilla OS
 description: Manpage for the almost utility.
 ---
 

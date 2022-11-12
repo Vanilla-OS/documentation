@@ -4,11 +4,13 @@ Beschreibt: Wie man apx, den Vanilla OS Paketmanager, benutzt.
 ---
 
 # Paketmanager (`apx`)
+
 `apx` ist der Vanilla-OS-Paketmanager. Er soll einfach zu benutzen sein, aber 
 mit Unterstützung für die Installation von Paketen aus mehreren Quellen ohne 
 ohne das Root-Dateisystem zu verändern.
 
 ## Wie es funktioniert
+
 `apx` führt ein völlig neues Paradigma in der Paketverwaltung ein. Die Idee ist, das 
 Ihr System nur als eine Box für die Speicherung Ihrer Dateien zu verwenden, so dass es frei von Paketen ist 
 und das Risiko zu begrenzen, dass es aufgrund von inkompatiblen, schlecht konstruierten oder 
@@ -24,6 +26,7 @@ Pakete benötigt werden, sowie auf Ihre eigenen Dateien von der installierten So
 Software zugreifen können, z. B. durch Öffnen einer Datei in LibreOffice.
 
 ### Host-System
+
 Die Installation von Software auf dem Host-System widerspricht zwar der Ideologie des Projekts, 
 gibt es Fälle, in denen dies nicht vermieden werden kann, z.B. wenn Sie 
 ein Kernelmodul installieren müssen.
@@ -34,6 +37,7 @@ arbeitet mit [`almost`](/docs/almost), um die Unveränderlichkeit vorübergehend
 Dies erlaubt Ihnen, die benötigten Pakete zu installieren und das System anschließend wiederherzustellen.
 
 ### Mehrere Quellen
+
 Standardmäßig bietet `apx` einen Container, der auf Ihrer Linux-Distribution basiert (Ubuntu 
 22.10 für Vanilla OS 22.10) und wickelt alle Befehle aus dem Paketmanager der Distribution 
 Paketmanager der Distribution (`apt` für Ubuntu).
@@ -48,10 +52,12 @@ auf bestimmte Implementierungen zu beschränken. Derzeit wird nur das `--aur`-Fl
 wir planen, auch die Unterstützung für den Nix-Paketmanager zu implementieren.
 
 ### Der Name
+
 Der Name `apx` kommt von **apt (Advanced Packaging Tool)**, dem Paketmanager 
 Paketmanager, der von Debian und seinen Derivaten verwendet wird, und **X**, was als 
 2 Zeilen (Host und Container), die sich überlappen, wobei der Container oben ist, was bedeutet 
 dass er über dem Wirtssystem steht.
 
 ## Verwendung
+
 - [Manpage](/docs/apx/manpage)

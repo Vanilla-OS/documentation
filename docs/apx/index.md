@@ -4,11 +4,13 @@ description: Find out how to use apx, the Vanilla OS package manager.
 ---
 
 # Package Manager (`apx`)
+
 `apx` is the Vanilla OS package manager. It's meant to be easy to use, but 
 also powerful with support for installing packages from multiple sources without 
 altering the root filesystem.
 
 ## How it works
+
 `apx` introduces a whole new paradigm in package management. The idea is to use 
 your system only as a box for storing your files, leaving it clean of packages 
 and limiting the risk of breaking due to incompatible, poorly constructed or 
@@ -24,6 +26,7 @@ packages, as well as being able to access your own files from the installed
 software, e.g. by opening a file in LibreOffice.
 
 ### Host system
+
 While installing software on the host is against the ideology of the project, 
 there are cases where this cannot be avoided, for example when you need to 
 install a kernel module.
@@ -34,6 +37,7 @@ works with [`almost`](/docs/almost) to temporarily disable the immutability,
 allowing you install the needed packages and restoring the system afterwards.
 
 ### Multiple sources
+
 By default, `apx` provides a container based on your Linux distribution (Ubuntu 
 22.10 for Vanilla OS 22.10) and wraps all commands from the distribution's 
 package manager (`apt` for Ubuntu).
@@ -48,10 +52,12 @@ to specific implementations. Currently, only the `--aur` flag is supported, but
 we are planning to implement support for the Nix package manager as well.
 
 ### The name
+
 The name `apx` comes from **apt (Advanced Packaging Tool)**, the package 
 manager used by Debian and its derivatives, and **X**, which should be seen as 
 2 lines (host and container) overlapping, where the container is on top, meaning 
 it is on top of the host system.
 
 ## Usage
+
 - [Manpage](/docs/apx/manpage)

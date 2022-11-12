@@ -1,21 +1,24 @@
 ---
-title: Manlpage almost - Vanilla OS
+title: Manpage almost - Vanilla OS
 description: Manpage for the almost utility.
 ---
 
 # Manpage `almost`
 
 ## NAME
+
 ```
 almost - an on-demand immutability and layering tool based on the (i)mmutable file attribute and tmpfs.
 ```
 
 ## SYNOPSIS
+
 ```
 almost [OPTIONS] [COMMAND] [ARGS]
 ```
 
 ## DESCRIPTION
+
 ```
 almost is a utility that provides on-demand immutability by toggling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable directories, allowing you to test changes before committing them.
 
@@ -32,6 +35,7 @@ Commands:
 ```
 
 ## ENTER
+
 ```
 Set the filesystem as read-only or read-write until reboot.
 
@@ -56,6 +60,7 @@ Examples:
 ```
 
 ## CONFIG
+
 ```
 Manage and show the current configuration.
 
@@ -74,6 +79,7 @@ Examples:
 ```
 
 ## CHECK
+
 ```
 Check whether the filesystem is read-only or read-write.
 
@@ -86,6 +92,7 @@ Examples:
 ```
 
 ## RUN
+
 ```
 Runs a command in read-write mode and returns to read-only mode after the command exits.
 
@@ -99,17 +106,21 @@ Examples:
 ```
 
 ## SEE ALSO
+
 - [`apx`](/docs/apx)
 
 ## DIAGNOSTICS
+
 ```
 almost returns 0 on success, 1 on error.
 ```
 
 ## AUTHOR
+
 ```
 Contributors of Vanilla OS
 ```
 
 ## REPORTING BUGS
+
 Report bugs to the [issue tracker](https://github.com/Vanilla-OS/almost/issues).

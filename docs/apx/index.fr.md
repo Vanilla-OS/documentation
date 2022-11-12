@@ -4,10 +4,12 @@ description : Découvrez comment utiliser apx, le gestionnaire de paquets de Van
 ---
 
 # Gestionnaire de paquets (`apx`)
+
 `apx` est le gestionnaire de paquets de Vanilla OS. Il est conçu pour être simple d'utilisation, 
 mais également puissant avec la prise en charge de l'installation de paquets depuis de multiples sources sans altérations du système de fichiers racine.
 
 ## Comment ça marche
+
 `apx` introduit un tout nouveau paradigme dans la gestion des paquets. 
 L'idée est d'utiliser votre système uniquement comme une boîte pour stocker vos fichiers,
 en le laissant propre de tout paquets, limitant ainsi le risque de casse dû 
@@ -22,6 +24,7 @@ vous pouvez donc accéder à vos fichiers de configuration, vos préférences et
 installés, par exemple en ouvrant un fichier dans LibreOffice.
 
 ### Système hôte
+
 Bien que l'installation de logiciels sur l'hôte soit contraire à l'idéologie du projet, 
 il existe des cas où cela ne peut être évité, par exemple lorsque vous devez 
 installer un module de noyau.
@@ -32,6 +35,7 @@ fonctionne avec [`almost`](/docs/almost) pour désactiver temporairement l'immut
 vous permettant d'installer les paquets nécessaires et de restaurer le système par la suite.
 
 ### Sources multiples
+
 Par défaut, `apx` fournit un conteneur basé sur votre distribution Linux (Ubuntu 22.10 pour Vanilla OS 22.10) 
 et englobe toutes les commandes du gestionnaire de paquets de la distribution (`apt` pour Ubuntu).
 
@@ -45,9 +49,11 @@ Pour des raisons de contrôle de qualité et de tests, nous avons choisi de limi
 mais nous prévoyons également d'implémenter le support pour le gestionnaire de paquets Nix.
 
 ### Le nom
+
 Le nom `apx` provient de **apt (Advanced Packaging Tool)**, le gestionnaire de paquets utilisé par Debian et ses dérivés, et **X**, qui doit être vu comme 
 2 lignes (hôte et conteneur) qui se chevauchent, où le conteneur est au dessus, 
 ce qui signifie qu'il se trouve au-dessus du système hôte.
 
 ## Utilisation
+
 - [Guide](/docs/apx/manpage.fr.md)

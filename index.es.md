@@ -4,9 +4,11 @@ descripción: Descubre cómo utilizar Vanilla OS y todas sus herramientas y ajus
 ---
 
 # Vanilla OS
+
 Prueba la experiencia de GNOME Vanilla en Ubuntu con algo de picante.
 
 ## FAQ
+
 Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
 - **¿Por qué una nueva distribución?**\
   Vanilla OS surgió de la necesidad de una distribución de Linux basada en Ubuntu que 
@@ -23,6 +25,7 @@ Respuestas a las preguntas más frecuentes (aunque el proyecto es muy joven).
   No. Vanilla OS es un lanzamiento puntual y sigue el ciclo de lanzamiento de Ubuntu.
 
 ## Secciones
+
 - **[Inmutabilidad (`almost`)](/docs/almost)**\
 Almost es una utilidad para la inmutabilidad bajo demanda basada
 en el atributo de inmutabilidad de los archivos.

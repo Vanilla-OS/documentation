@@ -31,7 +31,7 @@ While installing software on the host is against the ideology of the project,
 there are cases where this cannot be avoided, for example when you need to 
 install a kernel module.
 
-In cases like this, you can use the command `abroot exec apt install *package name*`
+In cases like this, you can use the command `abroot exec apt install <package_name>*`
 to bypass the container and install directly on the host, *but be aware that this 
 is not recommended*.
 

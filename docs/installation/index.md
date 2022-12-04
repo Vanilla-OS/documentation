@@ -1,5 +1,5 @@
 ---
-title: Installer - Vanilla OS
+title: Installation - Vanilla OS
 description: Documentation on how to install Vanilla OS.
 ---
 

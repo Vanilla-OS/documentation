@@ -27,7 +27,7 @@ Answers to the most frequently asked questions (even though the project is very 
   immutability attribute of files. This approach worked on any partition 
   schema/file system. Usage of OSTree may still be considered in the future.
   
-  We introduced a new utility ABRoot to replace `almost` to provide full immutability and atomicity by transacting between 2 root partitions (A<->B), it also allows on-demand transactions via a transactional shell.
+  We introduced a new utility `abroot` replacing `almost` to provide full immutability and atomicity by transacting between 2 root partitions (A<->B), it also allows on-demand transactions via a transactional shell.
   
 - **Rolling Release?**
 
@@ -35,9 +35,9 @@ Answers to the most frequently asked questions (even though the project is very 
 
 ## Sections
 
-- **[Vanilla-Installer](/docs/installer)**
+- **[Installation](/docs/installation)**
 
-Official installer for Vanilla OS.
+Documentation on how to install Vanilla OS using `vanilla-installer`.
 
 - **[First Setup](/docs/first-setup)**
 
@@ -48,13 +48,13 @@ Vanilla OS first-setup wizard utility. Its purpose is to help the user to config
 Apx is a package manager that allows you to install and manage packages in
 managed containers without affecting the host system. `apx` supports installing packages (both CLI and GUI) from the Arch User Repository (AUR), Fedora's DNF Repository inside a container.
 
-- **[Immutability (`ABRoot`)](/docs/ABRoot)**
+- **[Immutability (`abroot`)](/docs/ABRoot)**
 
 ABRoot is an utility that provides full immutability and atomicity by transacting between 2 root partitions (A<->B), it also allows on-demand transactions via a transactional shell.
 
 - **[Vanilla Control Center](/docs/vanilla-control-center)**
 
-Vanilla OS Control Center is an utility to manage Vanilla OS components such as ABRoot, VSO, Apx. It supports installing drivers from `ubuntu-drivers-common`, update options for VSO, GUI packages listed under Sub System.
+Vanilla OS Control Center is an utility to manage Vanilla OS components such as ABRoot, VSO, Apx. It supports installing drivers from `ubuntu-drivers-common`, has update options for VSO, GUI packages from `apx` containers are listed under the Sub System.
 
 - **[Vanilla System Operator (`vso`)](/docs/VSO)**
 

@@ -49,7 +49,7 @@ The Vanilla OS [First Setup](https://github.com/Vanilla-OS/first-setup) utility 
 - **[Package Manager (`apx`)](/docs/apx)**
 
 Apx is a package manager that allows you to install and manage packages in
-managed containers without affecting the host system. `apx` supports installing packages (both CLI and GUI) from the Arch User Repository (AUR), Fedora's DNF Repository inside a container.
+managed containers without affecting the host system. `apx` supports installing packages from the Ubuntu Repository, Arch User Repository (AUR) and Fedora's DNF Repository inside a container. It is tightly-integrated with the host system. For GUI packages, a desktop file entry is created automatically and added to GNOME Application menu.
 
 - **[Immutability (`abroot`)](/docs/ABRoot)**
 
@@ -61,9 +61,9 @@ Vanilla Control Center is a graphical tool that allows you to configure the oper
 
 - **[Vanilla System Operator (`vso`)](/docs/VSO)**
 
-Vanilla System Operator is a utility for Vanilla OS which allows you to perform maintenance tasks such as updating your system, scheduling tasks, etc.
+[Vanilla System Operator](https://github.com/Vanilla-OS/vanilla-system-operator) is a utility for Vanilla OS which allows you to perform maintenance tasks such as updating your system, scheduling tasks, etc.
 
 - **[Immutability (`almost`)](/docs/almost)**
 
-~~Almost is a utility for on-demand immutability based
+~~[Almost](https://github.com/Vanilla-OS/almost) is a utility for on-demand immutability based
 on the immutability attribute of files.~~ (Almost was replaced by `abroot`).

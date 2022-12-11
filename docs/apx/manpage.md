@@ -140,7 +140,7 @@ Options:
 ```
 
 Description: 
-	Install packages inside managed containers that are tightly integrated with the system. For Graphical GUI packages, a `.desktop` entry file is automatically created and added to the GNOME application menu. A list of installed GUI packages can also be found in the Subsystem menu of Vanilla Control Center.
+	Install packages inside a managed container.
 
 Usage:
     apx install [options] <packages>

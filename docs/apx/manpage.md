@@ -19,7 +19,7 @@ apx [options] [command] [arguments]
 
 ## DESCRIPTION
 
-```bash
+```markdown
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
 
 Usage:
@@ -34,7 +34,7 @@ Options:
 Commands:
     autoremove  Remove all unused packages
 	clean       Clean the apx package manager cache
-	enter       Enter the container shell
+	enter       Enter the container markdown
 	export      Export/Recreate a program's desktop entry from the container
 	help        Show this help message and exit
 	init        Initialize a managed container
@@ -54,7 +54,7 @@ Commands:
 
 ## AUTOREMOVE
 
-```bash
+```markdown
 Description: 
     Remove all unused packages automatically.
 Usage:
@@ -69,7 +69,7 @@ Usage:
 
 ## CLEAN
 
-```bash
+```markdown
 Description: 
     Clean the apx package manager cache.
 
@@ -85,9 +85,9 @@ Examples:
 
 ## ENTER
 
-```bash
+```markdown
 Description: 
-    Enter in the container shell.
+    Enter in the container markdown.
 
 Usage:
     apx enter [options]
@@ -98,7 +98,7 @@ Options:
 
 ## EXPORT
 
-```bash
+```markdown
 Description: 
     Export/Recreate a program's desktop entry from a managed container.
 
@@ -114,7 +114,7 @@ Examples:
 
 ## HELP
 
-```bash
+```markdown
 Description:
     Display help message.
 
@@ -124,7 +124,7 @@ Usage:
 
 ## INIT
 
-```bash
+```markdown
 Description: 
     Initialize the managed container.
 
@@ -137,7 +137,7 @@ Options:
 
 ## INSTALL
 
-```bash
+```markdown
 Description: 
     Install packages inside a managed container.
 
@@ -157,7 +157,7 @@ Examples:
 
 ## LIST
 
-```bash
+```markdown
 Description: 
     List installed packages.
 
@@ -170,7 +170,7 @@ Options:
 
 ## PURGE
 
-```bash
+```markdown
 Description: 
     Purge packages inside a managed container.
 
@@ -186,7 +186,7 @@ Examples:
 
 ## REMOVE
 
-```bash
+```markdown
 Description:
     Remove packages inside a managed container.
 
@@ -202,7 +202,7 @@ Examples:
 
 ## RUN
 
-```bash
+```markdown
 Description: 
     Run a program inside a managed container.
 
@@ -218,7 +218,7 @@ Examples:
 
 ## SEARCH
 
-```bash
+```markdown
 Description: 
     Search for packages in a managed container.
 
@@ -234,7 +234,7 @@ Examples:
 
 ## SHOW
 
-```bash
+```markdown
 Description: 
     Show details about a package.
 
@@ -250,7 +250,7 @@ Examples:
 
 ## UNEXPORT
 
-```bash
+```markdown
 Description:
     Unexport/Remove a program's desktop entry from a managed container.
 
@@ -266,7 +266,7 @@ Examples:
 
 ## UPDATE
 
-```bash
+```markdown
 Description: 
     Update the list of available packages.
 
@@ -282,7 +282,7 @@ Examples:
 
 ## UPGRADE
 
-```bash
+```markdown
 Description: 
     Upgrade the system by installing/upgrading available packages.
 
@@ -298,7 +298,7 @@ Examples:
 
 ## VERSION
 
-```bash
+```markdown
 Description:
     Display the version number of apx.
 

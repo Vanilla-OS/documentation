@@ -14,7 +14,7 @@ description: Manpage for the apx utility.
 ## SYNOPSIS
 
 ```
-apx [OPTIONS] [COMMAND] [ARGS]
+apx [options] [command] [arguments]
 ```
 
 ## DESCRIPTION
@@ -22,93 +22,101 @@ apx [OPTIONS] [COMMAND] [ARGS]
 ```
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
 
-Usage: apx [options] [command] [arguments]
+Usage:
+	apx [options] [command] [arguments]
 
 Options:
-  -h, --help    Show this help message and exit
-  -v, --version Show version and exit
-  --aur         Install packages from the AUR repository
-  --dnf         Install packages from the Fedora repository
+	-h, --help    Show this help message and exit
+	-v, --version Show version and exit
+	--aur	    Install packages from the AUR repository
+	--dnf	    Install packages from the Fedora repository
 
 Commands:
     autoremove  Remove all unused packages
-    clean       Clean the apx package manager cache
-    enter       Enter the container's shell
-    export      Export/Recreate a program's desktop entry from a managed container
-    help        Show this help message and exit
-    init        Initialize a managed container
-    install     Install packages inside the container
-    list        List installed packages
-    log         Show logs
-    purge       Purge packages from the container
-    run         Run a command inside the container
-    remove      Remove packages from the container
-    search      Search for packages
-    show        Show details about a package
-    unexport    Unexport/Remove a program's desktop entry
-    update      Update the list of available packages
-    upgrade     Upgrade the system by installing/upgrading available packages
-    version     Show version and exit
+	clean       Clean the apx package manager cache
+	enter       Enter the container shell
+	export      Export/Recreate a program's desktop entry from the container
+	help        Show this help message and exit
+	init        Initialize a managed container
+	install     Install packages inside the container
+	list        List installed packages
+	log         Show logs
+	purge       Purge packages from the container
+	run         Run a command inside the container
+	remove      Remove packages from the container
+	search      Search for packages
+	show        Show details about a package
+	unexport    Unexport/Remove a program's desktop entry
+	update      Update the list of available packages
+	upgrade     Upgrade the system by installing/upgrading available packages
+	version     Show version and exit
 ```
 
 ## AUTOREMOVE
 
 ```
-Remove all unused packages automatically.
+Description: 
+	Remove all unused packages automatically.
+Usage:
+    apx autoremove [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Usage:
     apx autoremove
-    apx --aur autoremove
-    apx --dnf autoremove
 ```
 
 ## CLEAN
 
 ```
-Clean the apx package manager cache.
+Description: 
+    Clean the apx package manager cache.
 
 Usage:
-    apx clean
-    apx --aur clean
-    apx --dnf clean [arguments]
+    apx clean [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx clean
-    apx --aur clean
-    apx --dnf clean all
 ```
 
 ## ENTER
 
 ```
-Enter the container shell.
+Description: 
+	Enter in the container shell.
 
 Usage:
-    apx enter
-    apx --aur enter
-    apx --dnf enter
+    apx enter [options]
+
+Options:
+    -h, --help            Show this help message and exit
 ```
 
 ## EXPORT
 
 ```
-Export/Recreate a program's desktop entry from a managed container.
+Description: 
+    Export/Recreate a program's desktop entry from a managed container.
 
 Usage:
-    apx export <program>
-    apx export --aur <program>
-    apx export --dnf <program>
+    apx export <program> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx export htop
-    apx export --aur htop
-    apx export --dnf firefox
 ```
 
 ## HELP
 
 ```
-Display help message.
+Description:
+    Display help message.
 
 Usage:
     apx --help
@@ -117,116 +125,128 @@ Usage:
 ## INIT
     
 ```
-Initialize the managed container.
+Description: 
+	Initialize the managed container.
 
 Usage:
-    apx init
+    apx init [options]
+
+Options:
+    -h, --help            Show this help message and exit
 ```
 
 ## INSTALL
 
 ```
-Install packages inside managed containers that are tightly integrated with the system. For Graphical GUI packages, a `.desktop` entry file is automatically created and added to the GNOME application menu. A list of installed GUI packages can also be found in the Subsystem menu of Vanilla Control Center.
+
+Description: 
+	Install packages inside managed containers that are tightly integrated with the system. For Graphical GUI packages, a `.desktop` entry file is automatically created and added to the GNOME application menu. A list of installed GUI packages can also be found in the Subsystem menu of Vanilla Control Center.
 
 Usage:
-  apx install <packages>
-  apx --aur install <packages>
-    
+    apx install [options] <packages>
+
+Options:
+    -h, --help            Show this help message and exit
+    -y, --assume-yes      Proceed without manual confirmation.
+    -f, --fix-broken      Fix broken deps before installing
+    --no-export           Do not export a desktop entry after the installation. --sideload [path]     Install a package from a local file.
+
 Examples:
     apx install htop git
-    apx --aur install htop
-    apx --dnf install htop
+    apx install --sideload /path/to/file.deb
 ```
 
 ## LIST
 
 ```
-List installed packages.
+Description: 
+	List installed packages.
 
 Usage:
-    apx list
-    apx --aur list
-    apx --dnf list
+    apx list [options]
+
+Options:
+    -h, --help            Show this help message and exit
 ```
 
 ## PURGE
 
 ```
-Purge packages inside a managed container.
+Description: 
+	Purge packages inside a managed container.
 
 Usage:
-    apx purge <packages>
-    apx --aur purge <packages>
-    apx --dnf purge <packages>
+    apx purge <packages> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx purge htop
-    apx --aur purge htop
-    apx --dnf purge htop
 ```
 
 ## REMOVE
 
 ```
-Remove packages inside a managed container.
+Description:
+	Remove packages inside a managed container.
 
 Usage:
-    apx remove <packages>
-    apx remove --aur <packages>
-    apx remove --dnf <packages>
+    apx remove <packages> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx remove htop
-    apx --aur remove htop
-    apx --dnf remove htop
 ```
 
 ## RUN
 
 ```
-Run a program inside a managed container.
+Description: 
+	Run a program inside a managed container.
 
 Usage:
-    apx run <program>
-    apx --aur run <program>
-    apx --dnf run <program>
+    apx run <program> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
-    apx run firefox
-    apx --aur run neofetch
-    apx --dnf run tldr
+    apx run htop
 ```
 
 ## SEARCH
 
 ```
-Search for packages in a managed container.
+Description: 
+	Search for packages in a managed container.
 
 Usage:
-    apx search <packages>
-    apx --aur search <packages>
-    apx --dnf search <packages>
+    apx search <packages> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx search htop
-    apx --aur search htop
-    apx --dnf search dnf
 ```
 
 ## SHOW
 
 ```
-Show details about a package.
+Description: 
+	Show details about a package.
 
 Usage:
-    apx show <package>
-    apx --aur show <package>
-    apx --dnf show <package>
+    apx show <package> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx show htop
-    apx --aur show htop
-    apx --dnf show htop
 ```
 
 ## UNEXPORT
@@ -235,42 +255,52 @@ Examples:
 Unexport/Remove a program's desktop entry from a managed container.
 
 Usage:
-    apx unexport <program>
-    apx unexport --aur <program>
-    apx unexport --dnf <program>
+    apx unexport <program> [options]
+
+Options:
+    -h, --help            Show this help message and exit
 
 Examples:
     apx unexport htop
-    apx unexport --aur htop
-    apx unexport --dnf htop
 ```
 
 ## UPDATE
 
 ```
-Update the list of available packages.
+Description: 
+	Update the list of available packages.
 
 Usage:
+    apx update [options]
+
+Options:
+    -h, --help            Show this help message and exit
+
+Examples:
     apx update
-    apx --aur update
-    apx --dnf update
 ```
 
 ## UPGRADE
 
 ```
-Upgrade the system by installing/upgrading available packages.
+Description: 
+	Upgrade the system by installing/upgrading available packages.
 
 Usage:
+    apx upgrade [options]
+  
+Options:
+    -h, --help            Show this help message and exit
+
+Examples:
     apx upgrade
-    apx --aur upgrade
-    apx --dnf upgrade
 ```
 
 ## VERSION
 
 ```
-Display the version number of apx.
+Description:
+    Display the version number of apx.
 
 Usage:
     apx --version

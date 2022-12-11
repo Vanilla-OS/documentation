@@ -37,7 +37,7 @@ package manager (`apt` for Ubuntu).
 
 Nevertheless, you can install packages from package other distributions. For example, using the `--aur` flag, a new
 container based on Arch Linux will be created. Here, `apx` will manage the packages 
-from the AUR (and Pacman), tightly integrating it with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating it with the host system. For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the GNOME application menu with a container indicator next to the application name. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
+from the AUR (and Pacman), tightly integrating them with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the GNOME application menu with a container indicator next to the application name. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
 
 For quality control, we are limiting this feature to specific implementations. Currently, only `--aur` and `--dnf` flags are supported, but 
 we are planning to implement support for the Nix package manager as well in future.

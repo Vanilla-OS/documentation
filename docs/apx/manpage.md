@@ -7,19 +7,19 @@ description: Manpage for the apx utility.
 
 ## NAME
 
-```
+```text
 `apx` - the Vanilla OS package manager that is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
 ```
 
 ## SYNOPSIS
 
-```
+```text
 apx [options] [command] [arguments]
 ```
 
 ## DESCRIPTION
 
-```
+```bash
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
 
 Usage:
@@ -54,9 +54,9 @@ Commands:
 
 ## AUTOREMOVE
 
-```
+```bash
 Description: 
-	Remove all unused packages automatically.
+    Remove all unused packages automatically.
 Usage:
     apx autoremove [options]
 
@@ -69,7 +69,7 @@ Usage:
 
 ## CLEAN
 
-```
+```bash
 Description: 
     Clean the apx package manager cache.
 
@@ -85,9 +85,9 @@ Examples:
 
 ## ENTER
 
-```
+```bash
 Description: 
-	Enter in the container shell.
+    Enter in the container shell.
 
 Usage:
     apx enter [options]
@@ -98,7 +98,7 @@ Options:
 
 ## EXPORT
 
-```
+```bash
 Description: 
     Export/Recreate a program's desktop entry from a managed container.
 
@@ -114,7 +114,7 @@ Examples:
 
 ## HELP
 
-```
+```bash
 Description:
     Display help message.
 
@@ -123,10 +123,10 @@ Usage:
 ```
 
 ## INIT
-    
-```
+
+```bash
 Description: 
-	Initialize the managed container.
+    Initialize the managed container.
 
 Usage:
     apx init [options]
@@ -137,10 +137,9 @@ Options:
 
 ## INSTALL
 
-```
-
+```bash
 Description: 
-	Install packages inside a managed container.
+    Install packages inside a managed container.
 
 Usage:
     apx install [options] <packages>
@@ -158,9 +157,9 @@ Examples:
 
 ## LIST
 
-```
+```bash
 Description: 
-	List installed packages.
+    List installed packages.
 
 Usage:
     apx list [options]
@@ -171,9 +170,9 @@ Options:
 
 ## PURGE
 
-```
+```bash
 Description: 
-	Purge packages inside a managed container.
+    Purge packages inside a managed container.
 
 Usage:
     apx purge <packages> [options]
@@ -187,9 +186,9 @@ Examples:
 
 ## REMOVE
 
-```
+```bash
 Description:
-	Remove packages inside a managed container.
+    Remove packages inside a managed container.
 
 Usage:
     apx remove <packages> [options]
@@ -203,9 +202,9 @@ Examples:
 
 ## RUN
 
-```
+```bash
 Description: 
-	Run a program inside a managed container.
+    Run a program inside a managed container.
 
 Usage:
     apx run <program> [options]
@@ -219,9 +218,9 @@ Examples:
 
 ## SEARCH
 
-```
+```bash
 Description: 
-	Search for packages in a managed container.
+    Search for packages in a managed container.
 
 Usage:
     apx search <packages> [options]
@@ -235,9 +234,9 @@ Examples:
 
 ## SHOW
 
-```
+```bash
 Description: 
-	Show details about a package.
+    Show details about a package.
 
 Usage:
     apx show <package> [options]
@@ -251,8 +250,9 @@ Examples:
 
 ## UNEXPORT
 
-```
-Unexport/Remove a program's desktop entry from a managed container.
+```bash
+Description:
+    Unexport/Remove a program's desktop entry from a managed container.
 
 Usage:
     apx unexport <program> [options]
@@ -266,9 +266,9 @@ Examples:
 
 ## UPDATE
 
-```
+```bash
 Description: 
-	Update the list of available packages.
+    Update the list of available packages.
 
 Usage:
     apx update [options]
@@ -282,9 +282,9 @@ Examples:
 
 ## UPGRADE
 
-```
+```bash
 Description: 
-	Upgrade the system by installing/upgrading available packages.
+    Upgrade the system by installing/upgrading available packages.
 
 Usage:
     apx upgrade [options]
@@ -298,7 +298,7 @@ Examples:
 
 ## VERSION
 
-```
+```bash
 Description:
     Display the version number of apx.
 
@@ -312,7 +312,7 @@ Usage:
 
 ## AUTHOR
 
-```
+```text
 Contributors of Vanilla OS
 ```
 

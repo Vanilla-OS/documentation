@@ -300,6 +300,7 @@ Usage:
 ## SEE ALSO
 
 - [`ABRoot`](/docs/ABRoot)
+- [`VSO`](/docs/vso)
 
 ## AUTHOR
 

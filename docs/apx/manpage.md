@@ -299,8 +299,8 @@ Usage:
 
 ## SEE ALSO
 
-- [`ABRoot`](/docs/ABRoot)
-- [`VSO`](/docs/vso)
+- [`abroot`](/docs/ABRoot)
+- [`vso`](/docs/vso)
 
 ## AUTHOR
 

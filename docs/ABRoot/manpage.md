@@ -23,15 +23,15 @@ abroot [options] [command]
 abroot [options] [command]
 
 Options:
-	--help/-h		show this message
-	--verbose/-v		show more verbosity
-	--version/-V		show version
+    --help/-h       show this message
+    --verbose/-v        show more verbosity
+    --version/-V        show version
 
 Commands:
-	_update-boot		update the boot partition (for advanced users only)
-	get			outputs the present or future root partition state
-	shell		enter a transactional shell in the future root partition and switch root on the next boot
-	exec		execute a command in a transactional shell in the future root partition and switch to it on the next boot
+    _update-boot    update the boot partition (for advanced users only)
+    get             outputs the present or future root partition state
+    shell           enter a transactional shell in the future root partition and switch root on the next boot
+    exec            execute a command in a transactional shell in the future root partition and switch to it on the next boot
 ```
 
 ## EXEC
@@ -40,15 +40,15 @@ Commands:
 Execute a command in a transactional shell in the future root partition and switch to it on the next boot.
 
 Usage:
-	exec [command]
+    exec [command]
 
 Options:
-	--help/-h		show this message
-	--assume-yes/-y		assume yes to all questions
+    --help/-h           show this message
+    --assume-yes/-y     assume yes to all questions
 
 Examples:
-	abroot exec ls -l /
-	abroot exec apt install git 
+    abroot exec ls -l /
+    abroot exec apt install git 
 ```
 
 ### GET
@@ -57,18 +57,18 @@ Examples:
 Outputs the present or future root partition state (A or B).
 
 Usage:
-	get [state]
+    get [state]
 
 Options:
-	--help/-h		show this message
+    --help/-h       show this message
 
 States:
-	present			get the present root partition state
-	future			get the future root partition state
+    present     get the present root partition state
+    future      get the future root partition state
 
 Examples:
-	abroot get present
-	abroot get future
+    abroot get present
+    abroot get future
 ```
 
 ## SHELL
@@ -77,14 +77,14 @@ Examples:
 Enter a transactional shell in the future root partition and switch root on the next boot.
 
 Usage:
-	shell
+    shell
 
 Options:
-	--help/-h		show this message
-	--assume-yes/-y		assume yes to all questions
+    --help/-h           show this message
+    --assume-yes/-y     assume yes to all questions
 
 Examples:
-	abroot shell
+    abroot shell
 ```
 
 ## UPDATE BOOT
@@ -93,17 +93,17 @@ Examples:
 Update the boot partition for maintenance purposes (for advanced users only).
 
 Usage:
-	_update-boot
+    _update-boot
 
 Options:
-	--help/-h		show this message
-	--assume-yes/-y		assume yes to all questions
+    --help/-h           show this message
+    --assume-yes/-y     assume yes to all questions
 ```
 
 ## SEE ALSO
 
 - [`apx`](/docs/apx)
-- [`VSO`](/docs/vso)
+- [`vso`](/docs/vso)
 
 ## AUTHOR
 

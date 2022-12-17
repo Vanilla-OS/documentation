@@ -59,7 +59,7 @@ managed containers without affecting the host system. `apx` supports installing 
 
 [Vanilla Control Center](https://github.com/Vanilla-OS/vanilla-control-center) is a graphical tool that allows you to configure the operating system,  [updates](https://handbook.vanillaos.org/2022/12/10/updates.html) and install additional drivers.
 
-- **[Vanilla System Operator (`vso`)](/docs/VSO)**
+- **[Vanilla System Operator (`vso`)](/docs/vso)**
 
 [Vanilla System Operator](https://github.com/Vanilla-OS/vanilla-system-operator) is a utility for Vanilla OS which allows you to perform maintenance tasks such as updating your system, scheduling tasks, etc.
 

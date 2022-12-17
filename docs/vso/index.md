@@ -9,9 +9,9 @@ description: Find out how to use vso utility to perform maintenance tasks on Van
 
 ## What can it do?
 
-`vso` can be used for various purposes like scheduling or triggering updates and scheduling tasks in your Vanilla OS installation.
+`vso` can be used for various purposes like scheduling or triggering tasks such as updates in your Vanilla OS installation.
 
-`vso` helps you stay productive by providing customizable options for creating automated workflows and tasks which can trigger a specific event or action on a particular occasion.
+`vso` helps you stay productive by providing customizable options for creating automated workflows and tasks which can trigger a specific event or an action on a particular occasion.
 
 ## Naming
 

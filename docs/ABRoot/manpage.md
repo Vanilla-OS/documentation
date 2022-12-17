@@ -20,7 +20,8 @@ abroot [options] [command]
 ## DESCRIPTION
 
 ```markdown
-abroot [options] [command]
+Usage:
+    abroot [options] [command]
 
 Options:
     --help/-h       show this message

@@ -24,11 +24,11 @@ Answers to the most frequently asked questions about Vanilla OS.
   
 - **Does it use OSTree?**
 
-  No. Vanilla OS achieves immutability through [`ABRoot`](https://github.com/Vanilla-OS/ABRoot) [previously achieved through `almost`]. 
+  No. Vanilla OS achieves immutability through [`ABRoot`](https://github.com/Vanilla-OS/ABRoot) [previously achieved through `almost`]. Usage of OSTree may be considered in the future.
  
   We wrote `almost` utility for On-Demand Immutability based on the 
   immutability attribute of files. This approach worked on any partition 
-  schema/file system. Usage of OSTree may be considered in the future.
+  schema/file system.
   
   We introduced a new utility [ABRoot](https://github.com/Vanilla-OS/ABRoot) replacing the `almost` utility to provide full immutability and atomicity, by transacting between 2 root partitions (A⟺B). It also allows on-demand transactions via a transactional shell.
   

@@ -5,18 +5,22 @@ description: Find out how to use vso utility to perform maintenance tasks on Van
 
 # Vanilla System Operator (`vso`)
 
-VSO is a command-line utility which allows you to perform maintenance tasks on your Vanilla OS installation.
+`vso` is a command-line utility which allows you to perform maintenance tasks on your Vanilla OS installation.
 
 ## What can it do?
 
 `vso` can be used for various purposes like scheduling or triggering updates and scheduling tasks in your Vanilla OS installation.
 
-VSO helps you stay productive by providing customizable options for creating automated workflows and tasks which can trigger a specific event or action.
+`vso` helps you stay productive by providing customizable options for creating automated workflows and tasks which can trigger a specific event or action on a particular occasion.
 
 ## Naming
 
-The name VSO abbreviated as Vanilla System Operator, signifies the user who acts as an operator of their Vanilla OS system.
+The name `vso` abbreviated as Vanilla System Operator, signifies the user who acts as an operator of their Vanilla OS system.
 
 ## Usage
 
 - [Manpage](/docs/vso/manpage)
+
+## Related Guides
+
+- [Update and Upgrade Vanilla OS](https://handbook.vanillaos.org/2022/12/10/updates.html)

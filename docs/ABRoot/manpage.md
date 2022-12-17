@@ -8,7 +8,7 @@ description: Manpage for the ABRoot utility.
 ## NAME
 
 ```text
-ABRoot is a utility that provides complete immutability and atomicity by transacting between 2 root partitions (A⟺B), it also allows on-demand transactions via a transactional shell.
+ABRoot is a utility that provides complete immutability and atomicity by transacting between 2 root partitions (A⟺B), it also allows for on-demand transactions via a transactional shell.
 ```
 
 ## SYNOPSIS

@@ -30,7 +30,7 @@ Commands:
     config                  Configure VSO
     create-task             Create a new task
     delete-task             Delete a task
-    developer-program       Join the developer's program
+    developer-program       Join the developers program
     help                    Show this help message and exit
     list-tasks              List all tasks
     rotate-tasks            Rotate tasks
@@ -90,10 +90,10 @@ Arguments:
     --on-disconnect         execute the task on network disconnection
     --on-battery            execute the task on battery
     --on-low-battery        execute the task on low battery (20%)
-    --on-charge             execute the task on charge
+    --on-charge             execute the task on battery charging
     --on-full-battery       execute the task on full battery
     --on-condition-command  execute the task on condition command
-    --on-process            execute the task when a process came up
+    --on-process            execute the task when a process comes up
 
 Examples:
     vso create-task -n "Battery fully charged" -d "notify at full charge" -c "notify-send 'Battery fully charged'" --on-full-battery

@@ -87,7 +87,7 @@ Examples:
 
 ```markdown
 Description: 
-    Enter in the container markdown.
+    Enter in the container.
 
 Usage:
     apx enter [options]

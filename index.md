@@ -24,11 +24,11 @@ Answers to the most frequently asked questions about Vanilla OS.
   
 - **Does it use OSTree?**
 
-  No. Vanilla OS achieves immutability through [`ABRoot`](https://github.com/Vanilla-OS/ABRoot) [previously achieved through `almost`]. 
+  No. Vanilla OS achieves immutability through [`ABRoot`](https://github.com/Vanilla-OS/ABRoot) [previously achieved through `almost`]. Usage of OSTree may be considered in the future.
  
   We wrote `almost` utility for On-Demand Immutability based on the 
   immutability attribute of files. This approach worked on any partition 
-  schema/file system. Usage of OSTree may be considered in the future.
+  schema/file system.
   
   We introduced a new utility [ABRoot](https://github.com/Vanilla-OS/ABRoot) replacing the `almost` utility to provide full immutability and atomicity, by transacting between 2 root partitions (A⟺B). It also allows on-demand transactions via a transactional shell.
   
@@ -48,20 +48,20 @@ The Vanilla OS [First Setup](https://github.com/Vanilla-OS/first-setup) utility 
 
 - **[Package Manager (`apx`)](/docs/apx)**
 
-[Apx](https://github.com/Vanilla-OS/apx) is a package manager that allows you to install and manage packages in
+[Apx](/docs/apx) is a package manager that allows you to install and manage packages in
 managed containers without affecting the host system. `apx` supports installing packages from the Ubuntu Repository, Arch User Repository (AUR) and Fedora's DNF Repository inside a container. It's tightly integrated with the host system. For GUI packages, a desktop file entry is created automatically and added to the GNOME Application menu.
 
 - **[Immutability (`abroot`)](/docs/ABRoot)**
 
-[ABRoot](https://github.com/Vanilla-OS/ABRoot) is a utility that provides full immutability and atomicity by transacting between 2 root partitions (A⟺B). It also allows on-demand transactions via a transactional shell.
+[ABRoot](/docs/ABRoot) is a utility that provides full immutability and atomicity by transacting between 2 root partitions (A⟺B). It also allows on-demand transactions via a transactional shell.
+
+- **[Vanilla System Operator (`vso`)](/docs/vso)**
+
+[Vanilla System Operator](/docs/vso) is a utility for Vanilla OS which allows you to perform maintenance tasks such as updating your system, scheduling tasks, etc.
 
 - **[Vanilla Control Center](https://handbook.vanillaos.org/2022/12/10/install-additional-drivers.html)**
 
 [Vanilla Control Center](https://github.com/Vanilla-OS/vanilla-control-center) is a graphical tool that allows you to configure the operating system,  [updates](https://handbook.vanillaos.org/2022/12/10/updates.html) and install additional drivers.
-
-- **[Vanilla System Operator (`vso`)](/docs/VSO)**
-
-[Vanilla System Operator](https://github.com/Vanilla-OS/vanilla-system-operator) is a utility for Vanilla OS which allows you to perform maintenance tasks such as updating your system, scheduling tasks, etc.
 
 - **[Immutability (`almost`)](/docs/almost)**
 

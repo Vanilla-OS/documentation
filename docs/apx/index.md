@@ -26,7 +26,7 @@ software, e.g. by opening a file in LibreOffice.
 While installing software on the host is against the project's ideology, there are cases where it is essential. For example, when you need to 
 install a kernel module or driver.
 
-In cases like this, you can use the `abroot exec apt install <package_name>*` or `abroot shell apt install <package_name>` command to bypass the container and install directly on the host, *but be aware that this 
+In cases like this, you can use the `abroot exec apt install <package_name>` or `abroot shell apt install <package_name>` command to bypass the container and install directly on the host, *but be aware that this 
 is not recommended*.
 
 ### Multiple sources
@@ -37,7 +37,9 @@ package manager (`apt` for Ubuntu).
 
 Nevertheless, you can install packages from package other distributions. For example, using the `--aur` flag, a new
 container based on Arch Linux will be created. Here, `apx` will manage the packages 
-from the AUR (and Pacman), tightly integrating them with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the Applications menu with a container indicator next to the application name. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
+from the AUR (Pacman and yay), tightly integrating them with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. 
+
+For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the Applications menu with a container indicator next to the application name. These applications are displayed beside other applications in the "Open with" menu in nautilus. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
 
 For quality control, we are limiting this feature to specific implementations. Currently, only `--aur` and `--dnf` flags are supported, but 
 we are planning to implement support for the Nix package manager as well in future.

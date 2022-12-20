@@ -52,6 +52,10 @@ Examples:
     abroot exec apt install git 
 ```
 
+```text
+Tip: You can enclose multiple commands using "" and pass it as a single string.
+```
+
 ### GET
 
 ```markdown

@@ -57,6 +57,7 @@ Befehle:
 ```markdown
 Beschreibung: 
     Alle nicht genutzten Pakete automatisch entfernen.
+
 Aufruf:
     apx autoremove [Optionen]
 

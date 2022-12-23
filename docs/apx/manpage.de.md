@@ -20,7 +20,7 @@ apx [Optionen] [Befehl] [Argumente]
 ## BESCHREIBUNG
 
 ```markdown
-apx ist ein Wrapper um mehrere Paketvervalter, der Pakete in einem verwalteten Container installiert und Befehle dort ausführt.
+apx ist ein Wrapper um mehrere Paketvervaltungprogramme, der Installationen und andere Befehle in einem verwalteten Container durchführt.
 
 Aufruf:
     apx [Optionen] [Befehl] [Argumente]

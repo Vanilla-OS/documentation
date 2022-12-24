@@ -140,11 +140,11 @@ Optionen:
     -y, --assume-yes      Ohne manuelle Zustimmung fortfahren
     -f, --fix-broken      Vor der Installation beschädigte Abhängigkeiten reparieren
     --no-export           Menüeintrag nach der Installation nicht exportieren
-    --sideload [path]     Paket von einer lokalen Datei installieren
+    --sideload [Pfad]     Paket von einer lokalen Datei installieren
 
 Beispiele:
     apx install htop git
-    apx install --sideload /path/to/file.deb
+    apx install --sideload /Pfad/zur/Datei.deb
 ```
 
 ## LIST

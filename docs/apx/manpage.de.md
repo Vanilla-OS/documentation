@@ -34,7 +34,7 @@ Optionen:
 Befehle:
     autoremove      Alle nicht genutzten Pakete entfernen
     clean           Cache des apx-Paketverwalters leeren
-    enter           Container-Shell betreten
+    enter           Container-Shell öffnen
     export          Menüeintrag eines Programms aus dem Container exportieren
     help            Diese Hilfe ausgeben und beenden
     init            Einen verwalteten Container initialisieren
@@ -88,7 +88,7 @@ Beispiele:
 
 ```markdown
 Beschreibung: 
-    Die Shell des gegebenen Containers betreten.
+    Die Shell des gegebenen Containers öffnen.
 
 Aufruf:
     apx enter [Optionen]

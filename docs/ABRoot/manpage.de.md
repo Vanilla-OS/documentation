@@ -8,7 +8,7 @@ Beschreibung: Manpage für das ABRoot-Programm.
 ## NAME
 
 ```text
-ABRoot ist ein Programm, das komplette Unveränderlichkeit und Atomarität bietet, indem es Transaktionen zwischen 2 Root-Partitionen (A⟺B) ausführt. Es macht auch Transaktionen auf Abruf mit einer interaktiven Shell möglich.
+ABRoot ist ein Programm, das komplette Unveränderlichkeit und Atomarität bietet, indem es Transaktionen zwischen 2 Root-Partitionen (A⟺B) ausführt. Es ermöglicht auch sofortige Transaktionen mithilfe einer interaktiven Shell.
 ```
 
 ## ÜBERSICHT

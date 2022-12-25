@@ -116,6 +116,6 @@ Optionen:
 Entwickler von Vanilla OS
 ```
 
-## FEHLER MELDEn
+## FEHLER MELDEN
 
 Fehler bitte beim [Bugtracker](https://github.com/Vanilla-OS/ABRoot/issues) melden.

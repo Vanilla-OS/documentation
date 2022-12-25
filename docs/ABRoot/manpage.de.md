@@ -113,7 +113,7 @@ Optionen:
 ## AUTHOR
 
 ```text
-Entwickler von Vanilla OS
+Mitwirkende von Vanilla OS
 ```
 
 ## FEHLER MELDEN

@@ -137,7 +137,7 @@ Aufruf:
 
 Optionen:
     -h, --help            Diese Hilfe ausgeben und beenden
-    -y, --assume-yes      Ohne manuelle Zustimmung fortfahren
+    -y, --assume-yes      Ohne manuelle Bestätigung fortfahren
     -f, --fix-broken      Vor der Installation beschädigte Abhängigkeiten reparieren
     --no-export           Menüeintrag nach der Installation nicht exportieren
     --sideload [Pfad]     Paket von einer lokalen Datei installieren

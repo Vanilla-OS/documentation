@@ -45,7 +45,7 @@ Verwendung:
 
 Optionen:
     --help/-h           Diese Hilfe ausgeben
-    --assume-yes/-y     Ohne manuelle Zustimmung fortfahren
+    --assume-yes/-y     Ohne manuelle Bestätigung fortfahren
 
 Beispiele:
     abroot exec ls -l /
@@ -86,7 +86,7 @@ Verwendung:
 
 Optionen:
     --help/-h           Diese Hilfe ausgeben
-    --assume-yes/-y     Ohne manuelle Zustimmung fortfahren
+    --assume-yes/-y     Ohne manuelle Bestätigung fortfahren
 
 Beispiele:
     abroot shell
@@ -102,7 +102,7 @@ Verwendung:
 
 Optionen:
     --help/-h           Diese Hilfe ausgeben
-    --assume-yes/-y     Ohne manuelle Zustimmung fortfahren
+    --assume-yes/-y     Ohne manuelle Bestätigung fortfahren
 ```
 
 ## SIEHE AUCH

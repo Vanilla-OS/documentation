@@ -192,7 +192,7 @@ Examples:
 ## RUN
 
 ```markdown
-Description: 
+Description:
     Run a program inside a managed container.
 
 Usage:

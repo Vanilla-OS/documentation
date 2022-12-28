@@ -261,8 +261,15 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ethon
+  faraday
+  faraday-net_http
   github-pages
+  minitest
+  nokogiri
+  racc
   webrick
+  zeitwerk
 
 BUNDLED WITH
    2.3.7

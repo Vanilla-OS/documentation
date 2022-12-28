@@ -40,7 +40,7 @@ Answers to the most frequently asked questions about Vanilla OS.
 - **[Updates](https://handbook.vanillaos.org/2022/12/10/updates.html)**
 - **[More guides](https://handbook.vanillaos.org/)**
 
-## Core Components Documentation
+## Core Components Docs
 
 - **[Apx](/docs/apx)**\
   is container based package manager which allows installing packages from other distributions in a sandboxed environment.

@@ -6,6 +6,7 @@ If you want to translate the documentation, read the [TRANSLATE](TRANSLATE.md) f
 
 ## Build
 ```bash
+bundle install
 jekyll build
 ```
 

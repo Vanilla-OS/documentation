@@ -53,3 +53,8 @@ Answers to the most frequently asked questions about Vanilla OS.
 
 - ~~**[Almost](/docs/almost)**~~\
   ~~allows you to make your system immutable by simply toggling the i attribute of files.~~
+
+## Contributing
+
+- **[Packaging](/docs/packaging)**\
+  apps for Vanilla OS requires some considerations and guidelines to be followed.

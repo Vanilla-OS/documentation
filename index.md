@@ -43,13 +43,13 @@ Answers to the most frequently asked questions about Vanilla OS.
 ## Core Components Docs
 
 - **[Apx](/docs/apx)**\
-  is container based package manager which allows installing packages from other distributions in a sandboxed environment.
+  is a container-based package manager that allows installing packages from other distributions in a sandboxed environment.
 
 - **[ABRoot](/docs/ABRoot)**\
-  is a utility that allow fully atomic transactions between 2 root partitions (A⟺B).
+  is a utility that allows fully atomic transactions between 2 root partitions (A⟺B).
 
 - **[VSO](/docs/vso)**\
-  is an utility which allows you to perform maintenance tasks on your Vanilla OS installation.
+  is a utility that allows you to perform maintenance tasks on your Vanilla OS installation.
 
 - ~~**[Almost](/docs/almost)**~~\
   ~~allows you to make your system immutable by simply toggling the i attribute of files.~~

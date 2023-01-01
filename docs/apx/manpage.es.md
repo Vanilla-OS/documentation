@@ -50,7 +50,6 @@ Commands:
     unexport        Elimina el acceso directo de un programa
     update          Actualiza los repositorios de paquetes disponibles
     upgrade         Actualiza todo el sistema instalando/actualizado los paquetes disponibles
-    version         Muestra la versión
 ```
 
 ## AUTOREMOVE

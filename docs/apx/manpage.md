@@ -49,7 +49,6 @@ Commands:
     unexport        Unexport/Remove a program's desktop entry
     update          Update the list of available packages
     upgrade         Upgrade the system by installing/upgrading available packages
-    version         Show version and exit
 ```
 
 ## AUTOREMOVE

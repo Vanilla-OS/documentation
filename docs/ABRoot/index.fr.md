@@ -5,7 +5,7 @@ description: Find out how to use ABRoot.
 
 # Immutabilité (`abroot`)
 
-`abroot` est un outil qui apporte une atomicité et immutabilité complète en effectuant des transactions entre 2 partitions racines (A⟺B), et permet aussi des transactions sur-demande via un shell transactionnel.
+`abroot` est un utilitaire qui apporte une atomicité et immutabilité complète en effectuant des transactions entre 2 partitions racines (A⟺B), et permet aussi des transactions sur-demande via un shell transactionnel.
 
 ## Fonctionnement
 
@@ -25,7 +25,7 @@ Les installations de Vanilla OS créent des partitions root et boot pour les deu
 
 ## Mises à jour
 
-`abroot` fait fonctionner l'outil `vso` permettant des mises à jour intelligentes automatiques et l'installation de mises à jour en arrière-plan dans la partition racine future, sauvant donc du temps puisqu'une mise à jour hors-ligne pendant le redémarrage n'est pas requise.
+`abroot` fait fonctionner l'utilitaire `vso` permettant des mises à jour intelligentes automatiques et l'installation de mises à jour en arrière-plan dans la partition racine future, sauvant donc du temps puisqu'une mise à jour hors-ligne pendant le redémarrage n'est pas requise.
 
 ## Appellation
 

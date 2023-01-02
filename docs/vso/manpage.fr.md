@@ -190,7 +190,7 @@ Examples:
 ## AUTEUR
 
 ```text
-Les contributeurs de Vanilla OS
+Les contributeurs de Vanilla OS, dont D-Maxwell (traducteur)
 ```
 
 ## SIGNALER DES BUGS

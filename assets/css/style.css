@@ -199,7 +199,6 @@ aside {
     min-width: 250px;
     color: var(--c-aside-text);
     background-color: var(--c-aside-background);
-    overflow-y: auto;
     box-shadow: 0 0 0 transparent;
     z-index: 1;
 }
@@ -248,10 +247,12 @@ h6.highlight {
 	main {
 		flex-direction: column;
 		gap: 0;
+        overflow-y: auto;
 	}
 
     main article {
         padding: 10px 20px;
+        overflow-y: initial;
     }
 
 	aside .summary > ul {
@@ -271,7 +272,7 @@ h6.highlight {
 	}
 
 	aside {
-		max-height: 70vh;
+		height: max-content;
 	}
 
 	aside:hover {

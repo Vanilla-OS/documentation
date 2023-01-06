@@ -41,9 +41,6 @@ aside {
 }
 
 /* Main */
-html,body {
-    height: 100%;
-}
 
 body {
     color: var(--c-text);
@@ -170,22 +167,22 @@ table tr:hover {
 
 /* Containers */
 .container {
-    max-width: 1020px;
-    /* margin: 0 auto; */
+    max-width: max-content;
     gap: 10px;
 }
 
 /* Main */
 main {
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: stretch;
-    gap: 40px;
     flex: 1;
 }
 
 main article {
     flex: 1;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 60px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -251,6 +248,10 @@ h6.highlight {
 		flex-direction: column;
 		gap: 0;
 	}
+
+    main article {
+        padding: 10px 20px;
+    }
 
 	aside .summary > ul {
 		display: none;

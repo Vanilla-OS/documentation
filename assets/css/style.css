@@ -208,11 +208,6 @@ aside ul {
     padding: 20px 0 20px 20px;
 }
 
-aside li a.active {
-    font-weight: 700;
-    color: #ffeb3b;
-}
-
 /* Code */
 pre {
     background-color: var(--c-code-block);

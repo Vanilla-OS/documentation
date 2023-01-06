@@ -272,6 +272,9 @@ h6.highlight {
 	}
 
 	aside {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: none;
 		height: max-content;
 	}
 

@@ -276,10 +276,6 @@ h6.highlight {
 		height: max-content;
 	}
 
-	aside:hover {
-		box-shadow: 0 0 70px #000000b8, 0 0 0 99rem var(--c-aside-shadow-content);
-	}
-
 	article {
 		width: initial;
 	}

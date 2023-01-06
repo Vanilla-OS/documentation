@@ -244,10 +244,13 @@ h6.highlight {
 }
 /* Media Queries */
 @media (max-width: 900px) {
+    body {
+        overflow-y: auto;
+    }
+
 	main {
 		flex-direction: column;
 		gap: 0;
-        overflow-y: auto;
 	}
 
     main article {

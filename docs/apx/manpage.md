@@ -158,6 +158,19 @@ Options:
     -h, --help            Show this help message and exit
 ```
 
+## LOG
+
+```markdown
+Description: 
+    Show logs.
+
+Usage:
+    apx log [options]
+
+Options:
+    -h, --help            Show this help message and exit
+```
+
 ## PURGE
 
 ```markdown
@@ -174,6 +187,23 @@ Examples:
     apx purge htop
 ```
 
+
+## RUN
+
+```markdown
+Description:
+    Run a program inside a managed container.
+
+Usage:
+    apx run <program> [options]
+
+Options:
+    -h, --help            Show this help message and exit
+
+Examples:
+    apx run htop
+```
+
 ## REMOVE
 
 ```markdown
@@ -188,22 +218,6 @@ Options:
 
 Examples:
     apx remove htop
-```
-
-## RUN
-
-```markdown
-Description: 
-    Run a program inside a managed container.
-
-Usage:
-    apx run <program> [options]
-
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx run htop
 ```
 
 ## SEARCH

@@ -208,11 +208,6 @@ aside ul {
     padding: 20px 0 20px 20px;
 }
 
-aside li a.active {
-    font-weight: 700;
-    color: #ffeb3b;
-}
-
 /* Code */
 pre {
     background-color: var(--c-code-block);
@@ -244,10 +239,13 @@ h6.highlight {
 }
 /* Media Queries */
 @media (max-width: 900px) {
+    body {
+        overflow-y: auto;
+    }
+
 	main {
 		flex-direction: column;
 		gap: 0;
-        overflow-y: auto;
 	}
 
     main article {
@@ -272,11 +270,10 @@ h6.highlight {
 	}
 
 	aside {
+        box-sizing: border-box;
+        width: 100%;
+        min-width: none;
 		height: max-content;
-	}
-
-	aside:hover {
-		box-shadow: 0 0 70px #000000b8, 0 0 0 99rem var(--c-aside-shadow-content);
 	}
 
 	article {

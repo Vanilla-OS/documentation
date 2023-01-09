@@ -16,7 +16,7 @@ instalación de Vanilla OS.
 
 ## Nombramiento
 
-El nombre `vso` abreviado del inglés "Vanilla System Operator" significa el usuario que actúa como operador en el sistema Vanilla OS.
+El nombre `vso` abreviado del inglés "Vanilla System Operator" (Operador del Sistema Vanilla) significa que el usuario que actúa como operador en el sistema Vanilla OS.
 
 ## Uso
 

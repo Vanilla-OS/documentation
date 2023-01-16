@@ -39,6 +39,8 @@ sudo cp /etc/default/abroot_kargs /etc/abroot/kargs
 
 When you're done editing the parameters file, you can trigger a transaction to have `abroot` update the boot file. You can do that by updating your system with `sudo vso trigger-update --now` or by running any command with `abroot exec` (e.g. `sudo abroot exec echo`).
 
+**NOTE:** Keep in mind that the kargs file is not accessible by text editors installed via `apx`. You should instead use an editor installed on the host system like `nano`.
+
 ## Naming
 
 ABRoot's name refers to the two transacting root partitions A and B (A⟺B).

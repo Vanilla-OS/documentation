@@ -35,7 +35,7 @@ Vanilla OS installations create root and boot partitions for both states (20GB p
 sudo cp /etc/default/abroot_kargs /etc/abroot/kargs
 ```
 
-[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the parameters that come in the file unless you know what your're doing.
+[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the parameters that come in the file unless you know what you're doing.
 
 When you're done editing the parameters file, you can trigger a transaction to have `abroot` update the boot file. You can do that by updating your system with `sudo vso trigger-update --now` or by running any command with `abroot exec` (e.g. `sudo abroot exec echo`).
 

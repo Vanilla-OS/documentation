@@ -34,3 +34,4 @@ ABRoot's name refers to the two transacting root partitions A and B (A⟺B).
 ## Usage
 
 - [Manpage](/docs/ABRoot/manpage)
+- [Porting to your distribution](/docs/ABRoot/porting)

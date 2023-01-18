@@ -49,7 +49,6 @@ Commands:
     unexport        Unexport/Remove a program's desktop entry
     update          Update the list of available packages
     upgrade         Upgrade the system by installing/upgrading available packages
-    version         Show version and exit
 ```
 
 ## AUTOREMOVE
@@ -138,7 +137,8 @@ Options:
     -h, --help            Show this help message and exit
     -y, --assume-yes      Proceed without manual confirmation.
     -f, --fix-broken      Fix broken deps before installing
-    --no-export           Do not export a desktop entry after the installation. --sideload [path]     Install a package from a local file.
+    --no-export           Do not export a desktop entry after the installation. 
+    --sideload [path]     Install a package from a local file.
 
 Examples:
     apx install htop git

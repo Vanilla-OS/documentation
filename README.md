@@ -1,2 +1,16 @@
 # Vanilla OS Documentation
-Available at https://vanilla-os.github.io/documentation/
+Available at https://documentation.vanillaos.org
+
+## Translate
+If you want to translate the documentation, read the [TRANSLATE](TRANSLATE.md) file.
+
+## Build
+```bash
+bundle install
+jekyll build
+```
+
+## Serve
+```bash
+jekyll serve
+```

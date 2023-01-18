@@ -27,6 +27,20 @@ Vanilla OS installations create root and boot partitions for both states (20GB p
 
 `abroot` powers the `vso` utility allowing for smart automatic updates and installation of updates in the background in the future root partition, thus saving time as an offline update during reboot isn't required.
 
+## Kernel parameters
+
+`abroot` allows setting custom kernel parameters in case a driver or custom setup requires it. By default, `abroot` reads the contents of `/etc/default/abroot_kargs`, which must **not** be edited. Instead, you should copy the file to `/etc/abroot` with the name *"kargs"* using the following command:
+
+```
+sudo cp /etc/default/abroot_kargs /etc/abroot/kargs
+```
+
+[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the parameters that come in the file unless you know what you're doing.
+
+When you're done editing the parameters file, you can trigger a transaction to have `abroot` update the boot file. You can do that by updating your system with `sudo vso trigger-update --now` or by running any command with `abroot exec` (e.g. `sudo abroot exec echo`).
+
+**NOTE:** Keep in mind that the kargs file is not accessible by text editors installed via `apx`. You should instead use an editor installed on the host system like `nano`.
+
 ## Naming
 
 ABRoot's name refers to the two transacting root partitions A and B (A⟺B).
@@ -34,3 +48,4 @@ ABRoot's name refers to the two transacting root partitions A and B (A⟺B).
 ## Usage
 
 - [Manpage](/docs/ABRoot/manpage)
+- [Porting to your distribution](/docs/ABRoot/porting)

@@ -47,3 +47,9 @@ description: Дізнайтеся, як користуватися apx, мене
 ## Використання
 
 -   [Manpage](/docs/apx/manpage.uk)
+
+### Автори
+```text
+Спільнота Vanilla OS
+Переклад: Сапуцький Петро (@voxelin)
+```

@@ -29,17 +29,17 @@ Vanilla OS installations create root and boot partitions for both states (20GB p
 
 ## Kernel parameters
 
-`abroot` allows setting custom kernel parameters in case a driver or custom setup requires it. By default, `abroot` reads the contents of `/etc/default/abroot_kargs`, which must **not** be edited. Instead, you should copy the file to `/etc/abroot` with the name *"kargs"* using the following command:
+`abroot` allows setting custom kernel parameters in case a driver or custom setup requires it. By default, `abroot` reads the contents of `/etc/default/abroot_kargs`, which must **not** be edited. Instead, you should use the provided command to manage your parameters:
 
 ```
-sudo cp /etc/default/abroot_kargs /etc/abroot/kargs
+sudo abroot kargs edit
 ```
 
-[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the parameters that come in the file unless you know what you're doing.
+The command above will open the parameters file in your default command-line text editor (`nano` by default), but you can override it by using the `$EDITOR` environment variable before the command. So, for example, if you want to edit the arguments using `vim`, you can run `sudo EDITOR=vim abroot kargs edit`.
 
-When you're done editing the parameters file, you can trigger a transaction to have `abroot` update the boot file. You can do that by updating your system with `sudo vso trigger-update --now` or by running any command with `abroot exec` (e.g. `sudo abroot exec echo`).
+[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the default parameters unless you know what you're doing, as changing them could make your system unbootable.
 
-**NOTE:** Keep in mind that the kargs file is not accessible by text editors installed via `apx`. You should instead use an editor installed on the host system like `nano`.
+**NOTE**: The kernel parameters are applied only to your future root, so you can always enter the previous root in case something goes wrong.
 
 ## Naming
 

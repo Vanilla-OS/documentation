@@ -1,23 +1,23 @@
 ---
-назва: Manpage vso - Vanilla OS
+title: VSO - Manpage - Vanilla OS
 description: Керування для утиліти vso.
 ---
 
-# Manpage `vso`
+# Manpage: `vso`
 
-## NAME
+## Найменування
 
 ```text
 VSO - утиліта, за допомогою якої ви можете виконувати завдання з обслуговування вашої системи Vanilla OS.
 ```
 
-## SYNOPSIS
+## Короткий опис
 
 ```text
 vso [параметри] [команда] [аргументи]
 ```
 
-## ОПИС
+## Опис
 
 ```markdown
 Використання:
@@ -38,7 +38,7 @@ vso [параметри] [команда] [аргументи]
     version                 Показати версію і вийти
 ```
 
-## CONFIG
+## Конфігурація
 
 ```markdown
 Опис:
@@ -61,7 +61,7 @@ vso [параметри] [команда] [аргументи]
     vso config set updates::schedule weekly
 ```
 
-## СТВОРИТИ ЗАВДАННЯ
+## Створення нових завдань
 
 ```markdown
 Опис:
@@ -100,7 +100,7 @@ vso [параметри] [команда] [аргументи]
     vso create-task -n "Запустити термінал" -d "Запускати термінал, коли відкриваєш Налаштування." -c "kgx" --on-process gnome-control-center
 ```
 
-## ВИДАЛИТИ ЗАВДАННЯ
+## Видалення завдань
 
 ```markdown
 Опис:
@@ -117,7 +117,7 @@ vso delete-task [task] [options] [options] [task] [options].
     vso delete-task "Моє завдання"
 ```
 
-## ПРОГРАМА РОЗРОБНИКІВ
+## Програма для розробників
 
 ```markdown
 Опис:
@@ -133,7 +133,7 @@ vso delete-task [task] [options] [options] [task] [options].
     vso developer-program
 ```
 
-## ПЕРЕЛІЧИТИ ЗАВДАННЯ
+## Перелік завдань
 
 ```markdown
 Опис:
@@ -149,7 +149,7 @@ vso delete-task [task] [options] [options] [task] [options].
     vso list-tasks
 ```
 
-## ОБЕРТАТИ ЗАВДАННЯ
+## Ротація завдань
 
 ```markdown
 Опис:
@@ -165,7 +165,7 @@ vso delete-task [task] [options] [options] [task] [options].
     vso rotate-tasks
 ```
 
-## ЗАПУСКАТИ ОНОВЛЕННЯ
+## Запуск оновлення системи
 
 ```markdown
 Опис:
@@ -175,24 +175,24 @@ vso delete-task [task] [options] [options] [task] [options].
     vso trigger-update [options] [опції].
 
 Параметри:
-    --help/-h               показати це повідомлення
+    --help/-h               Показати це повідомлення
     --now                   Негайно запустити оновлення системи
 
 Приклади:
     vso trigger-update --now
 ```
 
-## ДИВІТЬСЯ ТАКОЖ
+## Дивіться також
 
 -   [`apx`](/docs/apx/index.uk)
 -   [`abroot`](/docs/vso/index.uk)
 
-## АВТОРИ
+## Автори
 
 ```text
 Спільнота Vanilla OS
 ```
 
-## ПОВІДОМЛЕННЯ ПРО БАГИ
+## Повідомлення про помилки
 
 Повідомляйте про баги на [трекері помилок](https://github.com/Vanilla-OS/vanilla-system-operator/issues).

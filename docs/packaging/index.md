@@ -24,11 +24,11 @@ For these reasons, it is recommended to package only essential software and
 libraries. To better understand what is essential, you can check the following
 table:
 
-| Software | Essential | Reason |
-| -------- | --------- | ------ |
-| Chromium | No | It is a web browser, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/). |
-| fuse | Yes | This is a device driver, which is essential for AppImage to work, and must be also installed from outside the Apx container. |
-| GIMP | No | It is a graphics editor, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/). |
+| Software | Essential | Reason                                                                                                                                                                                                                                                    |
+| -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chromium | No        | It is a web browser, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/).     |
+| fuse     | Yes       | This is a device driver, which is essential for AppImage to work, and must be also installed from outside the Apx container.                                                                                                                              |
+| GIMP     | No        | It is a graphics editor, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/). |
 
 ## Packaging Guidelines
 
@@ -56,7 +56,7 @@ Some applications require a lot of storage, and this can be a problem for
 Vanilla OS, which has a small root partition. If the application cannot be
 installed in the Apx container or any other way, it is recommended to edit
 its behavior to locate its data in the user's home directory or in the `/home`
-partition, which has a lot more storage. 
+partition, which has a lot more storage.
 
 This is also a good practice, since it allows the user to easily backup the
 data of the application, and also to easily remove the application without

@@ -191,6 +191,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ```text
 Спільнота Vanilla OS
+Переклад: Сапуцький Петро (@voxelin)
 ```
 
 ## Повідомлення про помилки

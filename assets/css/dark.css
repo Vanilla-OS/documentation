@@ -66,6 +66,10 @@
         background-color: #28272a;
     }
 
+    table th {
+        background-color: #28272a;
+    }
+
     tbody tr:hover {
         background-color: #2c2b2e;
     }

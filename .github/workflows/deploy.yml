@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+
+concurrency:
+  group: "pages-deploy-${{ github.ref }}"
+  cancel-in-progress: true # Cancel previous jobs in the same group if they are still in progress
 
 jobs:
   deploy:
@@ -23,8 +25,6 @@ jobs:
       - name: Build website
         run: yarn build
 
-      # Popular action to deploy to GitHub Pages:
-      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

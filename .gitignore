@@ -7,8 +7,10 @@
 # Generated files
 .docusaurus
 .cache-loader
+
 # devcontainer 
 /.devcontainer
+
 # Misc
 .DS_Store
 .env.local

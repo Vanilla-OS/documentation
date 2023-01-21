@@ -1,16 +1,19 @@
 # Vanilla OS Documentation
 Available at https://documentation.vanillaos.org
 
-## Translate
-If you want to translate the documentation, read the [TRANSLATE](TRANSLATE.md) file.
+## Translation Guide
 
-## Build
+You can find the tutorial on how to translate Vanilla OS at [TRANSLATE.md](TRANSLATE.md).
+
+## Running the website locally
+
 ```bash
-bundle install
-jekyll build
+yarn install
+yarn start
 ```
 
-## Serve
+## Building the website
+
 ```bash
-jekyll serve
+yarn build
 ```

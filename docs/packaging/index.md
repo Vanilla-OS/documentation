@@ -1,6 +1,7 @@
 ---
-title: Packaging - Vanilla OS
+title: Packaging
 description: Find out how to package software and libraries for Vanilla OS.
+sidebar_position: 1
 ---
 
 # Packaging
@@ -13,7 +14,7 @@ followed.
 ## When to Package?
 
 Vanilla OS is a transactional distribution, which means that it receives
-updates through transactions. The process is handled by [ABRoot](/docs/ABRoot),
+updates through transactions. The process is handled by [ABRoot](/abroot),
 which requires a reboot to apply the changes. This means that the user will
 have to reboot the system after installing a package, and this is not ideal.
 Also the root partition is very small, this is intentional to prevent the user
@@ -26,9 +27,9 @@ table:
 
 | Software | Essential | Reason                                                                                                                                                                                                                                                    |
 | -------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chromium | No        | It is a web browser, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/).     |
+| Chromium | No        | It is a web browser, which is not essential for the system and can be installed via [Apx](/apx/), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/).     |
 | fuse     | Yes       | This is a device driver, which is essential for AppImage to work, and must be also installed from outside the Apx container.                                                                                                                              |
-| GIMP     | No        | It is a graphics editor, which is not essential for the system and can be installed via [Apx](/docs/apx), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/). |
+| GIMP     | No        | It is a graphics editor, which is not essential for the system and can be installed via [Apx](/apx/), [Flatpak](https://handbook.vanillaos.org/2022/12/09/install-flatpaks.html), [Snap](https://snapcraft.io/) or [AppImage](https://appimage.org/). |
 
 ## Packaging Guidelines
 

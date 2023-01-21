@@ -1,6 +1,7 @@
 ---
-title: Vanilla System Operator (vso) - Vanilla OS
+title: Vanilla System Operator (vso)
 description: Find out how to use vso utility to perform maintenance tasks on Vanilla OS.
+sidebar_position: 1
 ---
 
 # Vanilla System Operator (`vso`)
@@ -19,7 +20,7 @@ The name `vso` abbreviated as Vanilla System Operator, signifies the user who ac
 
 ## Usage
 
-- [Manpage](/docs/vso/manpage)
+- [Manpage](/vso/manpage)
 
 ## Related Guides
 

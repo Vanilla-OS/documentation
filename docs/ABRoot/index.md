@@ -1,6 +1,7 @@
 ---
-title: Immutability (ABRoot) - Vanilla OS
+title: Immutability (ABRoot)
 description: Find out how to use ABRoot.
+sidebar_position: 1
 ---
 
 # Immutability (`abroot`)
@@ -47,5 +48,5 @@ ABRoot's name refers to the two transacting root partitions A and B (A⟺B).
 
 ## Usage
 
-- [Manpage](/docs/ABRoot/manpage)
-- [Porting to your distribution](/docs/ABRoot/porting)
+- [Manpage](/abroot/manpage)
+- [Porting to your distribution](/abroot/porting)

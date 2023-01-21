@@ -1,6 +1,7 @@
 ---
-title: Layers in almost - Vanilla OS
+title: Layers in almost
 description: Learn how to use layers in almost.
+sidebar_position: 3
 ---
 
 # Layers

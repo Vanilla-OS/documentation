@@ -1,0 +1,10 @@
+{
+    "position": 2,
+    "label": "Package Manager (apx)",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "generated-index",
+        "title": "Tutorial overview"
+    }
+}

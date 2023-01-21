@@ -1,6 +1,7 @@
 ---
-title: Manpage almost - Vanilla OS
+title: Manpage almost
 description: Manpage for the almost utility.
+sidebar_position: 2
 ---
 
 # Manpage `almost`
@@ -107,7 +108,7 @@ Examples:
 
 ## SEE ALSO
 
-- [`apx`](/docs/apx)
+- [`apx`](/apx/)
 
 ## DIAGNOSTICS
 

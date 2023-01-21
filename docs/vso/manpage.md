@@ -1,6 +1,7 @@
 ---
-title: Manpage vso - Vanilla OS
+title: "VSO: Manpage"
 description: Manpage for the vso utility.
+sidebar_position: 2
 ---
 
 # Manpage `vso`
@@ -184,8 +185,8 @@ Examples:
 
 ## SEE ALSO
 
-- [`apx`](/docs/apx)
-- [`abroot`](/docs/vso)
+- [`apx`](/apx/)
+- [`abroot`](/vso)
 
 ## AUTHOR
 

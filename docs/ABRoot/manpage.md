@@ -1,6 +1,7 @@
 ---
-title: Manpage ABRoot - Vanilla OS
+title: Manpage ABRoot
 description: Manpage for the ABRoot utility.
+sidebar_position: 2
 ---
 
 # Manpage `abroot`
@@ -107,8 +108,8 @@ Options:
 
 ## SEE ALSO
 
-- [`apx`](/docs/apx)
-- [`vso`](/docs/vso)
+- [`apx`](/apx/)
+- [`vso`](/vso)
 
 ## AUTHOR
 

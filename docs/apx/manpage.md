@@ -1,6 +1,7 @@
 ---
-title: Manpage apx - Vanilla OS
+title: "APX: Manpage"
 description: Manpage for the apx utility.
+sidebar_position: 2
 ---
 
 # Manpage `apx`
@@ -299,8 +300,8 @@ Usage:
 
 ## SEE ALSO
 
-- [`abroot`](/docs/ABRoot)
-- [`vso`](/docs/vso)
+- [`abroot`](/abroot)
+- [`vso`](/vso)
 
 ## AUTHOR
 
@@ -310,4 +311,4 @@ Contributors of Vanilla OS
 
 ## REPORTING BUGS
 
-Report bugs to the [issue tracker](https://github.com/Vanilla-OS/apx/issues).
+Report bugs to the [issue tracker](https://github.com/Vanilla-OS/apx//issues).

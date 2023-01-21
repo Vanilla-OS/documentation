@@ -1,6 +1,7 @@
 ---
-title: Configuring almost - Vanilla OS
+title: Configuring almost
 description: Learn how to configure almost.
+sidebar_position: 4
 ---
 
 # Configuration

@@ -1,6 +1,7 @@
 ---
-title: Immutability (almost) - Vanilla OS
+title: Immutability (almost)
 description: Find out how to use Almost, the on-demand immutability utility.
+sidebar_position: 1
 ---
 
 # Immutability (`almost`)
@@ -45,11 +46,11 @@ the system. To avoid this, you should always test your changes using layers
 before committing them. The only reason to disable immutability would be to edit
 a configuration file which is not in the common directories or to install
 drivers. Disabling the immutability during an application or library installation is
-not recommended. Use [`apx`](/docs/apx), [`Flatpak`](/docs/flatpak),
-[`Snap`](/docs/snap) or [`AppImage`](/docs/appimage) instead.
+not recommended. Use [`apx`](/apx/), [`Flatpak`](https://flatpak.org/),
+[`Snap`](https://snapcraft.io/) or [`AppImage`](https://appimage.org/) instead.
 
 ## Usage
 
-- [Manpage](/docs/almost/manpage)
-- [Layers](/docs/almost/layers)
-- [Configuration](/docs/almost/configuration)
+- [Manpage](/almost/manpage)
+- [Layers](/almost/layers)
+- [Configuration](/almost/configuration)

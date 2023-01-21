@@ -1,6 +1,7 @@
 ---
-title: Porting ABRoot to your distribution - Vanilla OS
+title: Porting ABRoot to your distribution
 description: Find out how to port ABRoot to your distribution.
+sidebar_position: 3
 ---
 
 # Porting ABRoot to your distribution
@@ -9,7 +10,7 @@ ABRoot is a technology that can be used to bring atomic transactions to any Linu
 
 The instructions provided in this documentation are general guidelines, and may require some adjustments to work on your specific Linux distribution. To properly use and configure ABRoot, a basic understanding of how Linux works, including knowledge of the package manager, the common file structure of a Linux root partition and what atomicity is, is necessary. It is important to consult the documentation for specific details and make any necessary adaptations.
 
-Also a good understanding of what ABRoot is and how it works is necessary to properly port it to your distribution. If you are not familiar with ABRoot, please read the [ABRoot documentation](/docs/ABRoot/index) first.
+Also a good understanding of what ABRoot is and how it works is necessary to properly port it to your distribution. If you are not familiar with ABRoot, please read the [ABRoot documentation](/abroot/) first.
 
 ### Possible changes needed to the system
 

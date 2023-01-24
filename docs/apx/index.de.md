@@ -1,63 +1,48 @@
 ---
-Titel: Package Manager (apx) - Vanilla OS
-Beschreibt: Wie man apx, den Vanilla OS Paketmanager, benutzt.
+
+Titel: Paketmanager (apx) - VanillaOS
+
+Beschreibung: Bedienungsanleitung des Paketmanagers von VanillaOS, apx
+
 ---
 
 # Paketmanager (`apx`)
 
-`apx` ist der Vanilla-OS-Paketmanager. Er soll einfach zu benutzen sein, aber 
-mit Unterstützung für die Installation von Paketen aus mehreren Quellen ohne 
-ohne das Root-Dateisystem zu verändern.
+`apx` ist der Paketmanager von VanillaOS. Er macht es möglich Dateien aus verschiedenen Paketquellen zu beziehen, ohne das Root-Dateisystem zu verändern.
 
-## Wie es funktioniert
 
-`apx` führt ein völlig neues Paradigma in der Paketverwaltung ein. Die Idee ist, das 
-Ihr System nur als eine Box für die Speicherung Ihrer Dateien zu verwenden, so dass es frei von Paketen ist 
-und das Risiko zu begrenzen, dass es aufgrund von inkompatiblen, schlecht konstruierten oder 
-widersprüchliche Pakete.
 
-Dies wird durch die Installation von Software in einem oder mehreren "verwalteten" Containern erreicht, 
-die vollständig von `apx` verwaltet werden und eingeschränkten Zugriff auf die Ressourcen Ihres Systems haben 
-Ressourcen Ihres Systems haben, aber dennoch dieselben Treiber, Anzeigeserver usw. verwenden können.
+## Funktionsweise
 
-Ihr Home-Verzeichnis wird innerhalb des Containers abgebildet, so dass Sie auf Ihre 
-Konfigurationsdateien, Einstellungen und andere wichtige Daten, die von den installierten 
-Pakete benötigt werden, sowie auf Ihre eigenen Dateien von der installierten Software aus zugreifen können 
-Software zugreifen können, z. B. durch Öffnen einer Datei in LibreOffice.
+Die `apx` zugrunde liegenden Funktionsweisen sind vollkommen neuartige Konzepte der Paketverwaltung. Die Idee ist, dass ihr System nur als Behälter für ihre persönlichen Daten dient, es ist also völlig frei von Paketen. Das verringert das Risiko, dass inkompatible oder beschädige Pakete ihre Daten zerstören. 
+
+Dies wird durch sogenannte Container erreicht. Die Software, die Sie installieren wird in diesen Containern gespeichert. Die Container werden vollautomatisch von `apx` verwaltet. Durch dieses Verstauen der Programme in den Containern haben diese nicht auf alle Teile des Systems Zugriff, was wiederum die Sicherheit erhöht. Auf Dienste wie den Anzeigeserver und die Treiber für die Komponenten des PC haben aber alle Programme Zugriff.
+
+Damit sie Dateien aus ihrem Home-Verzeichnis in Programmen öffnen können, werden werden Konfigurationsdateien und andere Daten, die von den Programmen benötigt werden, innerhalb der Container gespiegelt. 
 
 ### Host-System
 
-Die Installation von Software auf dem Host-System widerspricht zwar der Ideologie des Projekts, 
-gibt es Fälle, in denen dies nicht vermieden werden kann, z.B. wenn Sie 
-ein Kernelmodul installieren müssen.
+Das Installieren von Software auf dem Host-System widerspricht der Philosophie des Projekts, ist aber in manchen Fällen unvermeidbar. Zum Beispiel beim Updaten/Installieren von Kernelmodulen.
 
-In solchen Fällen würden Sie das `--sys` Flag verwenden, um den Container zu umgehen und 
-um den Container zu umgehen und direkt auf dem Host zu installieren, *aber seien Sie sich bewusst, dass dies nicht empfohlen wird*. `apx` 
-arbeitet mit [`almost`](/docs/almost), um die Unveränderlichkeit vorübergehend zu deaktivieren, 
+In solchen Fällen würden Sie das `--sys` Flag verwenden, um den Container zu umgehen und  die Pakete direkt auf dem Host zu installieren, *aber seien Sie sich bewusst, dass dies nicht empfohlen wird*.
+
+`apx` arbeitet mit [`almost`](/docs/almost), um die Unveränderlichkeit vorübergehend zu deaktivieren, 
 Dies erlaubt Ihnen, die benötigten Pakete zu installieren und das System anschließend wiederherzustellen.
 
 ### Mehrere Quellen
 
-Standardmäßig bietet `apx` einen Container, der auf Ihrer Linux-Distribution basiert (Ubuntu 
-22.10 für Vanilla OS 22.10) und wickelt alle Befehle aus dem Paketmanager der Distribution 
-Paketmanager der Distribution (`apt` für Ubuntu).
+Standardmäßig bietet `apx` einen Container, der auf Ihrer Linux-Distribution basiert (Ubuntu 22.10 für Vanilla OS 22.10) und wickelt alle Befehle aus dem Paketmanager der Distribution Paketmanager der Distribution (`apt` für Ubuntu).
 
-Dennoch ist es möglich, Pakete von anderen Distributionen zu installieren 
-Paketmanager zu installieren, z.B. mit dem `--aur` Flag, wird ein zweiter 
-Container auf der Basis von Arch Linux erstellt werden. Hier wird `apx` die Software 
-aus dem AUR (und Pacman) verwalten, wobei es immer in das Wirtssystem integriert wird.
+Dennoch ist es möglich Pakete von anderen Distributionen zu installieren. Wenn Sie zum Beispiel bei der Verwendung von `apx` die `--aur` Option angeben wird ein neuer, auf Arch-Linux basierender Container erstellt. Die Software wird dann innerhalb des Containers mit dem Paketmanager von Arch (`pacman`) installiert und in das Host-System integriert.
 
-Aus Gründen der Qualitätskontrolle und des Testens haben wir uns entschieden, diese Funktion 
-auf bestimmte Implementierungen zu beschränken. Derzeit wird nur das `--aur`-Flag unterstützt, aber 
-wir planen, auch die Unterstützung für den Nix-Paketmanager zu implementieren.
+Aus Gründen der Qualitätssicherung sind nur einige Distributionen unterstützt.
 
 ### Der Name
 
-Der Name `apx` kommt von **apt (Advanced Packaging Tool)**, dem Paketmanager 
-Paketmanager, der von Debian und seinen Derivaten verwendet wird, und **X**, was als 
-2 Zeilen (Host und Container), die sich überlappen, wobei der Container oben ist, was bedeutet 
-dass er über dem Wirtssystem steht.
+Der Name `apx` kommt von **apt (Advanced Packaging Tool)**, dem Paketmanager, der von Debian und seinen Derivaten verwendet wird. Das **X** besteht aus 2 Zeilen und symbolisiert das Host- und das Container-System, wobei der Container das Host--System überlagert.
 
 ## Verwendung
 
 - [Manpage](/docs/apx/manpage)
+
+

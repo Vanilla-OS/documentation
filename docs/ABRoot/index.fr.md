@@ -1,6 +1,6 @@
 ---
-title: Immutability (ABRoot) - Vanilla OS
-description: Find out how to use ABRoot.
+title: Immutabilité (ABRoot) - Vanilla OS
+description: Découvrez comment utiliser ABRoot.
 ---
 
 # Immutabilité (`abroot`)

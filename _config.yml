@@ -10,3 +10,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+url:"https://documentation.vanillaos.org"
+plugins:
+  - jekyll-sitemap

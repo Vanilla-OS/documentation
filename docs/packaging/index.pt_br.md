@@ -23,29 +23,17 @@ Por estas razões, é recomendável empacotar apenas software e bibliotecas esse
 
 Esta seção está organizada em várias subseções, cada uma descrevendo um aspecto diferente do processo de empacotamento.
 
-### Naming
+### Nomeando
 
-There are no restrictions on the name of the package, but it is recommended to
-use the same name as the upstream project. I.e. if the upstream project is
-called `foo`, the package should be called `foo`, and not `bar`. This is
-important because it allows the user to easily identify the package.
+Não há restrições quanto ao nome de um pacote, mas é recomendável usar o mesmo nome que o projeto original. Isto é, se o projeto original for
+chamado `foo`, o pacote deve ser chamado `foo`, e não `bar`. Isto é importante porque permite que o usuário identifique facilmente o pacote.
 
-### Versioning
+### Versionamento
 
-The version of the package should be the same as the upstream version, with
-minor changes if needed. For example, if the upstream version is `1.2.3`, the
-package version should be `1.2.3`, and not `2.0.0`. If the package has some
-minor changes, the version should be `1.2.3-1`, `1.2.3-2`, etc. The version
-must never go backwards or forwards the upstream version.
+A versão do pacote deve ser a mesma que a versão original, com apenas pequenas mudanças se necessário. Por exemplo, se a versão original for `1.2.3`, a versão do pacote deve ser `1.2.3`, e não `2.0.0`. Se o pacote tiver algumas pequenas alterações, a versão deve ser `1.2.3-1`, `1.2.3-2`, etc. A versão nunca deve retroceder ou avançar a versão original.
 
-### Storage
+### Armazenamento
 
-Some applications require a lot of storage, and this can be a problem for
-Vanilla OS, which has a small root partition. If the application cannot be
-installed in the Apx container or any other way, it is recommended to edit
-its behavior to locate its data in the user's home directory or in the `/home`
-partition, which has a lot more storage.
+Algumas aplicações requerem muito espaço de armazenamento, e isto pode ser um problema para Vanilla OS, que tem uma pequena partição raiz. Se a aplicação não puder ser instalada no contêiner Apx ou de outra forma, é recomendável editar seu comportamento para localizar seus dados no diretório pessoal do usuário ou na partição `/home`, que possui muito mais espaço de armazenamento.
 
-This is also a good practice, since it allows the user to easily backup the
-data of the application, and also to easily remove the application without
-losing the data.
+Esta também é uma boa prática, pois permite ao usuário fazer facilmente o backup dos dados da aplicação, e também remover facilmente a aplicação sem perda de dados.

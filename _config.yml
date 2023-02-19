@@ -11,6 +11,6 @@ defaults:
     values:
       layout: "default"
 
-url:"https://documentation.vanillaos.org"
+url: "https://documentation.vanillaos.org"
 plugins:
   - jekyll-sitemap

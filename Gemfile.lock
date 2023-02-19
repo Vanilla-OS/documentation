@@ -265,6 +265,7 @@ DEPENDENCIES
   faraday
   faraday-net_http
   github-pages
+  jekyll-sitemap
   minitest
   nokogiri
   racc

@@ -7,10 +7,10 @@ If you want to translate the documentation, read the [TRANSLATE](TRANSLATE.md) f
 ## Build
 ```bash
 bundle install
-jekyll build
+bundler exec jekyll build
 ```
 
 ## Serve
 ```bash
-jekyll serve
+bundler exec jekyll serve
 ```

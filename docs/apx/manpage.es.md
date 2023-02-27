@@ -11,13 +11,13 @@ Descripción: Manual para apx.
 `apx` es el administrador de paquetes de Vanilla OS que es fácil de usar para instalar paquetes de múltiples fuentes dentro de contenedores sin la necesidad de alterar el sistema de archivos raíz.
 ```
 
-## SYNOPSIS
+## SINOPSIS
 
 ```text
 apx [opciones] [comando] [argumentos]
 ```
 
-## DESCRIPTION
+## DESCRIPCIÓN
 
 ```markdown
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
@@ -52,7 +52,7 @@ Commands:
     upgrade         Actualiza todo el sistema instalando/actualizado los paquetes disponibles
 ```
 
-## AUTOREMOVE
+## AUTOREMOVE (autoremover)
 
 ```markdown
 Descripción: 
@@ -67,7 +67,7 @@ Uso:
     apx autoremove
 ```
 
-## CLEAN
+## CLEAN (limpiar)
 
 ```markdown
 Descrición: 
@@ -83,7 +83,7 @@ Ejemplo:
     apx clean
 ```
 
-## ENTER
+## ENTER (entrar)
 
 ```markdown
 Descripción: 
@@ -96,7 +96,7 @@ Opciones:
     -h, --help            Muestra este mensaje
 ```
 
-## EXPORT
+## EXPORT (exportar)
 
 ```markdown
 Descripción: 
@@ -112,7 +112,7 @@ Ejemplo:
     apx export htop
 ```
 
-## INIT
+## INIT (inicializar)
 
 ```markdown
 Descripción: 
@@ -125,7 +125,7 @@ Opciones:
     -h, --help            Muestra este mensaje
 ```
 
-## INSTALL
+## INSTALL (instalar)
 
 ```markdown
 Descripción: 
@@ -146,7 +146,7 @@ Ejemplos:
     apx install --sideload /path/to/file.deb
 ```
 
-## LIST
+## LIST (listar)
 
 ```markdown
 Descripción: 
@@ -159,7 +159,7 @@ Opciones:
     -h, --help            Muestra este mensaje
 ```
 
-## LOG
+## LOG (registro/bitácora)
 
 ```markdown
 Descripción: 
@@ -172,7 +172,7 @@ Opciones:
     -h, --help            Muestra este mensaje
 ```
 
-## PURGE
+## PURGE (purgar)
 
 ```markdown
 Descripción: 
@@ -188,7 +188,7 @@ Ejemplos:
     apx purge htop
 ```
 
-## RUN
+## RUN (correr/ejecutar)
 
 ```markdown
 Descripción: 
@@ -204,7 +204,7 @@ Ejemplo:
     apx run htop
 ```
 
-## REMOVE
+## REMOVE (remover)
 
 ```markdown
 Descripción:
@@ -220,7 +220,7 @@ Ejemplo:
     apx remove htop
 ```
 
-## SEARCH
+## SEARCH (buscar)
 
 ```markdown
 Descripción: 
@@ -236,7 +236,7 @@ Ejemplo:
     apx search htop
 ```
 
-## SHOW
+## SHOW (mostrar)
 
 ```markdown
 Descripción: 
@@ -252,7 +252,7 @@ Ejemplo:
     apx show htop
 ```
 
-## UNEXPORT
+## UNEXPORT (des-exportar)
 
 ```markdown
 Descripción:
@@ -268,7 +268,7 @@ Ejemplo:
     apx unexport htop
 ```
 
-## UPDATE
+## UPDATE (actualizar)
 
 ```markdown
 Descripción: 
@@ -284,7 +284,7 @@ Ejemplo:
     apx update
 ```
 
-## UPGRADE
+## UPGRADE (mejorar)
 
 ```markdown
 Descripción: 

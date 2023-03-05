@@ -32,13 +32,14 @@ install a kernel module or driver.
 
 ### বিভিন্ন উৎস
 
-By default, `apx` provides a container based on your Linux distribution (Ubuntu 
-22.10 for Vanilla OS 22.10) and wraps all commands from the distribution's 
-package manager (`apt` for Ubuntu).
+ডিফল্ট ভাবে `apx` আপনার ডিস্ট্রিবিউশনের উপর ভিত্তি করে একটি কনটেইনার প্রদান করে (ভ্যানিলা ওএস ২২.১০ এ উবুন্টু ২২.১০)
+আর এটি ঐ ডিস্ট্রিবিউশনের প্যাকেজ ম্যানেজারের সকল কমান্ড অন্তর্ভুক্ত করে (যেমন উবুন্টুতে `apt`)।
 
-Nevertheless, you can install packages from package other distributions. For example, using the `--aur` flag, a new
-container based on Arch Linux will be created. Here, `apx` will manage the packages 
-from the AUR (Pacman and yay), tightly integrating them with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. 
+যাইহোক, আপনি চাইলে অন্য ডিস্ট্রিবিউশন থেকেও প্যাকেজ ইনস্টল করতে পারবেন। উদাহরণস্বরূপ, `--aur` ফ্লাগ ব্যবহার করলে
+আর্চ লিনাক্স ভিত্তিক নতুন একটি কনটেইনার তৈরি হবে। এখানে `apx` আপনার হোস্ট সিস্টেমের সাথে শক্ত ভাবে সমন্বয় করে
+AUR (Pacman ও yay) প্যাকেজগুলি নিয়ন্ত্রণ করবে।
+
+ Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. 
 
 For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the Applications menu. These applications are displayed beside other applications in the "Open with" menu in nautilus. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
 

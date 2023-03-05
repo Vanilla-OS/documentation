@@ -39,12 +39,13 @@ install a kernel module or driver.
 আর্চ লিনাক্স ভিত্তিক নতুন একটি কনটেইনার তৈরি হবে। এখানে `apx` আপনার হোস্ট সিস্টেমের সাথে শক্ত ভাবে সমন্বয় করে
 AUR (Pacman ও yay) প্যাকেজগুলি নিয়ন্ত্রণ করবে।
 
- Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. 
+`apx`-এর সাথে `--dnf` ফ্লাগ ব্যবহার করলে এটি একটি নতুন ফেডোরা ভিত্তিক কনটেইনার তৈরি করবে।
+এখানে `apx` আপনার হোস্ট সিস্টেমের সাথে শক্ত ভাবে সমন্বয় করে ফেডোরার ডিএনএফ উৎসে থাকা প্যাকেজগুলি নিয়ন্ত্রণ করবে।
 
-For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the Applications menu. These applications are displayed beside other applications in the "Open with" menu in nautilus. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
+`apx` কনটেইনারের ভিতর তৈরি হওয়া গ্রাফিক্যাল ইউজার ইন্টারফেস যুক্ত প্যাকেজগুলির জন্য স্বয়ংক্রিয়ভাবে .desktop ফাইল তৈরি করা হয় এবং অ্যাপ্লিকেশন মেন্যুতে যোগ করা হয়। এই অ্যাপ্লিকেশনগুলি ফাইল ম্যানেজারের "Open with" (অন্য অ্যাপে খুলুন) মেন্যুতে থাকা অ্যাপগুলির সাথে প্রদর্শিত হয়। কনটেইনারের ভিতরে থাকা গ্রাফিক্যাল ইন্টিরফেস যুক্ত প্যাকেজগুলি [ভ্যানিলা নিয়ন্ত্রণ কেন্দ্রের](/docs/vanilla-control-center) সাবসিস্টেম সেকশনে প্রদর্শিত হয়।
 
-For quality control, we are limiting this feature to specific implementations. Currently, only `--aur` and `--dnf` flags are supported, but 
-we are planning to implement support for the Nix package manager as well in future.
+গুণগত মান নিয়ন্ত্রণে রাখতে আমরা এই বৈশিষ্ট্যটি নির্দিষ্ট কিছু বাস্তবায়নে সীমাবদ্ধ রাখছি। আপাতত শুধু `--aur` ও `--dnf` ফ্লাগ দুটি সমর্থিত। 
+কিন্তু আমরা ভবিষ্যতে নিক্স প্যাকেজ ম্যানেজমেন্ট সমর্থনও বাস্তবায়ন করব।
 
 ### নামকরণ
 

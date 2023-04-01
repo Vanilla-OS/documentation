@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="assets/images/Documentation.png" height="40">
+<img src="assets/images/documentation.png?raw=true#gh-dark-mode-only" height="40">
+<img src="assets/images/documentation-mono.png?raw=true#gh-light-mode-only" height="40">
 
 --------------
 

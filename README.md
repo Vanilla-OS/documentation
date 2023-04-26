@@ -10,15 +10,17 @@
 </div>
 
 ## Translate
+
 If you want to translate the documentation, read the [TRANSLATE](TRANSLATE.md) file.
 
 ## Build
+
 ```bash
-bundle install
-bundler exec jekyll build
+jekyll build
 ```
 
 ## Serve
+
 ```bash
-bundler exec jekyll serve
+jekyll serve
 ```

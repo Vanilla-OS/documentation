@@ -62,7 +62,7 @@ Usage:
 Options:
     -h, --help            Show this help message and exit
 
-Usage:
+Examples:
     apx autoremove
 ```
 

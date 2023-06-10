@@ -35,7 +35,7 @@ Commands:
     list-tasks              List all tasks
     rotate-tasks            Rotate tasks
     trigger-update          Trigger a system update
-    version                 Show version and exit`
+    version                 Show version and exit
 ```
 
 ## CONFIG

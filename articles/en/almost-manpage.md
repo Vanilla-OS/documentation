@@ -1,6 +1,8 @@
 ---
-title: Manpage almost - Vanilla OS
-description: Manpage for the almost utility.
+Title: Almost Manpage
+Description: Manpage for the almost utility.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Manpage `almost`

@@ -1,6 +1,7 @@
 ---
 Title: ABRoot - Introducción
 Description: Descubra cómo usar ABRoot.
+Authors: Contributors of Vanilla OS
 ---
 
 > Esta documentación se refiere a ABRoot v1, no a v2. La documentación de v2 todavía se está escribiendo.

@@ -1,6 +1,7 @@
 ---
 Title: Manual ABRoot
 Description: Manual para ABRoot.
+Authors: Contributors of Vanilla OS
 ---
 
 # Manual `abroot`

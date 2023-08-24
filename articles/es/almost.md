@@ -1,6 +1,8 @@
 ---
-título: Inmutabilidad (almost) - Vanilla OS
-descripción: Descubre cómo utilizar Almost, la utilidad de inmutabilidad bajo demanda.
+Title: Inmutabilidad (almost) - Vanilla OS
+Description: Descubre cómo utilizar Almost, la utilidad de inmutabilidad bajo demanda.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Inmutabilidad (`almost`)

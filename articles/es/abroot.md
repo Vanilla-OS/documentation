@@ -1,12 +1,13 @@
 ---
 Title: ABRoot - Introducción
 Description: Descubra cómo usar ABRoot.
+PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
 > Esta documentación se refiere a ABRoot v1, no a v2. La documentación de v2 todavía se está escribiendo.
 
-# Immutabilidad (`abroot`)
+# ABRoot
 
 `abroot` es una utilidad que proporciona una completa inmutabilidad y atomicidad, esto se logra haciendo transacciones entre 2 particiones raíz (A⟺B), también se consiguen las transacciones bajo demanda gracias al shell transaccional. 
 ## Cómo funciona

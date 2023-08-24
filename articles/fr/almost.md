@@ -1,6 +1,7 @@
 ---
 Title : Immutabilité (almost) - Vanilla OS
 Description : Découvrez comment utiliser Almost, l'utilitaire d'immutabilité à la demande.
+PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 

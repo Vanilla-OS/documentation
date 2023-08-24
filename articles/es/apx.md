@@ -1,6 +1,8 @@
 ---
-Título: Administrador de Paquetes (apx) - Vanilla OS
-Descripción: Descubra cómo usar apx, el administrador de paquetes de Vanilla OS.
+Title: Administrador de Paquetes (apx) - Vanilla OS
+Description: Descubra cómo usar apx, el administrador de paquetes de Vanilla OS.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Administrador de paquetes (`apx`)

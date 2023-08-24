@@ -1,6 +1,8 @@
 ---
-Título: Manual apx - Vanilla OS
-Descripción: Manual para apx.
+Title: Manual apx - Vanilla OS
+Description: Manual para apx.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Manual `apx`

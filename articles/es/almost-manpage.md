@@ -1,6 +1,8 @@
 ---
-título: Manual de almost - Vanilla OS
-descripción: Manual de la utilidad almost.
+Title: Manual de almost - Vanilla OS
+Description: Manual de la utilidad almost.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Manual de `almost`

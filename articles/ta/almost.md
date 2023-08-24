@@ -1,6 +1,8 @@
 ---
 Title: மாறாத தன்மை (almost) - வெண்ணிலா OS
 Description: தேவைக்கேற்ப மாற்றமின்மை பயன்பாடான `Almost` ஐ பயன்படுத்துவது எப்படி என்பதைக் கண்டறிக.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # மாறாத தன்மை (`almost`)

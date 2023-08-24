@@ -1,6 +1,8 @@
 ---
-título: Empaquetado - Vanilla OS
-descripción: Averigüe como empaquetar software y librerías para Vanilla OS.
+Title: Empaquetado - Vanilla OS
+Description: Averigüe como empaquetar software y librerías para Vanilla OS.
+PublicationDate: 2023-06-10
+Authors: Contributors of Vanilla OS
 ---
 
 # Empaquetando

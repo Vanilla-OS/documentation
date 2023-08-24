@@ -1,6 +1,7 @@
 ---
 Title: Vanilla System Operator (vso) - Vanilla OS
 Description: Дізнайтеся, як використовувати утиліту vso для виконання завдань з обслуговування у Vanilla OS.
+PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 

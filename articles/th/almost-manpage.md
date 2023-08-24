@@ -1,6 +1,7 @@
 ---
 Title: Manpage almost - Vanilla OS
 Description: Manpage สำหรับเครื่องมือ almost
+PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 

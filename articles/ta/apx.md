@@ -1,7 +1,6 @@
 ---
 Title: தொகுப்பு மேலாளர் (apx) - வெண்ணிலா OS
 Description: வெண்ணிலா OS தொகுப்பு மேலாளரான apx ஐ எவ்வாறு பயன்படுத்துவது என்பதைக் கண்டறியவும்
-Authors: Contributors of Vanilla OS
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---

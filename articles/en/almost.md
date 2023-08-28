@@ -5,7 +5,7 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Immutability (`almost`)
+> Note: `almost` has been replaced with `abroot`.
 
 `almost` is a utility that provides on-demand immutability by toggling the
 immutability of files and directories in the system root. It also provides

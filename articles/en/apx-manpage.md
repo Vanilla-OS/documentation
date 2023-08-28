@@ -1,11 +1,11 @@
 ---
-Title: Apx Manpage
+Title: Apx v1 Manpage
 Description: Manpage for the Apx utility.
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `apx`
+> This documentation refers to Apx v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 

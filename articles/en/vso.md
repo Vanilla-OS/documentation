@@ -1,11 +1,11 @@
 ---
-Title: VSO - Introduction
+Title: VSO v1 - Introduction
 Description: Find out how to use vso utility to perform maintenance tasks on Vanilla OS.
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Vanilla System Operator (`vso`)
+> This documentation refers to VSO v1, not v2. The documentation for v2 is still being written.
 
 `vso` is a command-line utility which allows you to perform maintenance tasks on your Vanilla OS installation.
 

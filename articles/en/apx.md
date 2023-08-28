@@ -1,11 +1,11 @@
 ---
-Title: Apx - Introduction
+Title: Apx v1 - Introduction
 Description: Find out how to use apx, the Vanilla OS package manager.
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Package Manager (`apx`)
+> This documentation refers to Apx v1, not v2. The documentation for v2 is still being written.
 
 `apx` is the Vanilla OS package manager that is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
 

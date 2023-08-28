@@ -5,9 +5,7 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `almost`
-
-Note: `almost` has been replaced with `abroot`.
+> Note: `almost` has been replaced with `abroot`.
 
 ## NAME
 

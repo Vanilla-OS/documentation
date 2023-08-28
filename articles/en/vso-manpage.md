@@ -1,11 +1,11 @@
 ---
-Title: VSO Manpage
+Title: VSO v1 Manpage
 Description: Manpage for the vanilla system operator utility.
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `vso`
+> This documentation refers to VSO v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 

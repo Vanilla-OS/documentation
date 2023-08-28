@@ -1,11 +1,11 @@
 ---
-Title: ABRoot Manpage
-Description: Manpage for the ABRoot utility.
+Title: ABRoot v1 Manpage
+Description: Manpage for the ABRoot v1 utility.
 PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `abroot`
+> This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 

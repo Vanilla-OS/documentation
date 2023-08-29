@@ -1,16 +1,14 @@
 ---
-Title: ABRoot v1 Manpage
-Description: Manpage for the ABRoot v1 utility.
-PublicationDate: 2023-06-10
+Title: ABRoot Manpage
+Description: Manpage for the ABRoot utility.
+PublicationDate: 2023-08-29
 Authors: Contributors of Vanilla OS
 ---
-
-> This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 
 ```text
-ABRoot is a utility that provides complete immutability and atomicity by transacting between 2 root partitions (A⟺B), it also allows for on-demand transactions via a transactional shell.
+ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. It's updates are performed using OCI images, to ensure that the system is always in a consistent state.
 ```
 
 ## SYNOPSIS
@@ -21,90 +19,121 @@ abroot [options] [command]
 
 ## DESCRIPTION
 
-```markdown
-Usage:
-    abroot [options] [command]
-
-Options:
-    --help/-h       show this message
-    --verbose/-v        show more verbosity
-    --version/-V        show version
-
-Commands:
-    _update-boot    update the boot partition (for advanced users only)
-    get             outputs the present or future root partition state
-    shell           enter a transactional shell in the future root partition and switch root on the next boot
-    exec            execute a command in a transactional shell in the future root partition and switch to it on the next boot
-```
-
-## EXEC
-
-```markdown
-Execute a command in a transactional shell in the future root partition and switch to it on the next boot.
+```text
+ABRoot provides full immutability and atomicity by performing transactions between 2 root partitions (A<->B)
 
 Usage:
-    exec [command]
+  abroot [command]
 
-Options:
-    --help/-h           show this message
-    --assume-yes/-y     assume yes to all questions
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  help        Help about any command
+  kargs       Manage kernel parameters
+  pkg         Manage packages
+  rollback    Return the system to a previous state
+  status      Display status
+  upgrade     Update the boot partition
 
-Examples:
-    abroot exec ls -l /
-    abroot exec apt install git 
+Flags:
+  -h, --help      help for abroot
+  -v, --verbose   Show more detailed output
+      --version   version for abroot
+
+Use "abroot [command] --help" for more information about a command.
 ```
+
+## KARGS
 
 ```text
-Tip: You can enclose multiple commands using "" and pass it as a single string.
-```
-
-### GET
-
-```markdown
-Outputs the present or future root partition state (A or B).
+Manage kernel parameters.
 
 Usage:
-    get [state]
-
-Options:
-    --help/-h       show this message
-
-States:
-    present     get the present root partition state
-    future      get the future root partition state
+  abroot kargs edit|show [flags]
 
 Examples:
-    abroot get present
-    abroot get future
+abroot kargs edit
+
+Flags:
+  -h, --help   help for kargs
+
+Global Flags:
+  -v, --verbose   Show more detailed output
 ```
 
-## SHELL
+## PKG
 
-```markdown
-Enter a transactional shell in the future root partition and switch root on the next boot.
+```text
+Install and manage packages.
 
 Usage:
-    shell
-
-Options:
-    --help/-h           show this message
-    --assume-yes/-y     assume yes to all questions
+  abroot pkg add|remove|list|apply [flags]
 
 Examples:
-    abroot shell
+abroot pkg add <pkg>
+
+Flags:
+  -h, --help   help for pkg
+
+Global Flags:
+  -v, --verbose   Show more detailed output
 ```
 
-## UPDATE BOOT
+## ROLLBACK
 
-```markdown
-Update the boot partition for maintenance purposes (for advanced users only).
+```text
+Executes a system rollback, discarding changes made to the present root.
 
 Usage:
-    _update-boot
+  abroot rollback [flags]
 
-Options:
-    --help/-h           show this message
-    --assume-yes/-y     assume yes to all questions
+Examples:
+abroot rollback
+
+Flags:
+  -h, --help   help for rollback
+
+Global Flags:
+  -v, --verbose   Show more detailed output
+```
+
+## STATUS
+
+```text
+Display the current ABRoot status.
+
+Usage:
+  abroot status [flags]
+
+Examples:
+abroot status
+
+Flags:
+  -d, --dump   Dump the ABRoot status to an archive
+  -h, --help   help for status
+  -j, --json   Show output in JSON format
+
+Global Flags:
+  -v, --verbose   Show more detailed output
+```
+
+## UPGRADE
+
+```text
+Update the boot partition for maintenance purposes (for advanced users only)
+
+Usage:
+  abroot upgrade [flags]
+
+Examples:
+abroot upgrade
+
+Flags:
+  -c, --check-only   check for updates but do not apply them
+  -f, --force        force update the boot partition without asking for confirmation
+  -h, --help         help for upgrade
+
+Global Flags:
+  -v, --verbose   Show more detailed output
 ```
 
 ## SEE ALSO

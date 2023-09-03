@@ -7,13 +7,13 @@ Authors: Contributors of Vanilla OS
 
 ## NOM
 
-```text
+```md
 `apx` - Le gestionnaire de programme de VanillaOS qui est facile à utiliser et qui supporte l'installation de programmes de plusieurs sources depuis un conteneur sans altérer le système de fichiers administrateur.
 ```
 
 ## SYNOPSIS
 
-```text
+```md
 apx [options] [commande] [arguments]
 ```
 
@@ -308,7 +308,7 @@ Utilisation:
 
 ## AUTEURS
 
-```text
+```md
 Contributeurs de Vanilla OS
 Traduit en français par aWildJumpyGame
 ```

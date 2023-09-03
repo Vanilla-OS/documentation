@@ -6,13 +6,13 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```text
+```md
 ABRoot ist ein Programm, das komplette Unveränderlichkeit und Atomarität bietet, indem es Transaktionen zwischen 2 Root-Partitionen (A⟺B) ausführt. Es ermöglicht auch sofortige Transaktionen mithilfe einer interaktiven Shell.
 ```
 
 ## ÜBERSICHT
 
-```text
+```md
 abroot [Optionen] [Befehl]
 ```
 
@@ -51,7 +51,7 @@ Beispiele:
     abroot exec apt install git 
 ```
 
-```text
+```md
 Tipp: Sie können mehrere Befehle mit "" einklammern und als einzelnen String eingeben.
 ```
 
@@ -111,7 +111,7 @@ Optionen:
 
 ## AUTHOR
 
-```text
+```md
 Mitwirkende von Vanilla OS
 ```
 

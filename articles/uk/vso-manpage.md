@@ -7,13 +7,13 @@ Authors: Contributors of Vanilla OS
 
 ## Найменування
 
-```text
+```md
 VSO - утиліта, за допомогою якої ви можете виконувати завдання з обслуговування вашої системи Vanilla OS.
 ```
 
 ## Короткий опис
 
-```text
+```md
 vso [параметри] [команда] [аргументи]
 ```
 
@@ -189,7 +189,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Автори
 
-```text
+```md
 Спільнота Vanilla OS
 Переклад: Сапуцький Петро (@voxelin)
 ```

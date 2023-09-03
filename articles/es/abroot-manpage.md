@@ -7,13 +7,13 @@ Authors: Contributors of Vanilla OS
 
 ## Nombre
 
-```text
+```md
 ABRoot es una utilidad que proporciona una completa inmutabilidad y atomicidad, esto se logra haciendo transacciones entre 2 particiones raíz (A⟺B), también se consiguen las transacciones bajo demanda gracias al shell transaccional.
 ```
 
 ## SINOPSIS
 
-```text
+```md
 abroot [opción] [comando]
 ```
 
@@ -52,7 +52,7 @@ Ejemplos:
     abroot exec apt install git 
 ```
 
-```text
+```md
 Tip: Usted puede ejecutar varios comandos usando "" y pasarlos como una sola cadena.
 ```
 
@@ -112,7 +112,7 @@ Opciones:
 
 ## AUTOR
 
-```text
+```md
 @JMarcosHP
 ```
 

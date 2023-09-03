@@ -7,13 +7,13 @@ Authors: Contributors of Vanilla OS
 
 ## NOMBRE
 
-```text
+```md
 `apx` es el administrador de paquetes de Vanilla OS que es fácil de usar para instalar paquetes de múltiples fuentes dentro de contenedores sin la necesidad de alterar el sistema de archivos raíz.
 ```
 
 ## SINOPSIS
 
-```text
+```md
 apx [opciones] [comando] [argumentos]
 ```
 
@@ -318,7 +318,7 @@ Uso:
 
 ## AUTOR
 
-```text
+```md
 @JMarcosHP
 ```
 

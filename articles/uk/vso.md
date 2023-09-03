@@ -27,7 +27,7 @@ Authors: Contributors of Vanilla OS
 
 ### Автори
 
-```text
+```md
 Спільнота Vanilla OS
 Переклад: Сапуцький Петро (@voxelin)
 ```

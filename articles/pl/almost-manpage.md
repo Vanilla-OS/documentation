@@ -5,25 +5,23 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `almost`
-
 Note: `almost` has been replaced with `abroot`.
 
 ## NAZWA
 
-```
+```md
 almost - narzędzie do niezmienności i warstwowości na żądanie, oparte na atrybucie (i)mmutable pliku i tmpfs.
 ```
 
 ## STRESZCZENIE
 
-```
+```md
 almost [OPCJE] [POLECENIA] [ARGUMENTY]
 ```
 
 ## OPIS
 
-```
+```md
 almost jest narzędziem, które zapewnia niezmienność na żądanie poprzez przełączanie niezmienności plików i katalogów w rootcie systemu. Zapewnia również sposób tworzenia warstw na wierzchu niezmiennych katalogów, pozwalając na testowanie zmian przed ich zatwierdzeniem.
 
 Opcje:
@@ -40,7 +38,7 @@ Polecenia:
 
 ## ENTER
 
-```
+```md
 Ustaw system plików jako tylko do oczytu lub odczyt-zapis do czasu ponownego uruchomienia
 
 Ustawienie systemu pliku na tryb odczyt-zapis może stanowić ryzyko bezpieczeństwa. Zachowaj ostrożność przy korzystaniu z tego ustawnienia.
@@ -64,7 +62,7 @@ Przykłady:
 
 ## CONFIG
 
-```
+```md
 Zarządzaj i pokaż obecną konfigurację.
 
 Użycie:
@@ -83,7 +81,7 @@ Przykłady:
 
 ## CHECK
 
-```
+```md
 Sprawdź czy system plików jest w trybie tylko do odczytu czy odczyt-zapis.
 
 Użycie:
@@ -98,7 +96,7 @@ Przykłady:
 
 ## RUN
 
-```
+```md
 Uruchom polecenie w trybie odczyt-zapis i wraca do trybu tylko do odczytu po jego zakończeniu.
 
 Użycie:
@@ -118,13 +116,13 @@ Przykłady:
 
 ## DIAGNOSTYKA
 
-```
+```md
 almost zwraca 0 przy pomyślnym wykonaniu polecenia, 1 przy napotkaniu błędu.
 ```
 
 ## AUTOR
 
-```
+```md
 Współtwórcy Vanilla OS
 ```
 

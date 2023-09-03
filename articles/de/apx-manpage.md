@@ -6,13 +6,13 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```text
+```md
 `apx` - Der nutzerfreundliche Vanilla OS-Paketverwalter mit Unterstützung für die Installation von Paketen aus verschiedenen Quellen in Containern, um das Root-Dateisystem nicht zu verändern.
 ```
 
 ## ÜBERSICHT
 
-```text
+```md
 apx [Optionen] [Befehl] [Argumente]
 ```
 
@@ -305,7 +305,7 @@ Aufruf:
 
 ## AUTHOR
 
-```text
+```md
 Mitwirkende von Vanilla OS
 ```
 

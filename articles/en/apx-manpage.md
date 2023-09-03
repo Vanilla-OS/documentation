@@ -9,13 +9,13 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```text
+```md
 `apx` - the Vanilla OS package manager that is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
 ```
 
 ## SYNOPSIS
 
-```text
+```md
 apx [options] [command] [arguments]
 ```
 
@@ -305,7 +305,7 @@ Usage:
 
 ## AUTHOR
 
-```text
+```md
 Contributors of Vanilla OS
 ```
 

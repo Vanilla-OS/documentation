@@ -7,19 +7,19 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```text
+```md
 ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. It's updates are performed using OCI images, to ensure that the system is always in a consistent state.
 ```
 
 ## SYNOPSIS
 
-```text
+```md
 abroot [options] [command]
 ```
 
 ## DESCRIPTION
 
-```text
+```md
 ABRoot provides full immutability and atomicity by performing transactions between 2 root partitions (A<->B)
 
 Usage:
@@ -44,7 +44,7 @@ Use "abroot [command] --help" for more information about a command.
 
 ## KARGS
 
-```text
+```md
 Manage kernel parameters.
 
 Usage:
@@ -62,7 +62,7 @@ Global Flags:
 
 ## PKG
 
-```text
+```md
 Install and manage packages.
 
 Usage:
@@ -80,7 +80,7 @@ Global Flags:
 
 ## ROLLBACK
 
-```text
+```md
 Executes a system rollback, discarding changes made to the present root.
 
 Usage:
@@ -98,7 +98,7 @@ Global Flags:
 
 ## STATUS
 
-```text
+```md
 Display the current ABRoot status.
 
 Usage:
@@ -118,7 +118,7 @@ Global Flags:
 
 ## UPGRADE
 
-```text
+```md
 Update the boot partition for maintenance purposes (for advanced users only)
 
 Usage:
@@ -143,7 +143,7 @@ Global Flags:
 
 ## AUTHOR
 
-```text
+```md
 Contributors of Vanilla OS
 ```
 

@@ -9,13 +9,13 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```text
+```md
 VSO is an utility which allows you to perform maintenance tasks on your Vanilla OS installation.
 ```
 
 ## SYNOPSIS
 
-```text
+```md
 vso [options] [command] [arguments]
 ```
 
@@ -191,7 +191,7 @@ Examples:
 
 ## AUTHOR
 
-```text
+```md
 Contributors of Vanilla OS
 ```
 

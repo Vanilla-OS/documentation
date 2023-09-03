@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Vanilla System Operator (`vso`)
-
 `vso` est un utilitaire par terminal qui vous permet de réaliser des taches de maintenance sur votre installation de Vanilla OS.
 
 ## Que peut-il faire?

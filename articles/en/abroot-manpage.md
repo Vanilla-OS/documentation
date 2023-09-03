@@ -42,6 +42,30 @@ Flags:
 Use "abroot [command] --help" for more information about a command.
 ```
 
+## COMPLETION
+
+```md
+Generate the autocompletion script for abroot for the specified shell.
+See each sub-command's help for details on how to use the generated script.
+
+Usage:
+  abroot completion [command]
+
+Available Commands:
+  bash        Generate the autocompletion script for bash
+  fish        Generate the autocompletion script for fish
+  powershell  Generate the autocompletion script for powershell
+  zsh         Generate the autocompletion script for zsh
+
+Flags:
+  -h, --help   help for completion
+
+Global Flags:
+  -v, --verbose   show more detailed output
+
+Use "abroot completion [command] --help" for more information about a command.
+```
+
 ## KARGS
 
 ```md
@@ -138,8 +162,8 @@ Global Flags:
 
 ## SEE ALSO
 
-- [`apx`](/docs/apx)
-- [`vso`](/docs/vso)
+- [`apx`](apx)
+- [`vso`](vso)
 
 ## AUTHOR
 

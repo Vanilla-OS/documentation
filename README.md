@@ -5,7 +5,7 @@
 
 --------------
 
-<sup1>Available at https://documentation.vanillaos.org.</sup1>
+<sup1>Available at <https://documentation.vanillaos.org>.</sup1>
 
 Powered by [Chronos](https://github.com/Vanilla-OS/chronos).
 

@@ -1,16 +1,14 @@
 ---
-Title: Apx v1 Manpage
+Title: Apx Manpage
 Description: Manpage for the Apx utility.
-PublicationDate: 2023-06-10
+PublicationDate: 2023-09-03
 Authors: Contributors of Vanilla OS
 ---
-
-> This documentation refers to Apx v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 
 ```md
-`apx` - the Vanilla OS package manager that is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
+Apx is a package manager with support for multiple sources, allowing you to install packages in subsystems.
 ```
 
 ## SYNOPSIS
@@ -22,280 +20,329 @@ apx [options] [command] [arguments]
 ## DESCRIPTION
 
 ```md
-apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
+Apx is a package manager with support for multiple sources, allowing you to install packages in subsystems.
 
 Usage:
-    apx [options] [command] [arguments]
+  apx [command]
 
-Options:
-    -h, --help      Show this help message and exit
-    -v, --version   Show version and exit
-    --aur           Install packages from the AUR repository
-    --dnf           Install packages from the Fedora repository
+Available Commands:
+  [subsystem] Work with the specified subsystem, accessing the package manager and environment.
+  completion  Generate the autocompletion script for the specified shell
+  help        Help about any command
+  pkgmanagers Work with the package managers that are available in apx.
+  stacks      Work with the stacks that are available in apx.
+  subsystems  Work with the subsystems that are available in apx.
 
-Commands:
-    autoremove      Remove all unused packages
-    clean           Clean the apx package manager cache
-    enter           Enter the container shell
-    export          Export/Recreate a program's desktop entry from the container
-    help            Show this help message and exit
-    init            Initialize a managed container
-    install         Install packages inside the container
-    list            List installed packages
-    purge           Purge packages from the container
-    run             Run a command inside the container
-    remove          Remove packages from the container
-    search          Search for packages
-    show            Show details about a package
-    unexport        Unexport/Remove a program's desktop entry
-    update          Update the list of available packages
-    upgrade         Upgrade the system by installing/upgrading available packages
+Flags:
+  -h, --help      help for apx
+  -v, --version   version for apx
+
+Use "apx [command] --help" for more information about a command.
 ```
 
-## AUTOREMOVE
+## COMPLETION
 
 ```md
-Description: 
-    Remove all unused packages automatically.
+Generate the autocompletion script for apx for the specified shell.
+See each sub-command's help for details on how to use the generated script.
+
 Usage:
-    apx autoremove [options]
+  apx completion [command]
 
-Options:
-    -h, --help            Show this help message and exit
+Available Commands:
+  bash        Generate the autocompletion script for bash
+  fish        Generate the autocompletion script for fish
+  powershell  Generate the autocompletion script for powershell
+  zsh         Generate the autocompletion script for zsh
 
-Examples:
-    apx autoremove
+Flags:
+  -h, --help   help for completion
+
+Use "apx completion [command] --help" for more information about a command.
 ```
 
-## CLEAN
+## PKGMANAGERS
 
 ```md
-Description: 
-    Clean the apx package manager cache.
+Work with the package managers that are available in apx.
 
 Usage:
-    apx clean [options]
+  apx pkgmanagers [command]
 
-Options:
-    -h, --help            Show this help message and exit
+Available Commands:
+  list        List all available package managers.
+  new         Create a new package manager.
+  rm          Remove the specified package manager.
+  show        Show information about the specified package manager.
 
-Examples:
-    apx clean
+Flags:
+  -h, --help   help for pkgmanagers
+
+Use "apx pkgmanagers [command] --help" for more information about a command.
 ```
 
-## ENTER
+### PKGMANAGERS LIST
 
 ```md
-Description: 
-    Enter in the container shell.
+List all available package managers.
 
 Usage:
-    apx enter [options]
+  apx pkgmanagers list [flags]
 
-Options:
-    -h, --help            Show this help message and exit
+Flags:
+  -h, --help   help for list
+  -j, --json   Output in JSON format.
 ```
 
-## EXPORT
+### PKGMANAGERS NEW
 
 ```md
-Description: 
-    Export/Recreate a program's desktop entry from a managed container.
+Create a new package manager.
 
 Usage:
-    apx export <program> [options]
+  apx pkgmanagers new [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx export htop
+Flags:
+  -y, --assume-yes          Assume yes to all prompts.
+  -a, --autoremove string   The command to run to autoremove packages.
+  -c, --clean string        The command to run to clean the package manager's cache.
+  -h, --help                help for new
+  -i, --install string      The command to run to install packages.
+  -l, --list string         The command to run to list installed packages.
+  -n, --name string         The name of the package manager.
+  -S, --need-sudo           Whether the package manager needs sudo to run.
+  -p, --purge string        The command to run to purge packages.
+  -r, --remove string       The command to run to remove packages.
+  -s, --search string       The command to run to search for packages.
+  -w, --show string         The command to run to show information about packages.
+  -u, --update string       The command to run to update the list of available packages.
+  -U, --upgrade string      The command to run to upgrade packages.
 ```
 
-## INIT
+### PKGMANAGERS RM
 
 ```md
-Description: 
-    Initialize the managed container.
+Remove the specified package manager.
 
 Usage:
-    apx init [options]
+  apx pkgmanagers rm [flags]
 
-Options:
-    -h, --help            Show this help message and exit
+Flags:
+  -f, --force         Force removal of the package manager.
+  -h, --help          help for rm
+  -n, --name string   The name of the package manager to remove.
 ```
 
-## INSTALL
+### PKGMANAGERS SHOW
 
 ```md
-Description: 
-    Install packages inside a managed container.
+Show information about the specified package manager.
 
 Usage:
-    apx install [options] <packages>
+  apx pkgmanagers show [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-    -y, --assume-yes      Proceed without manual confirmation.
-    -f, --fix-broken      Fix broken deps before installing
-    --no-export           Do not export a desktop entry after the installation. 
-    --sideload [path]     Install a package from a local file.
-
-Examples:
-    apx install htop git
-    apx install --sideload /path/to/file.deb
+Flags:
+  -h, --help   help for show
 ```
 
-## LIST
+## STACKS
 
 ```md
-Description: 
-    List installed packages.
+Work with the stacks that are available in apx.
 
 Usage:
-    apx list [options]
+  apx stacks [command]
 
-Options:
-    -h, --help            Show this help message and exit
+Available Commands:
+  export      Export the specified stack.
+  import      Import the specified stack.
+  list        List all available stacks.
+  new         Create a new stack.
+  rm          Remove the specified stack.
+  show        Show information about the specified stack.
+  update      Update the specified stack.
+
+Flags:
+  -h, --help   help for stacks
+
+Use "apx stacks [command] --help" for more information about a command.
 ```
 
-## PURGE
+### STACKS EXPORT
 
 ```md
-Description: 
-    Purge packages inside a managed container.
+Export the specified stack.
 
 Usage:
-    apx purge <packages> [options]
+  apx stacks export [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx purge htop
+Flags:
+  -h, --help            help for export
+  -n, --name string     The name of the stack to export.
+  -o, --output string   The path to export the stack to.
 ```
 
-## REMOVE
+### STACKS IMPORT
 
 ```md
-Description:
-    Remove packages inside a managed container.
+Import the specified stack.
 
 Usage:
-    apx remove <packages> [options]
+  apx stacks import [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx remove htop
+Flags:
+  -h, --help           help for import
+  -i, --input string   The path to import the stack from.
 ```
 
-## RUN
+### STACKS LIST
 
 ```md
-Description: 
-    Run a program inside a managed container.
+List all available stacks.
 
 Usage:
-    apx run <program> [options]
+  apx stacks list [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx run htop
+Flags:
+  -h, --help   help for list
+  -j, --json   Output in JSON format.
 ```
 
-## SEARCH
+### STACKS NEW
 
 ```md
-Description: 
-    Search for packages in a managed container.
+Create a new stack.
 
 Usage:
-    apx search <packages> [options]
+  apx stacks new [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx search htop
+Flags:
+  -y, --assume-yes           Assume yes to all prompts.
+  -b, --base string          The base subsystem to use.
+  -h, --help                 help for new
+  -n, --name string          The name of the stack.
+  -p, --packages string      The packages to install.
+  -k, --pkg-manager string   The package manager to use.
 ```
 
-## SHOW
+### STACKS RM
 
 ```md
-Description: 
-    Show details about a package.
+Remove the specified stack.
 
 Usage:
-    apx show <package> [options]
+  apx stacks rm [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx show htop
+Flags:
+  -f, --force         Force removal of the stack.
+  -h, --help          help for rm
+  -n, --name string   The name of the stack to remove.
 ```
 
-## UNEXPORT
+### STACKS SHOW
 
 ```md
-Description:
-    Unexport/Remove a program's desktop entry from a managed container.
+Show information about the specified stack.
 
 Usage:
-    apx unexport <program> [options]
+  apx stacks show [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx unexport htop
+Flags:
+  -h, --help   help for show
 ```
 
-## UPDATE
+### STACKS UPDATE
 
 ```md
-Description: 
-    Update the list of available packages.
+Update the specified stack.
 
 Usage:
-    apx update [options]
+  apx stacks update [flags]
 
-Options:
-    -h, --help            Show this help message and exit
-
-Examples:
-    apx update
+Flags:
+  -y, --assume-yes           Assume yes to all prompts.
+  -b, --base string          The base subsystem to use.
+  -h, --help                 help for update
+  -n, --name string          The name of the stack.
+  -p, --packages string      The packages to install.
+  -k, --pkg-manager string   The package manager to use.
 ```
 
-## UPGRADE
+## SUBSYSTEMS
 
 ```md
-Description: 
-    Upgrade the system by installing/upgrading available packages.
+Work with the subsystems that are available in apx.
 
 Usage:
-    apx upgrade [options]
-  
-Options:
-    -h, --help            Show this help message and exit
+  apx subsystems [command]
 
-Examples:
-    apx upgrade
+Available Commands:
+  list        List all available subsystems.
+  new         Create a new subsystem.
+  reset       Reset the specified subsystem.
+  rm          Remove the specified subsystem.
+
+Flags:
+  -h, --help   help for subsystems
+
+Use "apx subsystems [command] --help" for more information about a command.
 ```
 
-## VERSION
+### SUBSYSTEMS LIST
 
 ```md
-Description:
-    Display the version number of apx.
+List all available subsystems.
 
 Usage:
-    apx --version
-    apx -v
+  apx subsystems list [flags]
+
+Flags:
+  -h, --help   help for list
+  -j, --json   Output in JSON format.
+```
+
+### SUBSYSTEMS NEW
+
+```md
+Create a new subsystem.
+
+Usage:
+  apx subsystems new [flags]
+
+Flags:
+  -h, --help           help for new
+  -n, --name string    The name of the subsystem.
+  -s, --stack string   The stack to use.
+```
+
+### SUBSYSTEMS RESET
+
+```md
+Reset the specified subsystem.
+
+Usage:
+  apx subsystems reset [flags]
+
+Flags:
+  -f, --force         Force reset of the subsystem.
+  -h, --help          help for reset
+  -n, --name string   The name of the subsystem to reset.
+
+```
+
+### SUBSYSTEMS RM
+
+```md
+Remove the specified subsystem.
+
+Usage:
+  apx subsystems rm [flags]
+
+Flags:
+  -f, --force         Force removal of the subsystem.
+  -h, --help          help for rm
+  -n, --name string   The name of the subsystem to remove.
+
 ```
 
 ## SEE ALSO

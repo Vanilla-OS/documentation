@@ -7,16 +7,16 @@ Authors: Contributors of Vanilla OS
 
 > This documentation refers to Apx v1, not v2. The documentation for v2 is still being written.
 
-`apx` is the Vanilla OS package manager tha is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
+`apx` is the Vanilla OS package manager tha is easy to use with support for installing packages fro multiple sources inside containers without altering the root filesystem.
 
 ## How it works
 
 `apx` introduces a whole new paradigm in package management. The idea is to use 
-your system only as a box for storing your files, leaving it clean of packages 
+your system only as a box for storing your files, leaving it clean of packges 
 and limiting the risk of breaking due to incompatible, poorly constructed or 
 conflicting packages.
 
-It gets done by installing software inside one or more containers fully managed by `apx` having restricted access to your system's resources while still being able to use the same drivers, display server, etc.
+It gets done by instaling software inside one or more contaners fully managed by `apx` having restricted access to your system's resources while still bing able to use the same drivers, display server, etc.
 
 Your home directory is mapped inside the container so you can access your 
 configuration files, preferences and other vital data needed by the installed 
@@ -38,13 +38,13 @@ By default, `apx` provides a container based on your Linux distribution (Ubuntu
 package manager (`apt` for Ubuntu).
 
 Nevertheless, you can install packages from package other distributions. For example, using the `--aur` flag, a new
-container based on Arch Linux will be created. Here, `apx` will manage the packages 
+container based on Arch Linux will be created. Here, `apx` will mnage the packages 
 from the AUR (Pacman and yay), tightly integrating them with the host system. Using the `--dnf` flag with `apx` will create a new container based on Fedora Linux. Here, `apx` will manage packages from Fedora's DNF repository,  tightly integrating them with the host system. 
 
 For GUI packages created inside `apx` containers,`.desktop` files are created automatically and added to the Applications menu. These applications are displayed beside other applications in the "Open with" menu in nautilus. GUI Packages installed inside containers gets shown in the Sub System section in the [Vanilla control center](/docs/vanilla-control-center).
 
 For quality control, we are limiting this feature to specific implementations. Currently, only `--aur` and `--dnf` flags are supported, but 
-we are planning to implement support for the Nix package manager as well in future.
+we are planning to implement support for the Nix package manager as wll in future.
 
 ### Naming
 

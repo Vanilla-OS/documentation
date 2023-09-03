@@ -5,25 +5,23 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manual de `almost`
-
 Note: `almost` has been replaced with `abroot`.
 
 ## NOMBRE
 
-```
+```md
 almost - una herramienta de inmutabilidad bajo demanda y capas basada en el atributo de archivo (i)nmutable y tmpfs.
 ```
 
 ## SINOPSIS
 
-```
+```md
 almost [OPCIÓNES] [COMANDO] [ARGUMENTOS]
 ```
 
 ## DESCRIPCIÓN
 
-```
+```md
 almost es una utilidad que provee inmutabilidad bajo demanda alternando la inmutabilidad de los archivos y directorios en la raíz del sistema. También provee una forma de crear capas por encima de los directorios inmutables, permitiendo probar cambios antes de cometerlos.
 
 Opciónes:
@@ -40,7 +38,7 @@ Comandos:
 
 ## ENTER (entrar)
 
-```
+```md
 Configura el sistema de archivos como sólo-lectura o lectura-escritura hasta el próximo reinicio.
 
 Configurar el sistema de archivos como lectura-escritura puede ser considerado un riesgo de seguridad. Sea cuidadoso cuando use este comando.
@@ -64,7 +62,7 @@ Ejemplos:
 
 ## CONFIG (configurar)
 
-```
+```md
 Administra y muestra la configuración actual.
 
 Uso:
@@ -83,7 +81,7 @@ Ejemplos:
 
 ## CHECK (checar/revisar)
 
-```
+```md
 Revisa si el sistema de archivos está en modo sólo-lectura o lectura-escritura.
 
 Uso:
@@ -98,7 +96,7 @@ Ejemplos:
 
 ## RUN (correr/ejecutar)
 
-```
+```md
 Corre un comando en modo lectura-escritura y regresa al modo sólo-lectura después de que el comando termine.
 
 Uso:
@@ -114,17 +112,17 @@ Ejemplos:
 
 ## VEA TAMBIÉN
 
-- [`apx`](/docs/apx)
+- [`apx`](apx)
 
 ## DIAGNÓSTICOS
 
-```
+```md
 almost regresa 0 en éxito, 1 en error.
 ```
 
 ## AUTOR
 
-```
+```md
 Contribuidores de Vanilla OS
 Traducción al español por @MasterGeekMX
 ```

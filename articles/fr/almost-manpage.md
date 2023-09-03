@@ -5,25 +5,23 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Guide pour `almost`
-
 Note: `almost` has been replaced with `abroot`.
 
 ## NOM
 
-```
+```md
 almost - un outil d'immuabilité à la demande et de superposition basé sur l'attribut de fichier (i)mmutable et tmpfs.
 ```
 
 ## SYNOPSIS
 
-```
+```md
 almost [OPTIONS] [COMMANDE] [ARGUMENTS]
 ```
 
 ## DESCRIPTION
 
-```
+```md
 almost est un utilitaire qui fournit une immutabilité à la demande en commutant l'immutabilité des fichiers et des répertoires à la racine du système. Il fournit également un moyen de créer des couches au-dessus des répertoires immutables, vous permettant de tester les changements avant de les valider.
 
 Options:
@@ -40,7 +38,7 @@ Commandes:
 
 ## ENTER
 
-```
+```md
 Définit le système de fichiers en lecture seule ou en lecture-écriture jusqu'au redémarrage.
 
 Le passage du système de fichiers en mode lecture-écriture peut présenter un risque de
@@ -65,7 +63,7 @@ Exemples:
 
 ## CONFIG
 
-```
+```md
 Gère et affiche la configuration actuelle.
 
 Utilisation:
@@ -84,7 +82,7 @@ Exemples:
 
 ## CHECK
 
-```
+```md
 Vérifie si le système de fichiers est en lecture seule ou en lecture-écriture.
 
 Utilisation:
@@ -99,7 +97,7 @@ Exemples:
 
 ## RUN
 
-```
+```md
 Exécute une commande en mode lecture-écriture et revient en mode lecture seule après la fin de la commande.
 
 Utilisation:
@@ -115,17 +113,17 @@ Exemples:
 
 ## VOIR AUSSI
 
-- [`apx`](/docs/apx)
+- [`apx`](apx)
 
 ## DIAGNOSTICS
 
-```
+```md
 almost renvoie un 0 en cas de succès, 1 en cas d'erreur.
 ```
 
 ## AUTEUR
 
-```
+```md
 Contributeurs de Vanilla OS
 ```
 

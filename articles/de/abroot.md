@@ -4,8 +4,6 @@ Description: Erfahren Sie, wie man ABRoot benutzt.
 Authors: Contributors of Vanilla OS
 ---
 
-# Unveränderlichkeit (`abroot`)
-
 `abroot` ist ein Programm, das komplette Unveränderlichkeit und Atomarität bietet, indem es Transaktionen zwischen 2 Root-Partitionen (A⟺B) ausführt. Es ermöglicht auch sofortige Transaktionen mithilfe einer interaktiven Shell.
 
 ## Funktionsweise

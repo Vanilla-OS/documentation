@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Packaging
-
 Le packaging est le processus de création d'un package pour un programme ou une librairie,
 de manière à ce qu'il puisse être installé sur une distribution. Vanilla OS a une
 disposition de système de fichiers racine inconventionnel, qui requiert quelques

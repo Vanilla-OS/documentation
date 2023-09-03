@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Inmutabilidad (`almost`)
-
 `almost` es una utilidad que proporciona inmutabilidad bajo demanda alternando la
 inmutabilidad de archivos y directorios en la raíz del sistema. También proporciona
 una forma de crear capas sobre los directorios inmutables, lo que le permite probar los

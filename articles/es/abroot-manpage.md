@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manual `abroot`
-
 ## Nombre
 
 ```text
@@ -21,7 +19,7 @@ abroot [opción] [comando]
 
 ## DESCRIPCIÓN
 
-```markdown
+```md
 Uso:
     abroot [opción] [comando]
 
@@ -39,7 +37,7 @@ Comandos:
 
 ## EXEC
 
-```markdown
+```md
 Ejecuta un comando en el shell transaccional en la futura partición raíz y cambia a esa partición en el siguiente reinicio.
 
 Uso:
@@ -60,7 +58,7 @@ Tip: Usted puede ejecutar varios comandos usando "" y pasarlos como una sola cad
 
 ### GET
 
-```markdown
+```md
 Muestra el estado presente o futuro de la partición raíz.
 
 Uso:
@@ -80,7 +78,7 @@ Ejemplos:
 
 ## SHELL
 
-```markdown
+```md
 Entra en un shell transaccional en la futura partición raíz y cambia a esa partición en el siguiente reinicio.
 
 Uso:
@@ -96,7 +94,7 @@ Ejemplos:
 
 ## UPDATE BOOT
 
-```markdown
+```md
 Actualiza la partición boot para propósitos de mantenimiento (sólo para usuarios avanzados).
 
 Uso:

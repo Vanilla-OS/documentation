@@ -21,7 +21,7 @@ vso [options] [command] [arguments]
 
 ## DESCRIPTION
 
-```markdown
+```md
 Usage: 
     vso [options] [command] [arguments]
 
@@ -42,7 +42,7 @@ Commands:
 
 ## CONFIG
 
-```markdown
+```md
 Description: 
     Configure VSO
 
@@ -65,7 +65,7 @@ Examples:
 
 ## CREATE TASK
 
-```markdown
+```md
 Description: 
     Create a new task
 
@@ -104,7 +104,7 @@ Examples:
 
 ## DELETE TASK
 
-```markdown
+```md
 Description: 
     Delete a task
 
@@ -121,7 +121,7 @@ Examples:
 
 ## DEVELOPER PROGRAM
 
-```markdown
+```md
 Description: 
     Join the developers program
 
@@ -137,7 +137,7 @@ Examples:
 
 ## LIST TASKS
 
-```markdown
+```md
 Description: 
     List all tasks
 
@@ -153,7 +153,7 @@ Examples:
 
 ## ROTATE TASKS
 
-```markdown
+```md
 Description: 
     Rotate tasks
 
@@ -169,7 +169,7 @@ Examples:
 
 ## TRIGGER UPDATE
 
-```markdown
+```md
 Description: 
     Trigger a system update
 

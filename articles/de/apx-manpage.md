@@ -4,8 +4,6 @@ Description: Manpage für das apx-Programm.
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `apx`
-
 ## NAME
 
 ```text
@@ -20,7 +18,7 @@ apx [Optionen] [Befehl] [Argumente]
 
 ## BESCHREIBUNG
 
-```markdown
+```md
 apx ist ein Wrapper um mehrere Paketvervaltungprogramme, der Installationen und andere Befehle in einem verwalteten Container durchführt.
 
 Aufruf:
@@ -55,7 +53,7 @@ Befehle:
 
 ## AUTOREMOVE
 
-```markdown
+```md
 Beschreibung: 
     Alle nicht genutzten Pakete automatisch entfernen.
 
@@ -71,7 +69,7 @@ Beispiele:
 
 ## CLEAN
 
-```markdown
+```md
 Beschreibung: 
     Cache des apx-Paketverwalters leeren.
 
@@ -87,7 +85,7 @@ Beispiele:
 
 ## ENTER
 
-```markdown
+```md
 Beschreibung: 
     Die Shell des gegebenen Containers öffnen.
 
@@ -100,7 +98,7 @@ Optionen:
 
 ## EXPORT
 
-```markdown
+```md
 Beschreibung: 
     Den Menüeintrag eines Programms aus einem verwalteten Container exportieren/neuerstellen.
 
@@ -116,7 +114,7 @@ Beispiele:
 
 ## INIT
 
-```markdown
+```md
 Beschreibung: 
     Einen verwalteten Container initialisieren.
 
@@ -129,7 +127,7 @@ Optionen:
 
 ## INSTALL
 
-```markdown
+```md
 Beschreibung: 
     Pakete innerhalb eines verwalteten Containers installieren.
 
@@ -150,7 +148,7 @@ Beispiele:
 
 ## LIST
 
-```markdown
+```md
 Beschreibung: 
     Installierte Pakete auflisten.
 
@@ -163,7 +161,7 @@ Optionen:
 
 ## PURGE
 
-```markdown
+```md
 Beschreibung: 
     Pakete und Konfigurationsdateien in einem verwalteten Container entfernen.
 
@@ -179,7 +177,7 @@ Beispiele:
 
 ## REMOVE
 
-```markdown
+```md
 Beschreibung:
     Pakete in einem verwalteten Container entfernen.
 
@@ -195,7 +193,7 @@ Beispiele:
 
 ## RUN
 
-```markdown
+```md
 Beschreibung: 
     Programm in einem verwalteten Container ausführen.
 
@@ -211,7 +209,7 @@ Beispiele:
 
 ## SEARCH
 
-```markdown
+```md
 Beschreibung: 
     In einem verwalteten Container nach Paketen suchen.
 
@@ -227,7 +225,7 @@ Beispiele:
 
 ## SHOW
 
-```markdown
+```md
 Beschreibung: 
     Details über ein Paket anzeigen.
 
@@ -243,7 +241,7 @@ Beispiele:
 
 ## UNEXPORT
 
-```markdown
+```md
 Beschreibung:
     Menüeintrag eines Programms aus einem verwalteten Container entfernen.
 
@@ -259,7 +257,7 @@ Beispiele:
 
 ## UPDATE
 
-```markdown
+```md
 Beschreibung: 
     Die Liste der verfügbaren Pakete aktualisieren.
 
@@ -275,7 +273,7 @@ Beispiele:
 
 ## UPGRADE
 
-```markdown
+```md
 Beschreibung: 
     Verfügbare Paketaktualisierungen anwenden.
 
@@ -291,7 +289,7 @@ Beispiele:
 
 ## VERSION
 
-```markdown
+```md
 Beschreibung:
     Die apx-Version anzeigen.
 

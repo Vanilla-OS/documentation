@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Page de manuel `apx`
-
 ## NOM
 
 ```text
@@ -21,7 +19,7 @@ apx [options] [commande] [arguments]
 
 ## DESCRIPTION
 
-```markdown
+```md
 apx est un "wrapper" de plusieurs gestionnaires de programme pour installer des programmes et exécuter des commandes à l'intérieur d'un conteneur.
 
 Usage:
@@ -55,7 +53,7 @@ Commandes:
 
 ## AUTOREMOVE
 
-```markdown
+```md
 Description: 
     Enlève les programmes inutiles automatiquement.
 
@@ -71,7 +69,7 @@ Exemples:
 
 ## CLEAN
 
-```markdown
+```md
 Description: 
     Nettoie le cache de apx.
 
@@ -87,7 +85,7 @@ Exemples:
 
 ## ENTER
 
-```markdown
+```md
 Description: 
     Entre dans le shell du conteneur.
 
@@ -103,7 +101,7 @@ Exemples:
 
 ## EXPORT
 
-```markdown
+```md
 Description: 
     Exporte/Recrée l'entrée bureau d'un programme depuis un conteneur.
 
@@ -119,7 +117,7 @@ Exemple:
 
 ## INIT
 
-```markdown
+```md
 Description: 
     Initialise un conteneur.
 
@@ -132,7 +130,7 @@ Options:
 
 ## INSTALL
 
-```markdown
+```md
 Description: 
     Installe un programme dans un conteneur.
 
@@ -153,7 +151,7 @@ Exemples:
 
 ## LIST
 
-```markdown
+```md
 Description: 
     Liste les programmes installés.
 
@@ -166,7 +164,7 @@ Options:
 
 ## PURGE
 
-```markdown
+```md
 Description: 
     Purge les programmes dans un conteneur.
 
@@ -182,7 +180,7 @@ Exemples:
 
 ## REMOVE
 
-```markdown
+```md
 Description:
     Enlève un programme d'un conteneur.
 
@@ -198,7 +196,7 @@ Exemples:
 
 ## RUN
 
-```markdown
+```md
 Description: 
     Exécute un programme dans un conteneur.
 
@@ -214,7 +212,7 @@ Exemples:
 
 ## SEARCH
 
-```markdown
+```md
 Description: 
     Cherche un programme dans un conteneur.
 
@@ -230,7 +228,7 @@ Exemples:
 
 ## SHOW
 
-```markdown
+```md
 Description: 
     Affiche les détails d'un programme.
 
@@ -246,7 +244,7 @@ Exemple:
 
 ## UNEXPORT
 
-```markdown
+```md
 Description:
     Désexporte/Supprime un entré bureau d'un programme dans un conteneur.
 
@@ -262,7 +260,7 @@ Exemples:
 
 ## UPDATE
 
-```markdown
+```md
 Description: 
     Met à jour la liste de programmes.
 
@@ -278,7 +276,7 @@ Exemples:
 
 ## UPGRADE
 
-```markdown
+```md
 Description: 
     Mets à jour le systeme en installant/mettant à jour les programmes disponibles.
 
@@ -294,7 +292,7 @@ Exemples:
 
 ## VERSION
 
-```markdown
+```md
 Description:
     Montre le numéro de version d'apx.
 

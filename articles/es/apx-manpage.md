@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manual `apx`
-
 ## NOMBRE
 
 ```text
@@ -21,7 +19,7 @@ apx [opciones] [comando] [argumentos]
 
 ## DESCRIPCIÓN
 
-```markdown
+```md
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
 apx es un envoltorio alrededor de múltiples administradores de paquetes para realizar la instalación de paquetes y ejecutar comandos dentro de un contenedor.
 
@@ -56,7 +54,7 @@ Commands:
 
 ## AUTOREMOVE (autoremover)
 
-```markdown
+```md
 Descripción: 
     Elimina todos los paquetes no utilizados.
 Uso:
@@ -71,7 +69,7 @@ Uso:
 
 ## CLEAN (limpiar)
 
-```markdown
+```md
 Descrición: 
     Limpia la caché de apx.
 
@@ -87,7 +85,7 @@ Ejemplo:
 
 ## ENTER (entrar)
 
-```markdown
+```md
 Descripción: 
     Entra al shell del contenedor.
 
@@ -100,7 +98,7 @@ Opciones:
 
 ## EXPORT (exportar)
 
-```markdown
+```md
 Descripción: 
     Exporta/Recrea el acceso directo de un programa del contenedor.
 
@@ -116,7 +114,7 @@ Ejemplo:
 
 ## INIT (inicializar)
 
-```markdown
+```md
 Descripción: 
     Inicializa un contenedor.
 
@@ -129,7 +127,7 @@ Opciones:
 
 ## INSTALL (instalar)
 
-```markdown
+```md
 Descripción: 
     Instala paquetes dentro del contenedor.
 
@@ -150,7 +148,7 @@ Ejemplos:
 
 ## LIST (listar)
 
-```markdown
+```md
 Descripción: 
     Lista todos los paquetes instalados.
 
@@ -163,7 +161,7 @@ Opciones:
 
 ## LOG (registro/bitácora)
 
-```markdown
+```md
 Descripción: 
     Muestra los registros.
 
@@ -176,7 +174,7 @@ Opciones:
 
 ## PURGE (purgar)
 
-```markdown
+```md
 Descripción: 
     Purga los paquetes del contenedor.
 
@@ -192,7 +190,7 @@ Ejemplos:
 
 ## RUN (correr/ejecutar)
 
-```markdown
+```md
 Descripción: 
     Ejecuta un comando dentro del contenedor.
 
@@ -208,7 +206,7 @@ Ejemplo:
 
 ## REMOVE (remover)
 
-```markdown
+```md
 Descripción:
     Elimina paquetes del contenedor.
 
@@ -224,7 +222,7 @@ Ejemplo:
 
 ## SEARCH (buscar)
 
-```markdown
+```md
 Descripción: 
     Buscar paquetes.
 
@@ -240,7 +238,7 @@ Ejemplo:
 
 ## SHOW (mostrar)
 
-```markdown
+```md
 Descripción: 
     Muestra los detalles de un paquete.
 
@@ -256,7 +254,7 @@ Ejemplo:
 
 ## UNEXPORT (des-exportar)
 
-```markdown
+```md
 Descripción:
     Elimina el acceso directo de un programa.
 
@@ -272,7 +270,7 @@ Ejemplo:
 
 ## UPDATE (actualizar)
 
-```markdown
+```md
 Descripción: 
     Actualiza los repositorios de paquetes disponibles.
 
@@ -288,7 +286,7 @@ Ejemplo:
 
 ## UPGRADE (mejorar)
 
-```markdown
+```md
 Descripción: 
     Actualiza todo el sistema instalando/actualizado los paquetes disponibles.
 
@@ -304,7 +302,7 @@ Ejemplo:
 
 ## VERSION
 
-```markdown
+```md
 Descripción:
     Muestra la versión.
 

@@ -7,9 +7,7 @@ Authors: Contributors of Vanilla OS
 
 > This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.
 
-# Porting ABRoot to your distribution
-
-ABRoot is a technology that can be used to bring atomic transactions to any Linux distribution. However, it may require some additional setup or configuration in order to function properly with different setups. 
+ABRoot is a technology that can be used to bring atomic transactions to any Linux distribution. However, it may require some additional setup or configuration in order to function properly with different setups.
 
 The instructions provided in this documentation are general guidelines, and may require some adjustments to work on your specific Linux distribution. To properly use and configure ABRoot, a basic understanding of how Linux works, including knowledge of the package manager, the common file structure of a Linux root partition and what atomicity is, is necessary. It is important to consult the documentation for specific details and make any necessary adaptations.
 
@@ -17,7 +15,7 @@ Also a good understanding of what ABRoot is and how it works is necessary to pro
 
 ### Possible changes needed to the system
 
-There are some possible changes you might need to apply to your system to make it compatible with ABRoot. This list only works as a starting point and not a to-do list. Your system may already be compatible with ABRoot without any modifications or with many others that are not foreseen in this documentation, so it is important to be prepared to troubleshoot and experiment. 
+There are some possible changes you might need to apply to your system to make it compatible with ABRoot. This list only works as a starting point and not a to-do list. Your system may already be compatible with ABRoot without any modifications or with many others that are not foreseen in this documentation, so it is important to be prepared to troubleshoot and experiment.
 
 Some possible changes include:
 
@@ -35,7 +33,7 @@ ABRoot uses a custom file system structure to allow for atomic transactions. It 
 
 The following is the structure of a root partition with ABRoot:
 
-```
+```txt
 .
 ├── bin -> .system/usr/bin
 ├── boot
@@ -62,7 +60,7 @@ The following is the structure of a root partition with ABRoot:
 
 As you can see, some directories are now symlinks to the `.system` directory, which is the true root of the system. This is done to allow ABRoot to switch the content of the root partition in a atomic way.
 
-It's important to note that, the libs directories can be different in other distributions and you may need to patch ABRoot to support a different layout. 
+It's important to note that, the libs directories can be different in other distributions and you may need to patch ABRoot to support a different layout.
 
 ### Protected directories
 
@@ -72,7 +70,7 @@ Protected Directories in ABRoot are a crucial aspect of its design, as they ensu
 
 ### Getting started
 
-It is recommended to work with the ABRoot code directly, rather than using any packaged version. This allows for better debugging and making changes to the code, as well as ensuring that you are using the most up-to-date version of the software. In order to do this, you will need to install **Go** (version **1.19.2 or later**), and clone the ABRoot repository from the [Vanilla OS Github Organization](https://github.com/Vanilla-OS/ABRoot). 
+It is recommended to work with the ABRoot code directly, rather than using any packaged version. This allows for better debugging and making changes to the code, as well as ensuring that you are using the most up-to-date version of the software. In order to do this, you will need to install **Go** (version **1.19.2 or later**), and clone the ABRoot repository from the [Vanilla OS Github Organization](https://github.com/Vanilla-OS/ABRoot).
 
 Then build the `abroot` binary with the following command:
 
@@ -82,7 +80,7 @@ go build -o abroot
 
 #### Setting up the environment
 
-For better testing and security purposes, it is recommended to use a virtual machine (VM) since ABRoot need a specific partitioning to works. 
+For better testing and security purposes, it is recommended to use a virtual machine (VM) since ABRoot need a specific partitioning to works.
 
 The following is the recommended partitioning for the VM:
 
@@ -96,9 +94,9 @@ To make sure that the testing environment is not affected by the changes you mad
 
 Once the VM is set up, you should copy the abroot binary you built to the `/usr/bin` directory. Then, you can start testing by running the command `abroot get present` to ensure that the setup is correct. It will raise an error if the A/B structure is not correct, so you may need to re-partition the VM to fix it.
 
-> The recommended way to run any test is entering a root session and export the `ABROOT_VERBOSE=1` environment variable for gain more verbosity. 
+> The recommended way to run any test is entering a root session and export the `ABROOT_VERBOSE=1` environment variable for gain more verbosity.
 
-Next, you can try starting a transactional shell. If the command failed it means that there are some incompatibilities with the system that we should fix. 
+Next, you can try starting a transactional shell. If the command failed it means that there are some incompatibilities with the system that we should fix.
 
 This task can vary from distribution to distribution and the `ABROOT_VERBOSE` variable helps in this as it lists all operations that are performed, including errors. This will allow you to identify what changes you need to make.
 

@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `vso`
-
 ## NOM
 
 ```text
@@ -21,7 +19,7 @@ vso [options] [commande] [arguments]
 
 ## DESCRIPTION
 
-```markdown
+```md
 Utilisation: 
     vso [options] [commande] [arguments]
 
@@ -42,7 +40,7 @@ Commandes:
 
 ## CONFIGURATION
 
-```markdown
+```md
 Description: 
     Configurer VSO
 
@@ -65,7 +63,7 @@ Exemples:
 
 ## CREER UNE TACHE
 
-```markdown
+```md
 Description: 
     Créer une nouvelle tache
 
@@ -104,7 +102,7 @@ Exemples:
 
 ## SUPPRIMER UNE TACHE
 
-```markdown
+```md
 Description: 
     Supprimer une tache
 
@@ -121,7 +119,7 @@ Exemples:
 
 ## PROGRAMME DEVELOPPEURS
 
-```markdown
+```md
 Description: 
     Rejoindre le programme développeurs
 
@@ -137,7 +135,7 @@ Exemples:
 
 ## LISTER LES TACHES
 
-```markdown
+```md
 Description: 
     Lister toutes les taches
 
@@ -153,7 +151,7 @@ Examples:
 
 ## FAIRE TOURNER LES TACHES
 
-```markdown
+```md
 Description: 
     Faire tourner les taches
 
@@ -169,7 +167,7 @@ Examples:
 
 ## ACTIONNER UNE MISE A JOUR
 
-```markdown
+```md
 Description: 
     Actionner une mise à jour système
 

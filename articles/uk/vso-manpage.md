@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage: `vso`
-
 ## Найменування
 
 ```text
@@ -21,7 +19,7 @@ vso [параметри] [команда] [аргументи]
 
 ## Опис
 
-```markdown
+```md
 Використання:
 
 
@@ -42,7 +40,7 @@ vso [параметри] [команда] [аргументи]
 
 ## Конфігурація
 
-```markdown
+```md
 Опис:
     Налаштування VSO
 
@@ -65,7 +63,7 @@ vso [параметри] [команда] [аргументи]
 
 ## Створення нових завдань
 
-```markdown
+```md
 Опис:
     Створити нове завдання
 
@@ -104,7 +102,7 @@ vso [параметри] [команда] [аргументи]
 
 ## Видалення завдань
 
-```markdown
+```md
 Опис:
 Видалення завдання
 
@@ -121,7 +119,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Програма для розробників
 
-```markdown
+```md
 Опис:
     Приєднатися до програми для розробників
 
@@ -137,7 +135,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Перелік завдань
 
-```markdown
+```md
 Опис:
     Перерахувати всі завдання
 
@@ -153,7 +151,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Ротація завдань
 
-```markdown
+```md
 Опис:
     Ротація завдань
 
@@ -169,7 +167,7 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Запуск оновлення системи
 
-```markdown
+```md
 Опис:
     Запустити оновлення системи
 
@@ -186,8 +184,8 @@ vso delete-task [task] [options] [options] [task] [options].
 
 ## Дивіться також
 
--   [`apx`](apx)
--   [`abroot`](abroot)
+- [`apx`](apx)
+- [`abroot`](abroot)
 
 ## Автори
 

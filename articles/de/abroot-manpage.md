@@ -4,8 +4,6 @@ Description: Manpage für das ABRoot-Programm.
 Authors: Contributors of Vanilla OS
 ---
 
-# Manpage `abroot`
-
 ## NAME
 
 ```text
@@ -20,7 +18,7 @@ abroot [Optionen] [Befehl]
 
 ## BESCHREIBUNG
 
-```markdown
+```md
 Verwendung:
     abroot [Optionen] [Befehl]
 
@@ -38,7 +36,7 @@ Befehle:
 
 ## EXEC
 
-```markdown
+```md
 Befehl in einer interaktiven Shell in der zukünftigen Root-Partition ausführen und beim nächsten Neustart die Root-Partition wechseln.
 
 Verwendung:
@@ -59,7 +57,7 @@ Tipp: Sie können mehrere Befehle mit "" einklammern und als einzelnen String ei
 
 ### GET
 
-```markdown
+```md
 Gibt den derzeitigen oder zukünftigen Zustand der Root-Partition aus (A oder B).
 
 Verwendung:
@@ -79,7 +77,7 @@ Beispiele:
 
 ## SHELL
 
-```markdown
+```md
 Interaktive Shell in der zukünftigen Root-Partition öffnen und beim nächsten Neustart die Root-Partition wechseln.
 
 Verwendung:
@@ -95,7 +93,7 @@ Beispiele:
 
 ## UPDATE BOOT
 
-```markdown
+```md
 Boot-Partition zu Wartungszwecken aktualisieren (nur für fortgeschrittene Nutzer).
 
 Verwendung:

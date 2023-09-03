@@ -5,13 +5,11 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Administrador de paquetes (`apx`)
-
 `apx` es el administrador de paquetes de Vanilla OS que es fácil de usar para instalar paquetes de múltiples fuentes dentro de contenedores sin la necesidad de alterar el sistema de archivos raíz.
 
 ## Cómo funciona
 
-`apx` introduce completamente un nuevo paradigma en la administración de paquetes. La idea es 
+`apx` introduce completamente un nuevo paradigma en la administración de paquetes. La idea es
 usar su sistema solo como un almacen de sus archivos, dejándolo limpio de paquetes
 y limitando el riesgo de quiebres por incompatibilidades, paquetes mal contruidos
 o que causan conflicto.

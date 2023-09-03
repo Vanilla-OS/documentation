@@ -21,7 +21,7 @@ apx [options] [command] [arguments]
 
 ## DESCRIPTION
 
-```markdown
+```md
 apx is a wrapper around multiple package managers to install packages and run commands inside a managed container.
 
 Usage:
@@ -54,7 +54,7 @@ Commands:
 
 ## AUTOREMOVE
 
-```markdown
+```md
 Description: 
     Remove all unused packages automatically.
 Usage:
@@ -69,7 +69,7 @@ Examples:
 
 ## CLEAN
 
-```markdown
+```md
 Description: 
     Clean the apx package manager cache.
 
@@ -85,7 +85,7 @@ Examples:
 
 ## ENTER
 
-```markdown
+```md
 Description: 
     Enter in the container shell.
 
@@ -98,7 +98,7 @@ Options:
 
 ## EXPORT
 
-```markdown
+```md
 Description: 
     Export/Recreate a program's desktop entry from a managed container.
 
@@ -114,7 +114,7 @@ Examples:
 
 ## INIT
 
-```markdown
+```md
 Description: 
     Initialize the managed container.
 
@@ -127,7 +127,7 @@ Options:
 
 ## INSTALL
 
-```markdown
+```md
 Description: 
     Install packages inside a managed container.
 
@@ -148,7 +148,7 @@ Examples:
 
 ## LIST
 
-```markdown
+```md
 Description: 
     List installed packages.
 
@@ -161,7 +161,7 @@ Options:
 
 ## PURGE
 
-```markdown
+```md
 Description: 
     Purge packages inside a managed container.
 
@@ -177,7 +177,7 @@ Examples:
 
 ## REMOVE
 
-```markdown
+```md
 Description:
     Remove packages inside a managed container.
 
@@ -193,7 +193,7 @@ Examples:
 
 ## RUN
 
-```markdown
+```md
 Description: 
     Run a program inside a managed container.
 
@@ -209,7 +209,7 @@ Examples:
 
 ## SEARCH
 
-```markdown
+```md
 Description: 
     Search for packages in a managed container.
 
@@ -225,7 +225,7 @@ Examples:
 
 ## SHOW
 
-```markdown
+```md
 Description: 
     Show details about a package.
 
@@ -241,7 +241,7 @@ Examples:
 
 ## UNEXPORT
 
-```markdown
+```md
 Description:
     Unexport/Remove a program's desktop entry from a managed container.
 
@@ -257,7 +257,7 @@ Examples:
 
 ## UPDATE
 
-```markdown
+```md
 Description: 
     Update the list of available packages.
 
@@ -273,7 +273,7 @@ Examples:
 
 ## UPGRADE
 
-```markdown
+```md
 Description: 
     Upgrade the system by installing/upgrading available packages.
 
@@ -289,7 +289,7 @@ Examples:
 
 ## VERSION
 
-```markdown
+```md
 Description:
     Display the version number of apx.
 

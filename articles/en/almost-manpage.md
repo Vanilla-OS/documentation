@@ -9,19 +9,19 @@ Authors: Contributors of Vanilla OS
 
 ## NAME
 
-```
+```md
 almost - an on-demand immutability and layering tool based on the (i)mmutable file attribute and tmpfs.
 ```
 
 ## SYNOPSIS
 
-```
+```md
 almost [OPTIONS] [COMMAND] [ARGS]
 ```
 
 ## DESCRIPTION
 
-```
+```md
 almost is a utility that provides on-demand immutability by toggling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable directories, allowing you to test changes before committing them.
 
 Options:
@@ -38,7 +38,7 @@ Commands:
 
 ## ENTER
 
-```
+```md
 Set the filesystem as read-only or read-write until reboot.
 
 Setting the filesystem to read-write mode could be a security risk, be
@@ -63,7 +63,7 @@ Examples:
 
 ## CONFIG
 
-```
+```md
 Manage and show the current configuration.
 
 Usage:
@@ -82,7 +82,7 @@ Examples:
 
 ## CHECK
 
-```
+```md
 Check whether the filesystem is read-only or read-write.
 
 Usage:
@@ -95,7 +95,7 @@ Examples:
 
 ## RUN
 
-```
+```md
 Runs a command in read-write mode and returns to read-only mode after the command exits.
 
 Usage:
@@ -113,13 +113,13 @@ Examples:
 
 ## DIAGNOSTICS
 
-```
+```md
 almost returns 0 on success, 1 on error.
 ```
 
 ## AUTHOR
 
-```
+```md
 Contributors of Vanilla OS
 ```
 

@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Empaquetando
-
 Empaquetar es el proceso de crear un paquete para un software o una librería, para
 que pueda ser instalada en una distribución. Vanilla OS tiene un sistema de archivos raíz
 poco convencional, por lo que algunas consideraciones y pautas deben ser seguidas.

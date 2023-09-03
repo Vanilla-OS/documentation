@@ -7,14 +7,13 @@ Authors: Contributors of Vanilla OS
 
 > Esta documentación se refiere a ABRoot v1, no a v2. La documentación de v2 todavía se está escribiendo.
 
-# ABRoot
+`abroot` es una utilidad que proporciona una completa inmutabilidad y atomicidad, esto se logra haciendo transacciones entre 2 particiones raíz (A⟺B), también se consiguen las transacciones bajo demanda gracias al shell transaccional.
 
-`abroot` es una utilidad que proporciona una completa inmutabilidad y atomicidad, esto se logra haciendo transacciones entre 2 particiones raíz (A⟺B), también se consiguen las transacciones bajo demanda gracias al shell transaccional. 
 ## Cómo funciona
 
 El sistema de archivos de GNU/Linux es una estructura con una gerarquía de archivos donde está la raíz y otros directorios.
 La raíz es el directorio primario de la gerarquía que contiene las demás particiones.
-En un sistema de archivos inmutable, la partición raíz es de solo lectura, impidiendo la instalación de paquetes esenciales, como los controladores en el sistema anfitrión. 
+En un sistema de archivos inmutable, la partición raíz es de solo lectura, impidiendo la instalación de paquetes esenciales, como los controladores en el sistema anfitrión.
 
 `abroot` permite instalar módulos del kernel, controladores y otros paquetes esenciales sin comprometer la inmutabilidad del sistema de archivos.
 
@@ -32,7 +31,7 @@ Las instalaciones de Vanilla OS crean las particiones raíz y boot para ambos es
 
 ## Nombramiento
 
-El nombre de `ABRoot` se refiere a las dos particiones raíz A y B (A⟺B), para realizar las transacciones. 
+El nombre de `ABRoot` se refiere a las dos particiones raíz A y B (A⟺B), para realizar las transacciones.
 
 ## Uso
 

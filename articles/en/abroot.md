@@ -7,17 +7,15 @@ Authors: Contributors of Vanilla OS
 
 > This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.
 
-# ABRoot
-
 `abroot` is a utility that provides complete immutability and atomicity by making transactions between 2 root partitions (A⟺B), it also allows for on-demand transactions via a transactional shell.
 
 ## How it works
 
-The Linux file system is a hierarchical file structure containing root and other directories. 
+The Linux file system is a hierarchical file structure containing root and other directories.
 Root is the primary hierarchical directory containing all other partitions.
 In immutable file systems, the root partition is read-only, preventing the installation of essential packages, such as drivers in the host.
 
-`abroot` allows you to install kernel modules, drivers and other essential packages without compromising the filesystem's immutability. 
+`abroot` allows you to install kernel modules, drivers and other essential packages without compromising the filesystem's immutability.
 
 When a command gets executed in `abroot`, a transaction gets started in the transactional shell in the second root partition. If the transaction succeeds, the changes are applied using an overlay and synced with the current root on reboot. If the transaction fails, no changes are applied (due to a property known as atomicity). `abroot` also allows for on-demand transactions using the `abroot shell` command.
 
@@ -35,7 +33,7 @@ Vanilla OS installations create root and boot partitions for both states (20GB p
 
 `abroot` allows setting custom kernel parameters in case a driver or custom setup requires it. By default, `abroot` reads the contents of `/etc/default/abroot_kargs`, which must **not** be edited. Instead, you should use the provided command to manage your parameters:
 
-```
+```bash
 sudo abroot kargs edit
 ```
 

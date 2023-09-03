@@ -5,8 +5,6 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Manual `vso`
-
 ## NOMBRE
 
 ```text
@@ -22,7 +20,7 @@ vso [opciones] [comandos] [argumentos]
 
 ## DESCRIPCIÓN
 
-```markdown
+```md
 Uso: 
     vso [opciones] [comandos] [argumentos]
 
@@ -43,7 +41,7 @@ Comandos:
 
 ## CONFIG
 
-```markdown
+```md
 Descripción: 
     Configurar VSO
 
@@ -66,7 +64,7 @@ Ejemplos:
 
 ## CREATE TASK
 
-```markdown
+```md
 Descripción: 
     Crear una nueva tarea
 
@@ -105,7 +103,7 @@ Ejemplos:
 
 ## DELETE TASK
 
-```markdown
+```md
 Descripción: 
     Eliminar una tarea
 
@@ -122,7 +120,7 @@ Ejemplos:
 
 ## DEVELOPER PROGRAM
 
-```markdown
+```md
 Descrición: 
     Unirse al programa de desarrolladores
 
@@ -138,7 +136,7 @@ Ejemplo:
 
 ## LIST TASKS
 
-```markdown
+```md
 Descripción: 
     Listar todas las tareas
 
@@ -154,7 +152,7 @@ Ejemplo:
 
 ## ROTATE TASKS
 
-```markdown
+```md
 Descripción: 
     Rotar tareas
 
@@ -170,7 +168,7 @@ Ejemplo:
 
 ## TRIGGER UPDATE
 
-```markdown
+```md
 Descripción: 
     Ejecutar una actualización del sistema
 

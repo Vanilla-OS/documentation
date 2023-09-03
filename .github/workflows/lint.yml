@@ -38,4 +38,6 @@ jobs:
             # Exit with 0 regardless of typos.
             only_warn: 1
             # Only check files in the PR
-            path: ${{ steps.changed-files.outputs.all_changed_files }}
+            path: |
+                ${{ steps.changed-files.outputs.all_changed_files }}
+                articles/en

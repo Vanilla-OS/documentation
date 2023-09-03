@@ -14,7 +14,7 @@ Apx is a package manager with support for multiple sources, allowing you to inst
 ## SYNOPSIS
 
 ```md
-apx [options] [command] [arguments]
+apx [command] [arguments] [options]
 ```
 
 ## DESCRIPTION

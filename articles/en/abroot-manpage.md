@@ -14,7 +14,7 @@ ABRoot is utility which provides full immutability and atomicity to a Linux syst
 ## SYNOPSIS
 
 ```md
-abroot [options] [command]
+abroot [command] [arguments] [options]
 ```
 
 ## DESCRIPTION

@@ -14,7 +14,7 @@ The Vanilla System Operator (VSO) is a package manager, a system updater and a t
 ## SYNOPSIS
 
 ```md
-vso [options] [command] [arguments]
+vso [command] [arguments] [options]
 ```
 
 ## DESCRIPTION

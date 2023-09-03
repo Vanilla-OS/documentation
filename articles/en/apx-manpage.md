@@ -350,12 +350,6 @@ Flags:
 - [`abroot`](abroot)
 - [`vso`](vso)
 
-## AUTHOR
-
-```md
-Contributors of Vanilla OS
-```
-
 ## REPORTING BUGS
 
 Report bugs to the [issue tracker](https://github.com/Vanilla-OS/apx/issues).

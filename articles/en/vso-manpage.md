@@ -1,16 +1,14 @@
 ---
-Title: VSO v1 Manpage
-Description: Manpage for the vanilla system operator utility.
-PublicationDate: 2023-06-10
+Title: VSO Manpage
+Description: Manpage for the Vanilla System Operator utility.
+PublicationDate: 2023-09-03
 Authors: Contributors of Vanilla OS
 ---
-
-> This documentation refers to VSO v1, not v2. The documentation for v2 is still being written.
 
 ## NAME
 
 ```md
-VSO is an utility which allows you to perform maintenance tasks on your Vanilla OS installation.
+The Vanilla System Operator (VSO) is a package manager, a system updater and a task automator
 ```
 
 ## SYNOPSIS
@@ -22,178 +20,345 @@ vso [options] [command] [arguments]
 ## DESCRIPTION
 
 ```md
-Usage: 
-    vso [options] [command] [arguments]
+The Vanilla System Operator is a package manager, a system updater and a task automator.
 
-Options:
-    -h, --help            Show this help message and exit
+Usage:
+  vso [command]
 
-Commands:
-    config                  Configure VSO
-    create-task             Create a new task
-    delete-task             Delete a task
-    developer-program       Join the developers program
-    help                    Show this help message and exit
-    list-tasks              List all tasks
-    rotate-tasks            Rotate tasks
-    trigger-update          Trigger a system update
-    version                 Show version and exit
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  config      Manage the system configuration.
+  export      Export an application or binary from the subsystem
+  help        Help about any command
+  install     Install an application inside the subsystem
+  pico-init   Initialize the Pico subsystem, used for package management
+  remove      Remove an application from the subsystem
+  run         Run an application from the subsystem
+  search      Search for an application to install inside the subsystem
+  shell       Enter the subsystem environment
+  sys-upgrade Upgrade the system
+  tasks       Create and manage tasks
+  unexport    Unexport an application or binary from the subsystem
+  update      Update the subsystem's package repository
+  upgrade     Upgrade the packages inside the subsystem
+
+Flags:
+  -h, --help      help for vso
+  -v, --version   version for vso
+
+Use "vso [command] --help" for more information about a command.
+```
+
+## COMPLETION
+
+```md
+Generate the autocompletion script for vso for the specified shell.
+See each sub-command's help for details on how to use the generated script.
+
+Usage:
+  vso completion [command]
+
+Available Commands:
+  bash        Generate the autocompletion script for bash
+  fish        Generate the autocompletion script for fish
+  powershell  Generate the autocompletion script for powershell
+  zsh         Generate the autocompletion script for zsh
+
+Flags:
+  -h, --help   help for completion
+
+Use "vso completion [command] --help" for more information about a command.
 ```
 
 ## CONFIG
 
 ```md
-Description: 
-    Configure VSO
+Manage the system configuration.
 
 Usage:
-    vso config [options] [command]
+  vso config [command]
 
-Options:
-    --help/-h           show this message
-    --assume-yes/-y     assume yes to all questions
+Available Commands:
+  get         Get the system configuration
+  set         Set the system configuration
+  show        Show the system configuration
 
-Commands:
-    show                show current configuration
-    get <key>           get a configuration value
-    set <key> <value>   set a configuration value
+Flags:
+  -h, --help   help for config
 
-Examples:
-    vso config get updates::schedule
-    vso config set updates::schedule weekly
+Use "vso config [command] --help" for more information about a command.
 ```
 
-## CREATE TASK
+## EXPORT
 
 ```md
-Description: 
-    Create a new task
+Export an application or binary from the subsystem
 
 Usage:
-    vso create-task [options] [arguments]
+  vso export [flags]
 
-Options:
-    --help/-h               show this message
-
-Arguments:
-    --name/-n               name of the task
-    --description/-d        description of the task
-    --need-confirm          ask for confirmation before executing the task
-    --command/-c            command to execute
-    --after-task            execute the task after another task
-    --after-task-success    execute the task after another task if it was successful
-    --after-task-failure    execute the task after another task if it failed
-    --every/-e              execute the task every X (minutes, hours, days)
-    --at/-a                 execute the task at a specific time (hh:mm)
-    --on-boot               execute the task on boot
-    --on-shutdown           execute the task on shutdown
-    --on-login              execute the task on login
-    --on-network            execute the task on network connection
-    --on-disconnect         execute the task on network disconnection
-    --on-battery            execute the task on battery
-    --on-low-battery        execute the task on low battery (20%)
-    --on-charge             execute the task on battery charging
-    --on-full-battery       execute the task on full battery
-    --on-condition-command  execute the task on condition command
-    --on-process            execute the task when a process comes up
-
-Examples:
-    vso create-task -n "Battery fully charged" -d "notify at full charge" -c "notify-send 'Battery fully charged'" --on-full-battery
-    vso create-task -n "Launch-terminal" -d "Launch terminal at Settings launch" -c "kgx" --on-process gnome-control-center
+Flags:
+  -a, --app string   the name of the application to export
+  -b, --bin string   the name of the binary to export
+  -h, --help         help for export
 ```
 
-## DELETE TASK
+## INSTALL
 
 ```md
-Description: 
-    Delete a task
+Install an application inside the subsystem
 
 Usage:
-    vso delete-task [task] [options]
+  vso install [flags]
 
-Options:
-    --help/-h       show this message
-
-Examples:
-    vso delete-task my-task
-    vso delete-task "my task"
+Flags:
+  -h, --help   help for install
 ```
 
-## DEVELOPER PROGRAM
+## PICO-INIT
 
 ```md
-Description: 
-    Join the developers program
+Initialize the Pico subsystem, used for package management
 
 Usage:
-    vso developer-program [options]
+  vso pico-init [flags]
 
-Options:
-    --help/-h       show this message
-
-Examples:
-    vso developer-program
+Flags:
+  -f, --force   force the initialization if the subsystem is already initialized
+  -h, --help    help for pico-init
 ```
 
-## LIST TASKS
+## REMOVE
 
 ```md
-Description: 
-    List all tasks
+Remove an application from the subsystem
 
 Usage:
-    vso list-tasks [options]
+  vso remove [flags]
 
-Options:
-    --help/-h       show this message
-
-Examples:
-    vso list-tasks
+Flags:
+  -h, --help   help for remove
 ```
 
-## ROTATE TASKS
+## RUN
 
 ```md
-Description: 
-    Rotate tasks
+Run an application from the subsystem
 
 Usage:
-    vso rotate-tasks [options]
+  vso run [flags]
 
-Options:
-    --help/-h       show this message
-
-Examples:
-    vso rotate-tasks
+Flags:
+  -h, --help   help for run
 ```
 
-## TRIGGER UPDATE
+## SEARCH
 
 ```md
-Description: 
-    Trigger a system update
+Search for an application to install inside the subsystem
 
 Usage:
-    vso trigger-update [options]
+  vso search [flags]
 
-Options:
-    --help/-h       show this message
-    --now           trigger a system update immediately
+Flags:
+  -h, --help   help for search
+```
 
-Examples:
-    vso trigger-update --now
+## SHELL
+
+```md
+Enter the subsystem environment
+
+Usage:
+  vso shell [flags]
+
+Flags:
+  -h, --help   help for shell
+```
+
+## SYS-UPGRADE
+
+```md
+Upgrade the system
+
+Usage:
+  vso sys-upgrade [command]
+
+Available Commands:
+  check       Check for system updates
+  upgrade     Upgrade the system
+
+Flags:
+  -h, --help   help for sys-upgrade
+
+Use "vso sys-upgrade [command] --help" for more information about a command.
+```
+
+### SYS-UPGRADE CHECK
+
+```md
+Check for system updates
+
+Usage:
+  vso sys-upgrade check [flags]
+
+Flags:
+  -x, --as-exit-code   checks for upgrade but doesn't print anything. Return exit code 0 if no upgrade is available and 1 otherwise.
+  -h, --help           help for check
+  -j, --json           output the result in JSON format
+```
+
+### SYS-UPGRADE UPGRADE
+
+```md
+Upgrade the system
+
+Usage:
+  vso sys-upgrade upgrade [flags]
+
+Flags:
+  -h, --help   help for upgrade
+  -n, --now    Trigger a system upgrade now
+```
+
+## TASKS
+
+```md
+Create and manage tasks
+
+Usage:
+  vso tasks [command]
+
+Available Commands:
+  list        List all tasks
+  new         Create a new task
+  rm          Remove a task
+  rotate      Rotate tasks
+
+Flags:
+  -h, --help   help for tasks
+
+Use "vso tasks [command] --help" for more information about a command.
+```
+
+### TASKS LIST
+
+```md
+List all tasks
+
+Usage:
+  vso tasks list [flags]
+
+Flags:
+  -h, --help   help for list
+  -j, --json   output the tasks in JSON format
+```
+
+### TASKS NEW
+
+```md
+Create a new task
+
+Usage:
+  vso tasks new [flags]
+
+Flags:
+  -y, --assume-yes                    assume yes for all prompts
+      --at string                     schedule the task to execute at a specific time (hh:mm)
+      --command string                specify the command to execute
+      --description string            specify the task's description
+      --every string                  schedule the task to execute every X time (minutes, hours, days)
+  -h, --help                          help for new
+      --name string                   specify the task's name
+      --need-confirm                  ask for confirmation before executing the task
+      --on-battery                    execute the task only when the system is on battery
+      --on-charge                     execute the task only when the system is charging
+      --on-condition-command string   execute the task on condition command
+      --on-cpu-temp string            execute the task when CPU temperature is higher than 60\C2\B0C
+      --on-cpu-usage string           execute the task when CPU usage is higher than X%
+      --on-device-connect string      execute the task when a device is connected
+      --on-device-disconnect string   execute the task when a device is disconnected
+      --on-disconnect                 execute the task when the system is disconnected from the network
+      --on-full-battery               execute the task when the system is fully charged
+      --on-high-cpu-usage             execute the task when CPU usage is higher than 50%
+      --on-high-internet-usage        execute the task when internet usage is higher than 500Kb/s
+      --on-high-memory-usage          execute the task when memory usage is higher than 50%
+      --on-internet-usage string      execute the task when internet usage is higher than XKb/s
+      --on-low-battery                execute the task when the system is low on battery (20%)
+      --on-memory-usage string        execute the task when memory usage is higher than X%
+      --on-network                    execute the task when the system is connected to the network
+      --on-process string             execute the task when a process starts
+```
+
+### TASKS RM
+
+```md
+Remove a task
+
+Usage:
+  vso tasks rm [flags]
+
+Flags:
+  -f, --force         force the deletion of the task
+  -h, --help          help for rm
+  -n, --name string   specify the task's name
+```
+
+### TASKS ROTATE
+
+```md
+Rotate tasks
+
+Usage:
+  vso tasks rotate [flags]
+
+Flags:
+  -h, --help                   help for rotate
+  -e, --private-event string   specify private event to rotate tasks for boot, shutdown, login, logout
+```
+
+## UNEXPORT
+
+```md
+Unexport an application or binary from the subsystem
+
+Usage:
+  vso unexport [flags]
+
+Flags:
+  -a, --app string   the name of the application to unexport
+  -b, --bin string   the name of the binary to unexport
+  -h, --help         help for unexport
+```
+
+## UPDATE
+
+```md
+Update the subsystem's package repository
+
+Usage:
+  vso update [flags]
+
+Flags:
+  -h, --help   help for update
+```
+
+## UPGRADE
+
+```md
+Upgrade the packages inside the subsystem
+
+Usage:
+  vso upgrade [flags]
+
+Flags:
+  -h, --help   help for upgrade
 ```
 
 ## SEE ALSO
 
 - [`apx`](apx)
 - [`abroot`](vso)
-
-## AUTHOR
-
-```md
-Contributors of Vanilla OS
-```
 
 ## REPORTING BUGS
 

@@ -16,7 +16,7 @@ jobs:
     
           - name: Run markdownlint
             run: |
-              sudo npm install -g markdownlint
+              sudo npm install -g markdownlint-cli
               markdownlint $(find . -name '*.md' | grep -vF './.git')
     
     codespell:

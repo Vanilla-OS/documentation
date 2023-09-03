@@ -1,0 +1,31 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, ready_for_review, edited]
+
+jobs:
+    markdownlint:
+        runs-on: ubuntu-latest
+    
+        steps:
+          - uses: actions/checkout@v3
+    
+          - name: Run markdownlint
+            run: |
+              sudo npm install -g markdownlint-cli
+              markdownlint $(find . -name '*.md' | grep -vF './.git'
+    
+    codespell:
+        runs-on: ubuntu-latest
+
+        steps:             
+          - uses: codespell-project/actions-codespell@v2
+            with:
+                # Exit with 0 regardless of typos.
+                only_warn: 1
+                # Only check files in the PR
+                path: articles/en

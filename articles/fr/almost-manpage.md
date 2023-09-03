@@ -5,7 +5,7 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-# Guide pour `almost`
+# Guide pour `almst`
 
 Note: `almost` has been replaced with `abroot`.
 

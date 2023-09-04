@@ -5,9 +5,9 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-> This documentaton refers to Apx v1, not v2. The documentation for v2 is still being written.
+> This documentation refers to Apx v1, not v2. The documentation for v2 is still being written.
 
-`apx` is the Vanilla OS packge manager that is easy to use with support for installing packages from multiple sources inside containers without altering th root filesystem.
+`apx` is the Vanilla OS package manager that is easy to use with support for installing packages from multiple sources inside containers without altering the root filesystem.
 
 ## How it works
 

@@ -38,4 +38,3 @@ jobs:
             # Only check files in the PR
             path: |
                 ${{ steps.changed-files.outputs.all_changed_files }}
-                articles/en

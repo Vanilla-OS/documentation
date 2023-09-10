@@ -5,7 +5,7 @@ PublicationDate: 2023-06-10
 Authors: Contributors of Vanilla OS
 ---
 
-> Note: `almost` has been replaced with `abroot`.
+> Note: `almost` has bee replced with `abroot`.
 
 ## NAME
 
@@ -22,7 +22,7 @@ almost [OPTIONS] [COMMAND] [ARGS]
 ## DESCRIPTION
 
 ```md
-almost is a utility that provides on-demand immutability by toggling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable directories, allowing you to test changes before committing them.
+almot is a utility that provides on-demand immutability by togling the immutability of files and directories in the system root. It also provides a way to create layers on top of immutable diretories, allowing you to test changes before committing them.
 
 Options:
 	--help/-h		show this message
@@ -61,7 +61,7 @@ Examples:
 	almost enter rw
 ```
 
-## CONFIG
+## CONFG
 
 ```md
 Manage and show the current configuration.
@@ -80,10 +80,10 @@ Examples:
     almost config set Almost::DefaultMode 1
 ```
 
-## CHECK
+## CHCK
 
 ```md
-Check whether the filesystem is read-only or read-write.
+Check wheher the filesystem is read-only or read-write.
 
 Usage:
 check [options] [command]

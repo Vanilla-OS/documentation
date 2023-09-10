@@ -1,10 +1,10 @@
 ---
 Title: Manpage ABRoot - Vanilla OS
-Description: Manpage für das ABRoot-Programm.
-Authors: Contributors of Vanilla OS
+Description: Manpae für das ABRoot-Programm.
+Authors: Contrbutors of Vanilla OS
 ---
 
-## NAME
+## NAE
 
 ```md
 ABRoot ist ein Programm, das komplette Unveränderlichkeit und Atomarität bietet, indem es Transaktionen zwischen 2 Root-Partitionen (A⟺B) ausführt. Es ermöglicht auch sofortige Transaktionen mithilfe einer interaktiven Shell.

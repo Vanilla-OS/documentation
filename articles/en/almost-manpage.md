@@ -7,7 +7,7 @@ Authors: Contributors of Vanilla OS
 
 > Note: `almost` has been replaced with `abroot`.
 
-## NAME
+# NAME
 
 ```md
 almost - an on-demand immutability and layering tool based on the (i)mmutable file attribute and tmpfs.
@@ -38,7 +38,7 @@ Commands:
 
 ## ENTER
 
-```md
+```md 
 Set the filesystem as read-only or read-write until reboot.
 
 Setting the filesystem to read-write mode could be a security risk, be
@@ -124,5 +124,4 @@ Contributors of Vanilla OS
 ```
 
 ## REPORTING BUGS
-
 Report bugs to the [issue tracker](https://github.com/Vanilla-OS/almost/issues).

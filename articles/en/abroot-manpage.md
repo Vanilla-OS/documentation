@@ -5,21 +5,20 @@ PublicationDate: 2023-08-29
 Authors: Contributors of Vanilla OS
 ---
 
-## NAME
+# NAME
 
 ```md
 ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. It's updates are performed using OCI images, to ensure that the system is always in a consistent state.
-```
+``` 
 
 ## SYNOPSIS
-
 ```md
 abroot [command] [arguments] [options]
 ```
 
 ## DESCRIPTION
 
-```md
+```
 ABRoot provides full immutability and atomicity by performing transactions between 2 root partitions (A<->B)
 
 Usage:
@@ -64,7 +63,7 @@ Global Flags:
   -v, --verbose   show more detailed output
 
 Use "abroot completion [command] --help" for more information about a command.
-```
+``` 
 
 ## KARGS
 

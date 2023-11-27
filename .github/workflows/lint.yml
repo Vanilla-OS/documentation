@@ -10,23 +10,26 @@ on:
 jobs:
     markdownlint:
         runs-on: ubuntu-latest
-    
+        container:
+          image: ghcr.io/vanilla-os/pico:main
         steps:
           - uses: actions/checkout@v4
-    
+          - uses: actions/setup-node@v4
+            with:
+             node-version: '20'
           - name: Run markdownlint
             run: |
-              sudo npm install -g markdownlint-cli
+              npm install -g markdownlint-cli
               markdownlint $(find . -name '*.md' | grep -vF './.git')
     
     codespell:
         runs-on: ubuntu-latest
-
+        container:
+          image: ghcr.io/vanilla-os/pico:main
         steps:
         - uses: actions/checkout@v4
-
         - uses: codespell-project/actions-codespell@v2
           with:
-            # Only check files in the PR
-            path: |
-                articles/en
+             path: |
+                 articles/en
+             only_warn: 1

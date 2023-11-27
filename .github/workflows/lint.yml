@@ -20,8 +20,7 @@ jobs:
             - name: Run markdownlint
               run: |
                 npm install -g markdownlint-cli
-                markdownlint $(find . -name '*.md' | grep -vF './.git') --output lint-result.txt
- 
+                find . -name '*.md' -not -path './.git/*' -exec markdownlint {} + --output lint-result.txt
             - name: Comment PR if lint errors
               uses: actions/github-script@v7
               if: ${{ failure() }}

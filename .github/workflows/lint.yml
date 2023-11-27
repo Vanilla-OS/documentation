@@ -30,7 +30,7 @@ jobs:
                   const fs = require('fs');
                   const lintResult = fs.readFileSync('lint-result.txt', 'utf8');
                   console.log('Lint result:', lintResult);
-                  const issue_number = github.event.pull_request.number;
+                  const issue_number = github.context.payload.pull_request.number;
                   console.log('Issue number:', issue_number);
                   const owner = github.context.repo.owner;
                   const repo = github.context.repo.repo;

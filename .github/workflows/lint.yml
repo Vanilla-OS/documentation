@@ -20,7 +20,7 @@ jobs:
             - name: Run markdownlint
               run: |
                 npm install -g markdownlint-cli
-                find . -name '*.md' -not -path './.git/*' -exec markdownlint {} + --output lint-result.txt
+                markdownlint $(find . -name '*.md' | grep -vF './.git') > lint-result.txt
             - name: Comment PR if lint errors
               uses: actions/github-script@v7
               if: ${{ failure() }}
@@ -30,10 +30,10 @@ jobs:
                   const fs = require('fs');
                   const lintResult = fs.readFileSync('lint-result.txt', 'utf8');
                   if (lintResult) {
-                    const issue_number = context.issue.number;
-                    const owner = context.repo.owner;
-                    const repo = context.repo.repo;
-                    github.issues.createComment({
+                    const issue_number = github.context.issue.number;
+                    const owner = github.context.repo.owner;
+                    const repo = github.context.repo.repo;
+                    github.rest.issues.createComment({
                       issue_number: issue_number,
                       owner: owner,
                       repo: repo,

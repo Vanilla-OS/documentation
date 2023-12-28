@@ -218,7 +218,7 @@ Usage:
 
 Flags:
   -y, --assume-yes           Assume yes to all prompts.
-  -b, --base string          The base subsystem to use.
+  -b, --base string          The base distribution image to use. (For a list of compatible images view: https://distrobox.it/compatibility/#containers-distros)
   -h, --help                 help for new
   -n, --name string          The name of the stack.
   -p, --packages string      The packages to install.

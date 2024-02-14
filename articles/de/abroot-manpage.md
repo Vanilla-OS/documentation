@@ -1,7 +1,8 @@
 ---
 Title: Manpage ABRoot - Vanilla OS
 Description: Manpage für das ABRoot-Programm.
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 ## NAME

@@ -2,7 +2,11 @@
 Title: VSO Manpage
 Description: Manpage for the Vanilla System Operator utility.
 PublicationDate: 2023-09-03
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
+Tags:
+  - vso
+  - manpage
 ---
 
 ## NAME

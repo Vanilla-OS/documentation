@@ -2,7 +2,11 @@
 Title: Packaging 
 Description: Find out how to package software and libraries for Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
+Tags:
+  - packages
+  - contributing
 ---
 
 Packaging is the process of creating a package for a software or library, so that

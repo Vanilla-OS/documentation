@@ -2,7 +2,8 @@
 Title: Empaquetado - Vanilla OS
 Description: Averigüe como empaquetar software y librerías para Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 Empaquetar es el proceso de crear un paquete para un software o una librería, para

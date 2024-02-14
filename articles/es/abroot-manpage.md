@@ -2,7 +2,8 @@
 Title: Manual ABRoot
 Description: Manual para ABRoot.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 ## Nombre

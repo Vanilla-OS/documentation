@@ -2,7 +2,8 @@
 Title: Administrador de Paquetes (apx) - Vanilla OS
 Description: Descubra cómo usar apx, el administrador de paquetes de Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 `apx` es el administrador de paquetes de Vanilla OS que es fácil de usar para instalar paquetes de múltiples fuentes dentro de contenedores sin la necesidad de alterar el sistema de archivos raíz.

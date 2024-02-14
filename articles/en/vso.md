@@ -2,7 +2,14 @@
 Title: VSO v1 - Introduction
 Description: Find out how to use vso utility to perform maintenance tasks on Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
+Tags:
+  - vso
+  - maintenance
+  - packages
+  - automation
+  - updates
 ---
 
 > This documentation refers to VSO v1, not v2. The documentation for v2 is still being written.

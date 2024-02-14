@@ -2,7 +2,8 @@
 Títle: Manual vso - Vanilla OS
 Description: Manual para vso.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 ## NOMBRE

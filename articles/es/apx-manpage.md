@@ -2,7 +2,8 @@
 Title: Manual apx - Vanilla OS
 Description: Manual para apx.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 ## NOMBRE

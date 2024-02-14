@@ -2,7 +2,8 @@
 Title: Packaging - Vanilla OS
 Description: Descubra como instalar programas e bibliotecas para o Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 "Packaging" é o processo de criação de um "pacote" para um software ou uma biblioteca, de modo que ele possa ser instalado em uma distribuição linux. "Vanilla OS" tem um sistema de arquivos com uma raiz não convencional, o que requer que algumas considerações e diretrizes sejam seguidas.

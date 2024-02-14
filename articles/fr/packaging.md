@@ -2,7 +2,8 @@
 Title: Packaging - Vanilla OS
 Description: Découvrez comment packager des programmes et des librairies pour Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 Le packaging est le processus de création d'un package pour un programme ou une librairie,

@@ -2,7 +2,10 @@
 Title: ABRoot v1 - Introduction
 Description: Find out how to use ABRoot.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
+Tags:
+  - abroot
 ---
 
 > This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.

@@ -2,7 +2,8 @@
 Title: Менеджер пакунків (apx) - Vanilla OS
 Description: Дізнайтеся, як користуватися apx, менеджером пакунків Vanilla OS.
 PublicationDate: 2023-06-10
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 `apx` - це простий у використанні менеджер пакунків Vanilla OS з підтримкою встановлення пакунків з різних джерел всередині контейнерів без зміни кореневої файлової системи.

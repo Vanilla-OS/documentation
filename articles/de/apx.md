@@ -1,7 +1,8 @@
 ---
 Title: Paketmanager (apx) - VanillaOS
 Description: Bedienungsanleitung des Paketmanagers von VanillaOS, apx
-Authors: Contributors of Vanilla OS
+Authors: 
+  - Contributors of Vanilla OS
 ---
 
 `apx` ist der Paketmanager von VanillaOS. Er macht es möglich Dateien aus verschiedenen Paketquellen zu beziehen, ohne das Root-Dateisystem zu verändern.

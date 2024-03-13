@@ -4,6 +4,7 @@ Description: Manpage for the ABRoot utility.
 PublicationDate: 2023-08-29
 Authors: 
   - Contributors of Vanilla OS
+  - kbdharun
 Tags:
   - abroot
   - manpage
@@ -31,6 +32,7 @@ Usage:
 
 Available Commands:
   completion       Generate the autocompletion script for the specified shell
+  config-editor    Edit ABRoot configuration
   help             Help about any command
   kargs            Manage kernel parameters
   pkg              Manage packages
@@ -69,6 +71,21 @@ Global Flags:
   -v, --verbose   show more detailed output
 
 Use "abroot completion [command] --help" for more information about a command.
+```
+
+## CONFIG EDITOR
+
+```md
+Open an editor to edit the ABRoot configuration.
+
+Usage:
+  abroot config-editor [flags]
+
+Flags:
+  -h, --help   help for config-editor
+
+Global Flags:
+  -v, --verbose   show more detailed output
 ```
 
 ## KARGS
@@ -121,7 +138,7 @@ Examples:
 abroot rollback
 
 Flags:
-  -c, --check-only   rollback.checkOnlyFlag
+  -c, --check-only   check if rollback to previous root is possible
   -h, --help         help for rollback
 
 Global Flags:
@@ -160,7 +177,7 @@ Examples:
 abroot update-initramfs
 
 Flags:
-  -d, --dry-run   updateInitramfs.dryRunFlag
+  -d, --dry-run   perform a dry run of the operation
   -h, --help      help for update-initramfs
 
 Global Flags:

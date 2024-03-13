@@ -4,6 +4,7 @@ Description: Manpage for the Apx utility.
 PublicationDate: 2023-09-03
 Authors: 
   - Contributors of Vanilla OS
+  - kbdharun
 Tags:
   - apx
   - manpage
@@ -74,15 +75,45 @@ Usage:
   apx pkgmanagers [command]
 
 Available Commands:
+  export      Export the specified package manager.
+  import      Import the specified package manager.
   list        List all available package managers.
   new         Create a new package manager.
   rm          Remove the specified package manager.
   show        Show information about the specified package manager.
+  update      Update the specified package manager.
 
 Flags:
   -h, --help   help for pkgmanagers
 
 Use "apx pkgmanagers [command] --help" for more information about a command.
+```
+
+### PKGMANAGERS EXPORT
+
+```md
+Export the specified package manager.
+
+Usage:
+  apx pkgmanagers export [flags]
+
+Flags:
+  -h, --help            help for export
+  -n, --name string     The name of the package manager to export.
+  -o, --output string   The path to export the stack to.
+```
+
+### PKGMANAGERS IMPORT
+
+```md
+Import the specified package manager.
+
+Usage:
+  apx pkgmanagers import [flags]
+
+Flags:
+  -h, --help           help for import
+  -i, --input string   the path to import the package manager from.
 ```
 
 ### PKGMANAGERS LIST
@@ -147,6 +178,31 @@ Usage:
 
 Flags:
   -h, --help   help for show
+```
+
+### PKGMANAGERS UPDATE
+
+```md
+Update the specified package manager.
+
+Usage:
+  apx pkgmanagers update [flags]
+
+Flags:
+  -y, --assume-yes          Assume yes to all prompts.
+  -a, --autoremove string   The command to run to autoremove packages.
+  -c, --clean string        The command to run to clean the package manager's cache.
+  -h, --help                help for update
+  -i, --install string      The command to run to install packages.
+  -l, --list string         The command to run to list installed packages.
+  -n, --name string         The name of the package manager.
+  -S, --need-sudo           Whether the package manager needs sudo to run.
+  -p, --purge string        The command to run to purge packages.
+  -r, --remove string       The command to run to remove packages.
+  -s, --search string       The command to run to search for packages.
+  -w, --show string         The command to run to show information about packages.
+  -u, --update string       The command to run to update the list of available packages.
+  -U, --upgrade string      The command to run to upgrade packages.
 ```
 
 ## STACKS
@@ -331,7 +387,6 @@ Flags:
   -f, --force         Force reset of the subsystem.
   -h, --help          help for reset
   -n, --name string   The name of the subsystem to reset.
-
 ```
 
 ### SUBSYSTEMS RM
@@ -346,7 +401,6 @@ Flags:
   -f, --force         Force removal of the subsystem.
   -h, --help          help for rm
   -n, --name string   The name of the subsystem to remove.
-
 ```
 
 ## SEE ALSO

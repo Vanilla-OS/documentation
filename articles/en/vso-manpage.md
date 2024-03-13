@@ -4,6 +4,7 @@ Description: Manpage for the Vanilla System Operator utility.
 PublicationDate: 2023-09-03
 Authors: 
   - Contributors of Vanilla OS
+  - kbdharun
 Tags:
   - vso
   - manpage
@@ -30,16 +31,18 @@ Usage:
   vso [command]
 
 Available Commands:
+  android     Manage the vso waydroid subsystem
   completion  Generate the autocompletion script for the specified shell
   config      Manage the system configuration.
   export      Export an application or binary from the subsystem
   help        Help about any command
   install     Install an application inside the subsystem
-  pico-init   Initialize the Pico subsystem, used for package management
+  pico-init   Initialize the VSO subsystem, used for package management
   remove      Remove an application from the subsystem
   run         Run an application from the subsystem
   search      Search for an application to install inside the subsystem
   shell       Enter the subsystem environment
+  sideload    Sideload DEB/APK packages inside the subsystem
   sys-upgrade Upgrade the system
   tasks       Create and manage tasks
   unexport    Unexport an application or binary from the subsystem
@@ -51,6 +54,181 @@ Flags:
   -v, --version   version for vso
 
 Use "vso [command] --help" for more information about a command.
+```
+
+## ANDROID
+
+```md
+Manage the vso waydroid subsystem
+
+Usage:
+  vso android [command]
+
+Available Commands:
+  clean       Cleans the waydroid vso cache
+  delete      Delete the waydroid subsystem
+  info        Display information about an application
+  init        Initialize the waydroid subsystem
+  install     Install an application
+  launch      Launch an installed application
+  launcher    Show the waydroid launcher
+  remove      Uninstall an application
+  search      Search for an application
+  status      Return the internal status code of the Android subsystem. For development purposes.
+  sync        Sync the repositories
+  update      Update installed applications
+
+Flags:
+  -h, --help   help for android
+
+Use "vso android [command] --help" for more information about a command.
+```
+
+### ANDROID CLEAN
+
+```md
+Cleans the waydroid vso cache
+
+Usage:
+  vso android clean [flags]
+
+Flags:
+  -h, --help   help for clean
+```
+
+### ANDROID DELETE
+
+```md
+Delete the waydroid subsystem
+
+Usage:
+  vso android delete [flags]
+
+Flags:
+  -h, --help   help for delete
+```
+
+### ANDROID INFO
+
+```md
+Display information about an application
+
+Usage:
+  vso android info [flags]
+
+Flags:
+  -h, --help   help for info
+```
+
+### ANDROID INIT
+
+```md
+Initialize the waydroid subsystem
+
+Usage:
+  vso android init [flags]
+
+Flags:
+  -f, --force   Force the initialization
+  -h, --help    help for init
+```
+
+### ANDROID INSTALL
+
+```md
+Install an application
+
+Usage:
+  vso android install [flags]
+
+Flags:
+  -h, --help        help for install
+  -l, --local       Install a local apk
+  -y, --noconfirm   Do not ask for confirmation during installation
+```
+
+### ANDROID LAUNCH
+
+```md
+Launch an installed application
+
+Usage:
+  vso android launch [flags]
+
+Flags:
+  -h, --help   help for launch
+```
+
+### ANDROID LAUNCHER
+
+```md
+Show the waydroid launcher
+
+Usage:
+  vso android launcher [flags]
+
+Flags:
+  -h, --help   help for launcher
+```
+
+### ANDROID REMOVE
+
+```md
+Uninstall an application
+
+Usage:
+  vso android remove [flags]
+
+Flags:
+  -h, --help   help for remove
+```
+
+### ANDROID SEARCH
+
+```md
+Search for an application
+
+Usage:
+  vso android search [flags]
+
+Flags:
+  -h, --help   help for search
+```
+
+### ANDROID STATUS
+
+```md
+Return the internal status code of the Android subsystem. For development purposes.
+
+Usage:
+  vso android status [flags]
+
+Flags:
+  -h, --help   help for status
+```
+
+### ANDROID SYNC
+
+```md
+Sync the repositories
+
+Usage:
+  vso android sync [flags]
+
+Flags:
+  -h, --help   help for sync
+```
+
+### ANDROID UPDATE
+
+```md
+Update installed applications
+
+Usage:
+  vso android update [flags]
+
+Flags:
+  -h, --help   help for update
 ```
 
 ## COMPLETION
@@ -153,7 +331,8 @@ Usage:
   vso run [flags]
 
 Flags:
-  -h, --help   help for run
+  -h, --help       help for run
+  -n, --no-reset   do not propose to reset the subsystem if something goes wrong
 ```
 
 ## SEARCH
@@ -178,6 +357,18 @@ Usage:
 
 Flags:
   -h, --help   help for shell
+```
+
+## SIDELOAD
+
+```md
+Sideload DEB/APK packages inside the subsystem
+
+Usage:
+  vso sideload [flags]
+
+Flags:
+  -h, --help   help for sideload
 ```
 
 ## SYS-UPGRADE

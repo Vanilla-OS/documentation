@@ -30,17 +30,18 @@ Usage:
   abroot [command]
 
 Available Commands:
-  completion  Generate the autocompletion script for the specified shell
-  help        Help about any command
-  kargs       Manage kernel parameters
-  pkg         Manage packages
-  rollback    Return the system to a previous state
-  status      Display status
-  upgrade     Update the boot partition
+  completion       Generate the autocompletion script for the specified shell
+  help             Help about any command
+  kargs            Manage kernel parameters
+  pkg              Manage packages
+  rollback         Return the system to a previous state
+  status           Display status
+  update-initramfs Update the initramfs
+  upgrade          Upgrade the system
 
 Flags:
   -h, --help      help for abroot
-  -v, --verbose   Show more detailed output
+  -v, --verbose   show more detailed output
       --version   version for abroot
 
 Use "abroot [command] --help" for more information about a command.
@@ -85,7 +86,7 @@ Flags:
   -h, --help   help for kargs
 
 Global Flags:
-  -v, --verbose   Show more detailed output
+  -v, --verbose   show more detailed output
 ```
 
 ## PKG
@@ -100,10 +101,12 @@ Examples:
 abroot pkg add <pkg>
 
 Flags:
-  -h, --help   help for pkg
+  -d, --dry-run                       perform a dry run of the operation
+  -f, --force-enable-user-agreement   force enable user agreement, for embedded systems
+  -h, --help                          help for pkg
 
 Global Flags:
-  -v, --verbose   Show more detailed output
+  -v, --verbose   show more detailed output
 ```
 
 ## ROLLBACK
@@ -118,10 +121,11 @@ Examples:
 abroot rollback
 
 Flags:
-  -h, --help   help for rollback
+  -c, --check-only   rollback.checkOnlyFlag
+  -h, --help         help for rollback
 
 Global Flags:
-  -v, --verbose   Show more detailed output
+  -v, --verbose   show more detailed output
 ```
 
 ## STATUS
@@ -136,18 +140,37 @@ Examples:
 abroot status
 
 Flags:
-  -d, --dump   Dump the ABRoot status to an archive
+  -d, --dump   dump the ABRoot status to an archive
   -h, --help   help for status
-  -j, --json   Show output in JSON format
+  -j, --json   show output in JSON format
 
 Global Flags:
   -v, --verbose   Show more detailed output
 ```
 
+## UPDATE-INITRAMFS
+
+```md
+Update the initramfs of the future root.
+
+Usage:
+  abroot update-initramfs [flags]
+
+Examples:
+abroot update-initramfs
+
+Flags:
+  -d, --dry-run   updateInitramfs.dryRunFlag
+  -h, --help      help for update-initramfs
+
+Global Flags:
+  -v, --verbose   show more detailed output
+```
+
 ## UPGRADE
 
 ```md
-Update the boot partition for maintenance purposes (for advanced users only)
+Check for a new system image and apply it.
 
 Usage:
   abroot upgrade [flags]
@@ -157,11 +180,12 @@ abroot upgrade
 
 Flags:
   -c, --check-only   check for updates but do not apply them
-  -f, --force        force update the boot partition without asking for confirmation
+  -d, --dry-run      perform a dry run of the operation
+  -f, --force        force update even if the system is up to date
   -h, --help         help for upgrade
 
 Global Flags:
-  -v, --verbose   Show more detailed output
+  -v, --verbose   show more detailed output
 ```
 
 ## SEE ALSO

@@ -3,7 +3,7 @@ Title: Almost Manpage
 Description: Manpage for the almost utility.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 Tags:
   - almost
   - manpage

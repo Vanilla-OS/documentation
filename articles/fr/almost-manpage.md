@@ -3,7 +3,7 @@ Title : Guide pour almost - Vanilla OS
 Description : Guide pour l'utilitaire almost.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 Note: `almost` has been replaced with `abroot`.

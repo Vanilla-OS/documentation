@@ -3,7 +3,7 @@ Title: Almost - Introduction
 Description: Find out how to use Almost, the on-demand immutability utility.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 Tags:
   - almost
 ---

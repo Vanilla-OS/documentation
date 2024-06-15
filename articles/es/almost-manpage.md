@@ -3,7 +3,7 @@ Title: Manual de almost - Vanilla OS
 Description: Manual de la utilidad almost.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 Note: `almost` has been replaced with `abroot`.

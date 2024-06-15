@@ -3,7 +3,7 @@ Title: Operador del sistema de Vanilla (vso) - Vanilla OS
 Description: Descubra cómo usar vso para realizar tareas de mantenimiento en Vanilla OS.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `vso` es una utilidad de línea de comandos que le permite realizar tareas de mantenimiento en su

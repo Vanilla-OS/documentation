@@ -3,7 +3,7 @@ Title : Gestionnaire de paquets (apx) - Vanilla OS
 Description : Découvrez comment utiliser apx, le gestionnaire de paquets de Vanilla OS.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `apx` est le gestionnaire de paquets de Vanilla OS. Il est conçu pour être simple d'utilisation,

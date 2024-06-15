@@ -3,7 +3,7 @@ Title: Immutabilité (ABRoot) - Vanilla OS
 Description: Découvrez comment utiliser ABRoot.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 > Cette documentation fait référence à ABRoot v1, et non à v2. La documentation de la v2 est toujours en cours de rédaction.

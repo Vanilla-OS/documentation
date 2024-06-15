@@ -3,7 +3,7 @@ Title: Vanilla System Operator (vso) - Vanilla OS
 Description: Дізнайтеся, як використовувати утиліту vso для виконання завдань з обслуговування у Vanilla OS.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `vso` - утиліта командного рядка, за допомогою якої ви можете виконувати завдання з обслуговування вашої системи Vanilla OS.

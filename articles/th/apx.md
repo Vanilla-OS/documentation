@@ -3,7 +3,7 @@ Title: ตัวจัดการแพคเกจ (apx) - Vanilla OS
 Description: เรียนรู้วิธีการใช้งาน apx, ตัวจัดการแพตเกจของ the Vanilla OS
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `apx` เป็นตัวจัดการแพคเเกจของ Vanilla OS ที่ออกแบบให้ใช้งานง่าย แต่ทรงพลังและรองรับการติดตั้งแพคเกจ

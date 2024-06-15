@@ -3,7 +3,7 @@ Title: Керування ABRoot - Vanilla OS
 Description: Керування утилітою ABRoot.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 ## Найменування

@@ -3,7 +3,7 @@ Title: Page de manuel (manpage) pour apx - Vanilla OS
 Description: Page de manuel pour l'utilitaire apx.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 ## NOM

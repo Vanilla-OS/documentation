@@ -2,7 +2,7 @@
 Title: Vanilla System Operator (vso) - Vanilla OS
 Description: Erfahren Sie, wie Sie das vso-Programm nutzen können, um Wartungsaufgaben an Ihrem Vanilla OS-System durchzuführen.
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `vso` ist ein Befehlszeilen-Programm, mit dem Sie Wartungsaufgaben an Ihrem Vanilla OS-System durchführen können.

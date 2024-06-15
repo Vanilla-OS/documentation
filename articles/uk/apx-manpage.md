@@ -3,7 +3,7 @@ Title: APX - Manpage - Vanilla OS
 Description: Manpage для менеджера пакунків apx.
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 ## Найменування

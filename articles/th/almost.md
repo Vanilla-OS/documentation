@@ -3,7 +3,7 @@ Title: การล็อคไฟล์ระบบ (almost) - Vanilla OS
 Description: เรียนรู้วิธีการใช้งาน almost, เครื่องมือในการการล็อคไฟล์ระบบตามความต้องการ
 PublicationDate: 2023-06-10
 Authors: 
-  - Contributors of Vanilla OS
+  - Vanilla-OS
 ---
 
 `almost` เป็นเครื่องมือในการล็อคไฟล์ระบบตามความต้องการโดยการเปิด-ปิดไฟล์และโฟลเดอร์ในโฟลเดอร์ราก

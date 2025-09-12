@@ -14,7 +14,7 @@ Tags:
 ## NAME
 
 ```md
-ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. It's updates are performed using OCI images, to ensure that the system is always in a consistent state.
+ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. Its updates are performed using OCI images, to ensure that the system is always in a consistent state.
 ```
 
 ## SYNOPSIS

@@ -1,8 +1,8 @@
 ---
 Title: Almost Manpage
 Description: Manpage for the almost utility.
-PublicationDate: 2023-06-10
-Listed: true
+PublicationDate: 2026-08-24
+Listed: false
 Authors: 
   - Vanilla-OS
 Tags:
@@ -10,7 +10,8 @@ Tags:
   - manpage
 ---
 
-> Note: `almost` has been replaced with `abroot`.
+> Almost is not included in Vanilla OS 3 Reunion. This page is kept as a
+> historical command reference. Use [ABRoot](abroot) on a current system.
 
 ## NAME
 

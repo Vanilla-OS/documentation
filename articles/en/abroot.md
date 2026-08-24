@@ -1,57 +1,108 @@
 ---
-Title: ABRoot v1 - Introduction
-Description: Find out how to use ABRoot.
-PublicationDate: 2023-06-10
+Title: ABRoot - Introduction
+Description: Learn how ABRoot provides atomic, image-based system updates.
+PublicationDate: 2026-08-24
 Listed: true
-Authors: 
+Authors:
   - Vanilla-OS
 Tags:
   - abroot
+  - updates
+  - immutability
 ---
 
-> This documentation refers to ABRoot v1, not v2. The documentation for v2 is still being written.
-
-`abroot` is a utility that provides complete immutability and atomicity by making transactions between 2 root partitions (A⟺B), it also allows for on-demand transactions via a transactional shell.
+ABRoot provides atomic system updates for Vanilla OS. It deploys complete OCI
+images instead of changing the running root filesystem one package at a time.
 
 ## How it works
 
-The Linux file system is a hierarchical file structure containing root and other directories.
-Root is the primary hierarchical directory containing all other partitions.
-In immutable file systems, the root partition is read-only, preventing the installation of essential packages, such as drivers in the host.
+Vanilla OS keeps two system states: the current state and a future state. An
+upgrade is prepared in the future state while you continue to use the current
+one. After the operation succeeds, a reboot activates the new state. The
+previous state stays available for rollback.
 
-`abroot` allows you to install kernel modules, drivers and other essential packages without compromising the filesystem's immutability.
+This design keeps the deployed system image consistent and prevents an
+interrupted upgrade from leaving a partially updated root filesystem.
 
-When a command gets executed in `abroot`, a transaction gets started in the transactional shell in the second root partition. If the transaction succeeds, the changes are applied using an overlay and synced with the current root on reboot. If the transaction fails, no changes are applied (due to a property known as atomicity). `abroot` also allows for on-demand transactions using the `abroot shell` command.
+## System upgrades
 
-Vanilla OS installations create root and boot partitions for both states (20GB per root partition) as it is a requirement for `abroot`.
+Check whether an image is available:
 
-## States
+```bash
+sudo abroot upgrade --check-only
+```
 
-`abroot` has two states - present and future. When you are in your Vanilla OS installation for the first time, the present state is A. When you reboot your system, the state automatically switches to B. When you install a package using `abroot`,  it gets installed in the future root partition and synced with the current root partition upon reboot.
+Download and prepare the latest image:
 
-## Updates
+```bash
+sudo abroot upgrade
+```
 
-`abroot` powers the `vso` utility allowing for smart automatic updates and installation of updates in the background in the future root partition, thus saving time as an offline update during reboot isn't required.
+Reboot to enter the new state. Vanilla System Operator provides the usual
+user-facing commands for the same workflow:
 
-## Kernel parameters
+```bash
+vso upgrade check
+vso upgrade
+```
 
-`abroot` allows setting custom kernel parameters in case a driver or custom setup requires it. By default, `abroot` reads the contents of `/etc/default/abroot_kargs`, which must **not** be edited. Instead, you should use the provided command to manage your parameters:
+## Rollback
+
+Check whether rollback is available, then select the previous state:
+
+```bash
+sudo abroot rollback --check-only
+sudo abroot rollback
+```
+
+Reboot to complete the rollback.
+
+## Host packages
+
+Use ABRoot packages only for software that must be part of the host system,
+such as drivers or kernel modules. Applications should normally be installed
+with Flatpak, Apx, or the VSO native subsystem.
+
+```bash
+sudo abroot pkg add PACKAGE
+sudo abroot pkg apply
+```
+
+Package changes are applied to a newly built system state and require a
+reboot. Review the pending package list with `sudo abroot pkg list`.
+
+## Rebase
+
+Rebase changes the OCI image used by the installation:
+
+```bash
+sudo abroot rebase IMAGE_NAME
+```
+
+Use `--dry-run` to inspect the operation first. Rebase only to images made for
+ABRoot and your system architecture.
+
+## Kernel arguments
+
+Edit persistent kernel arguments with:
 
 ```bash
 sudo abroot kargs edit
 ```
 
-The command above will open the parameters file in your default command-line text editor (`nano` by default), but you can override it by using the `$EDITOR` environment variable before the command. So, for example, if you want to edit the arguments using `vim`, you can run `sudo EDITOR=vim abroot kargs edit`.
+The command opens the configuration in `$EDITOR`. Invalid kernel arguments can
+prevent a state from booting, so keep the previous state available until the
+new one has been tested.
 
-[Kernel parameters](https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html) must be separated by spaces and should **not** have line breaks between them. Furthermore, you should not remove the default parameters unless you know what you're doing, as changing them could make your system unbootable.
+## Persistent paths
 
-**NOTE**: The kernel parameters are applied only to your future root, so you can always enter the previous root in case something goes wrong.
-
-## Naming
-
-ABRoot's name refers to the two transacting root partitions A and B (A⟺B).
+Runtime and user data live outside the replaced system image. In Vanilla OS 3,
+`/opt` and `/usr/local` are persistent paths backed by `/var`. Custom images
+must not replace those paths with image-owned directories or files.
 
 ## Usage
 
-- [Manpage](abroot-manpage)
-- [Porting to your distribution](abroot-porting)
+- [ABRoot manpage](abroot-manpage)
+- [Integrating ABRoot](abroot-porting)
+- [Apx](apx)
+- [Vanilla System Operator](vso)

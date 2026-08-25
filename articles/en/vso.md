@@ -87,7 +87,7 @@ Read and change a VSO setting with positional arguments:
 
 ```bash
 vso config get KEY
-sudo vso config set KEY VALUE
+vso config set KEY VALUE
 vso config show
 ```
 

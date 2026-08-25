@@ -25,7 +25,7 @@ ABRoot manages atomic OCI-based system states.
 Open the ABRoot configuration in the default command-line editor.
 
 ```bash
-sudo abroot config-editor
+abroot config-editor
 ```
 
 ### `kargs`

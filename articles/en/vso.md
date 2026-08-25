@@ -1,9 +1,9 @@
 ---
-Title: VSO v1 - Introduction
-Description: Find out how to use vso utility to perform maintenance tasks on Vanilla OS.
-PublicationDate: 2023-06-10
+Title: Vanilla System Operator - Introduction
+Description: Manage upgrades, native packages, and scheduled tasks with VSO.
+PublicationDate: 2026-08-24
 Listed: true
-Authors: 
+Authors:
   - Vanilla-OS
 Tags:
   - vso
@@ -13,24 +13,91 @@ Tags:
   - updates
 ---
 
-> This documentation refers to VSO v1, not v2. The documentation for v2 is still being written.
+Vanilla System Operator, or VSO, provides the user-facing commands for system
+upgrades, native package management, and scheduled tasks in Vanilla OS.
 
-`vso` is a command-line utility which allows you to perform maintenance tasks on your Vanilla OS installation.
+## System upgrades
 
-## What can it do?
+Check for a new Vanilla OS image:
 
-`vso` can be used for various purposes like scheduling or triggering tasks such as updates in your Vanilla OS installation.
+```bash
+vso upgrade check
+```
 
-`vso` helps you stay productive by providing customizable options for creating automated workflows and tasks which can trigger a specific event or an action on a particular occasion.
+Prepare the available upgrade in the background:
 
-## Naming
+```bash
+vso upgrade
+```
 
-The name `vso` abbreviated as Vanilla System Operator, signifies the user who acts as an operator of their Vanilla OS system.
+Pass `--now` to reboot after the upgrade is ready:
+
+```bash
+vso upgrade --now
+```
+
+VSO delegates image deployment to ABRoot. The current system remains usable
+while the future state is prepared.
+
+## Native subsystem
+
+The native subsystem installs Debian packages without changing the host image.
+Initialize it before first use:
+
+```bash
+vso native init
+```
+
+Install packages, enter its shell, or run a command directly:
+
+```bash
+vso native install PACKAGE
+vso native shell
+vso native run COMMAND
+```
+
+Export a graphical application or command to the desktop:
+
+```bash
+vso native export --app APP_NAME
+vso native export --bin COMMAND
+```
+
+Apx manages the native subsystem under the name `apx-vso-native`. Installations
+upgraded from an older release may also contain the legacy `apx-vso-pico`
+subsystem.
+
+VSO 3 no longer provides the former Android and Waydroid commands.
+
+## Scheduled tasks
+
+VSO can run user commands on a schedule. List the tasks already configured:
+
+```bash
+vso tasks list
+```
+
+Use `vso tasks new --help` to view the scheduling fields accepted by the
+installed version. Tasks can be removed or rotated with `vso tasks rm` and
+`vso tasks rotate`.
+
+## Configuration
+
+Read and change a VSO setting with positional arguments:
+
+```bash
+vso config get KEY
+vso config set KEY VALUE
+vso config show
+```
+
+VSO 3 replaces the former `vso config set -k KEY -v VALUE` syntax. Changing the
+system configuration requires administrative privileges.
+The current settings are `updates.smart`, which accepts `true` or `false`, and
+`updates.schedule`, which accepts `never`, `daily`, `weekly`, or `monthly`.
 
 ## Usage
 
-- [Manpage](vso-manpage)
-
-## Related Guides
-
-- [Update and Upgrade Vanilla OS](https://handbook.vanillaos.org/2022/12/10/updates.html)
+- [VSO manpage](vso-manpage)
+- [ABRoot](abroot)
+- [Apx](apx)

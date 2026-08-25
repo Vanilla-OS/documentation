@@ -1,216 +1,130 @@
 ---
 Title: ABRoot Manpage
-Description: Manpage for the ABRoot utility.
-PublicationDate: 2023-08-29
+Description: Command reference for ABRoot 2.6.
+PublicationDate: 2026-08-24
 Listed: true
-Authors: 
+Authors:
   - Vanilla-OS
-  - kbdharun
 Tags:
   - abroot
   - manpage
 ---
 
-## NAME
+## Synopsis
 
-```md
-ABRoot is utility which provides full immutability and atomicity to a Linux system, by transacting between two root filesystems. Its updates are performed using OCI images, to ensure that the system is always in a consistent state.
+```text
+abroot [command] [options]
 ```
 
-## SYNOPSIS
+ABRoot manages atomic OCI-based system states.
 
-```md
-abroot [command] [arguments] [options]
+## Commands
+
+### `config-editor`
+
+Open the ABRoot configuration in the default command-line editor.
+
+```bash
+abroot config-editor
 ```
 
-## DESCRIPTION
+### `kargs`
 
-```md
-ABRoot provides full immutability and atomicity by performing transactions between 2 root partitions (A<->B)
+Show or edit persistent kernel arguments.
 
-Usage:
-  abroot [command]
-
-Available Commands:
-  completion       Generate the autocompletion script for the specified shell
-  config-editor    Edit ABRoot configuration
-  help             Help about any command
-  kargs            Manage kernel parameters
-  pkg              Manage packages
-  rollback         Return the system to a previous state
-  status           Display status
-  update-initramfs Update the initramfs
-  upgrade          Upgrade the system
-
-Flags:
-  -h, --help      help for abroot
-  -v, --verbose   show more detailed output
-      --version   version for abroot
-
-Use "abroot [command] --help" for more information about a command.
+```text
+abroot kargs edit|show
 ```
 
-## COMPLETION
+### `pkg`
 
-```md
-Generate the autocompletion script for abroot for the specified shell.
-See each sub-command's help for details on how to use the generated script.
+Manage packages included in the host system.
 
-Usage:
-  abroot completion [command]
-
-Available Commands:
-  bash        Generate the autocompletion script for bash
-  fish        Generate the autocompletion script for fish
-  powershell  Generate the autocompletion script for powershell
-  zsh         Generate the autocompletion script for zsh
-
-Flags:
-  -h, --help   help for completion
-
-Global Flags:
-  -v, --verbose   show more detailed output
-
-Use "abroot completion [command] --help" for more information about a command.
+```text
+abroot pkg add|remove|list|apply [options]
 ```
 
-## CONFIG EDITOR
+Options include:
 
-```md
-Open an editor to edit the ABRoot configuration.
+- `--dry-run`, `-d`: preview the operation.
+- `--force-enable-user-agreement`, `-f`: accept the package agreement for an embedded system.
+- `--force-apply`: apply the package operation even when no changes are detected.
+- `--delete-old-system`: delete the previous system after applying changes.
 
-Usage:
-  abroot config-editor [flags]
+### `rebase`
 
-Flags:
-  -h, --help   help for config-editor
+Change the OCI image used for future system states.
 
-Global Flags:
-  -v, --verbose   show more detailed output
+```text
+abroot rebase IMAGE_NAME [options]
 ```
 
-## KARGS
+Options include:
 
-```md
-Manage kernel parameters.
+- `--dry-run`, `-d`: preview the rebase.
+- `--remove-packages`, `-r`: remove configured host packages.
+- `--keep-packages`, `-k`: keep configured host packages.
+- `--rebase-only`, `-n`: change the image without starting an upgrade.
 
-Usage:
-  abroot kargs edit|show [flags]
+### `rollback`
 
-Examples:
-abroot kargs edit
+Select the previous system state for the next boot.
 
-Flags:
-  -h, --help   help for kargs
-
-Global Flags:
-  -v, --verbose   show more detailed output
+```text
+abroot rollback [--check-only]
 ```
 
-## PKG
+### `status`
 
-```md
-Install and manage packages.
+Show the current and future system states.
 
-Usage:
-  abroot pkg add|remove|list|apply [flags]
-
-Examples:
-abroot pkg add <pkg>
-
-Flags:
-  -d, --dry-run                       perform a dry run of the operation
-  -f, --force-enable-user-agreement   force enable user agreement, for embedded systems
-  -h, --help                          help for pkg
-
-Global Flags:
-  -v, --verbose   show more detailed output
+```text
+abroot status [--json] [--dump]
 ```
 
-## ROLLBACK
+`--json`, `-j` prints JSON. `--dump`, `-d` creates a diagnostic archive.
 
-```md
-Executes a system rollback, discarding changes made to the present root.
+### `update-initramfs`
 
-Usage:
-  abroot rollback [flags]
+Rebuild the initramfs in the future system state.
 
-Examples:
-abroot rollback
-
-Flags:
-  -c, --check-only   check if rollback to previous root is possible
-  -h, --help         help for rollback
-
-Global Flags:
-  -v, --verbose   show more detailed output
+```text
+abroot update-initramfs [--dry-run] [--delete-old-system]
 ```
 
-## STATUS
+### `upgrade`
 
-```md
-Display the current ABRoot status.
+Check for, download, and prepare a new system image.
 
-Usage:
-  abroot status [flags]
-
-Examples:
-abroot status
-
-Flags:
-  -d, --dump   dump the ABRoot status to an archive
-  -h, --help   help for status
-  -j, --json   show output in JSON format
-
-Global Flags:
-  -v, --verbose   Show more detailed output
+```text
+abroot upgrade [options]
 ```
 
-## UPDATE-INITRAMFS
+Options include:
 
-```md
-Update the initramfs of the future root.
+- `--check-only`, `-c`: check without applying an update.
+- `--dry-run`, `-d`: preview the operation.
+- `--force`, `-f`: run even when the system is current.
+- `--delete-old-system`: remove the previous system after the upgrade.
+- `--cancel`: cancel the current upgrade.
+- `--unblock`: clear an upgrade block.
 
-Usage:
-  abroot update-initramfs [flags]
+### `completion`
 
-Examples:
-abroot update-initramfs
+Generate completion scripts for Bash, Fish, PowerShell, or Zsh.
 
-Flags:
-  -d, --dry-run   perform a dry run of the operation
-  -h, --help      help for update-initramfs
-
-Global Flags:
-  -v, --verbose   show more detailed output
+```text
+abroot completion bash|fish|powershell|zsh
 ```
 
-## UPGRADE
+## Global options
 
-```md
-Check for a new system image and apply it.
+- `--help`, `-h`: show help.
+- `--verbose`, `-V`: show detailed output.
+- `--version`, `-v`: show the version.
 
-Usage:
-  abroot upgrade [flags]
+Run `abroot COMMAND --help` for the flags accepted by an installed version.
 
-Examples:
-abroot upgrade
+## Reporting bugs
 
-Flags:
-  -c, --check-only   check for updates but do not apply them
-  -d, --dry-run      perform a dry run of the operation
-  -f, --force        force update even if the system is up to date
-  -h, --help         help for upgrade
-
-Global Flags:
-  -v, --verbose   show more detailed output
-```
-
-## SEE ALSO
-
-- [`apx`](apx)
-- [`vso`](vso)
-
-## REPORTING BUGS
-
-Report bugs to the [issue tracker](https://github.com/Vanilla-OS/ABRoot/issues).
+Report bugs in the [ABRoot issue tracker](https://github.com/Vanilla-OS/ABRoot/issues).

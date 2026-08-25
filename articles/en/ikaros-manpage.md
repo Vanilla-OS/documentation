@@ -1,14 +1,17 @@
 ---
 Title: Ikaros Manpage
 Description: Manpage for the Ikaros utility.
-PublicationDate: 2023-09-03
-Listed: true
+PublicationDate: 2026-08-24
+Listed: false
 Authors: 
   - Vanilla-OS
 Tags:
   - ikaros
   - manpage
 ---
+
+> Ikaros is not included in Vanilla OS 3 Reunion. Driver images and host
+> packages are managed through ABRoot. See [ABRoot](abroot).
 
 ## NAME
 

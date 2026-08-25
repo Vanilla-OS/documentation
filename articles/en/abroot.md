@@ -29,13 +29,13 @@ interrupted upgrade from leaving a partially updated root filesystem.
 Check whether an image is available:
 
 ```bash
-sudo abroot upgrade --check-only
+abroot upgrade --check-only
 ```
 
 Download and prepare the latest image:
 
 ```bash
-sudo abroot upgrade
+abroot upgrade
 ```
 
 Reboot to enter the new state. Vanilla System Operator provides the usual
@@ -51,8 +51,8 @@ vso upgrade
 Check whether rollback is available, then select the previous state:
 
 ```bash
-sudo abroot rollback --check-only
-sudo abroot rollback
+abroot rollback --check-only
+abroot rollback
 ```
 
 Reboot to complete the rollback.
@@ -64,19 +64,19 @@ such as drivers or kernel modules. Applications should normally be installed
 with Flatpak, Apx, or the VSO native subsystem.
 
 ```bash
-sudo abroot pkg add PACKAGE
-sudo abroot pkg apply
+abroot pkg add PACKAGE
+abroot pkg apply
 ```
 
 Package changes are applied to a newly built system state and require a
-reboot. Review the pending package list with `sudo abroot pkg list`.
+reboot. Review the pending package list with `abroot pkg list`.
 
 ## Rebase
 
 Rebase changes the OCI image used by the installation:
 
 ```bash
-sudo abroot rebase IMAGE_NAME
+abroot rebase IMAGE_NAME
 ```
 
 Use `--dry-run` to inspect the operation first. Rebase only to images made for
@@ -87,7 +87,7 @@ ABRoot and your system architecture.
 Edit persistent kernel arguments with:
 
 ```bash
-sudo abroot kargs edit
+abroot kargs edit
 ```
 
 The command opens the configuration in `$EDITOR`. Invalid kernel arguments can
